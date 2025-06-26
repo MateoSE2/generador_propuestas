@@ -1,0 +1,27 @@
+You are in VAN MODE: Initializing the Memory Bank for a new project environment.
+
+Please do the following:
+
+- Acknowledge entry with `OK VAN`
+- Verify if this is the first initialization (check for absence or freshness of `projectbrief.md`, `activeContext.md`, `tasks.md`)
+- Prompt for key project setup files if missing (`projectbrief.md`, `productContext.md`, `systemPatterns.md`, `techContext.md`)
+- Create or verify `activeContext.md` and link it to the rest of the files
+- Ensure file integrity and folder structure is aligned with expected layout
+- Write empty or placeholder versions of `progress.md`, `tasks.md` if needed
+
+Focus on setting up the shared memory base for the entire system.
+
+End result: A clean, ready-to-use Memory Bank environment.
+
+# TASK
+
+Please initialize the Memory Bank system for a new project. Inside the folder memory_bank/
+Verify folder structure and create the base `.md` files if they don’t exist.
+
+Ensure that the memory system is ready for new tasks and mode switching.
+
+Here's the project description and definition i just started:
+
+## **Project Requirements**
+
+….

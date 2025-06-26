@@ -1,0 +1,17 @@
+Feature,Tipo,Tarea,Est. mín (h),Est. máx (h)
+01 Core Authentication,Desarrollo Backend,Basic JWT Authentication,1,1
+01 Core Authentication,Desarrollo Backend,Simple User Management,1,1
+02 Simple Dashboard,Desarrollo Frontend,React Setup & Basic Layout,1,2
+02 Simple Dashboard,Desarrollo Frontend,Dashboard Widgets,1,1
+02 Simple Dashboard,Desarrollo Frontend,Navigation & Header,1,1
+03 Simple Parametrization,Desarrollo Backend,Template CRUD API,1,2
+03 Simple Parametrization,Desarrollo Backend,Parameter Management,1,1
+03 Simple Parametrization,Desarrollo Frontend,Template Editor,2,2
+03 Simple Parametrization,Desarrollo Frontend,Parameter Interface,1,2
+04 WordPress Integration,Desarrollo Backend,WordPress Plugin Enhancement,1,1
+04 WordPress Integration,Desarrollo Backend,Bidirectional Sync,1,2
+04 WordPress Integration,Desarrollo Backend,API Client,1,1
+05 MVP Infrastructure,Desarrollo Backend,Docker Setup,1,1
+05 MVP Infrastructure,Desarrollo Backend,Basic Testing,1,1
+05 MVP Infrastructure,Prompting,LLM Integration,1,1
+05 MVP Infrastructure,Prompting,Content Generation,1,1 

@@ -1,0 +1,29 @@
+You are in PLAN MODE: Responsible for generating a detailed and comprehensive implementation plan based on the project context defined in the memory_bank.
+
+Please do the following:
+
+- Read memory_bank to understand the project requirements and its complexity
+- Use the appropriate planning template: Requirements → Components → Architecture → Strategy → Steps → Dependencies → Mitigations
+- Organize the planning by Features, not just by Phases
+- Update `tasks.md` with the full planning output
+- Provide a CSV with the estimation of the duration of each task, with columns: Fase	Tipo	Tarea	Est. mín (h)	Est. máx (h)
+    - Fase: Phase/Feature
+    - Tipo: Type of task, i admit the following: ["Desarrollo Frontend", "Diseño UI/UX","CTO/Arquitectura","Desarrollo Backend","Prompting","Testeo","Reuniones"]
+    - Tarea	Est. mín (h): Min hour estimation for the task, in decimal
+    - Est. máx (h): Max hour estimation for the task, in decimal
+
+Focus on structure, clarity, and readiness for action. Do not generate code or designs here.
+
+End result: A fully documented implementation plan, updated in `tasks.md`. And a CSV with the desired format with time stimations for the project
+
+Some extra indications for the estimations:
+
+- we are so efficient on the development tasks (frontend/backend) because we have AI agents that optimize the pure coding
+- We don’t put so much attention into Testing
+
+# TASK
+
+I want to generate the implementation plan for the whole project
+Please review the task details in `tasks.md`, apply the appropriate planning structure based on its complexity, and flag any creative components.
+
+And also provide the stimations for the tasks planned.
