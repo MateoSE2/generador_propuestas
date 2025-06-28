@@ -1,0 +1,54 @@
+Phase/Feature,Type,Task,Min H,Max H,Min Cost,Max Cost
+01 User/Tenant Management,Desarrollo Backend,JWT Middleware Development,3,4,150,200
+01 User/Tenant Management,Desarrollo Backend,Service Integration,3,4,150,200
+01 User/Tenant Management,Testeo,Authentication Testing & Validation,2,3,70,105
+01 User/Tenant Management,Desarrollo Backend,Database Design & Models,2,3,100,150
+01 User/Tenant Management,Desarrollo Backend,Data Sync Service,2,3,100,150
+02 Simple Dashboard,Desarrollo Frontend,React Project Setup & Configuration,2,3,80,120
+02 Simple Dashboard,Desarrollo Frontend,Core Infrastructure Setup,2,3,80,120
+02 Simple Dashboard,Desarrollo Frontend,Development Tools Configuration,1,2,40,80
+02 Simple Dashboard,Desarrollo Frontend,Layout & Navigation Components,3,4,120,160
+02 Simple Dashboard,Desarrollo Frontend,Dashboard Widgets Development,4,5,160,200
+03 Simple Parametrization,Desarrollo Backend,Template Model & API Development,4,5,200,250
+03 Simple Parametrization,Testeo,Template Backend Testing & Optimization,2,3,70,105
+03 Simple Parametrization,Desarrollo Frontend,Template Editor Development,5,6,200,240
+03 Simple Parametrization,Desarrollo Frontend,Parameter Management Interface,4,5,160,200
+03 Simple Parametrization,Desarrollo Frontend,Template Library & Management,4,5,160,200
+04 WordPress Integration,Desarrollo Backend,WordPress Plugin Architecture Review,2,3,100,150
+04 WordPress Integration,Desarrollo Backend,WordPress Bidirectional Sync Implementation,6,8,300,400
+04 WordPress Integration,Desarrollo Backend,WordPress Admin Interface & Security,3,4,150,200
+04 WordPress Integration,Desarrollo Backend,WordPress API Client Development,4,5,200,250
+04 WordPress Integration,Desarrollo Backend,WordPress Sync Operations,3,4,150,200
+04 WordPress Integration,Desarrollo Backend,WordPress Monitoring & Logging,2,3,100,150
+05 Excel Integration,Desarrollo Backend,Excel File Upload & Validation,4,5,200,250
+05 Excel Integration,Desarrollo Backend,Excel Processing Engine,4,6,200,300
+05 Excel Integration,Desarrollo Backend,Excel Export & Reporting,4,5,200,250
+05 Excel Integration,Desarrollo Frontend,Excel File Upload Interface,3,4,120,160
+05 Excel Integration,Diseño UI/UX,Excel Column Mapping Interface,4,5,160,200
+05 Excel Integration,Desarrollo Frontend,Excel Progress & Results Display,2,3,80,120
+06 Complex Dashboard,Desarrollo Backend,Usage Statistics Aggregation,4,5,200,250
+06 Complex Dashboard,Desarrollo Backend,Custom Report Generation System,5,6,250,300
+06 Complex Dashboard,Desarrollo Backend,Real-time Metrics & Analytics,4,5,200,250
+06 Complex Dashboard,Desarrollo Frontend,Advanced Dashboard UI,5,6,200,240
+07 Complex Parametrization,Desarrollo Backend,Advanced Template Engine,6,8,300,400
+07 Complex Parametrization,Desarrollo Backend,Template Inheritance & Versioning,5,6,250,300
+07 Complex Parametrization,Desarrollo Frontend,Advanced Template UI,4,5,160,200
+08 Stripe Payments,Desarrollo Backend,Stripe API Integration,4,5,200,250
+08 Stripe Payments,Desarrollo Backend,Subscription Management System,5,6,250,300
+08 Stripe Payments,Desarrollo Backend,Payment Webhook Processing,3,4,150,200
+08 Stripe Payments,Desarrollo Frontend,Payment & Billing UI,3,4,120,160
+09 Infrastructure,Desarrollo Backend,Docker Compose Configuration,3,4,150,200
+09 Infrastructure,Desarrollo Backend,Testing Framework Backend Setup,2,3,100,150
+09 Infrastructure,Desarrollo Frontend,Testing Framework Frontend Setup,2,3,80,120
+09 Infrastructure,Testeo,CI Pipeline Integration,2,3,70,105
+09 Infrastructure,Desarrollo Backend,Production Deployment Setup,3,4,150,200
+09 Infrastructure,Reuniones,Project Planning & Coordination,4,6,0,0
+09 Infrastructure,Reuniones,Weekly Progress Reviews,3,4,0,0
+09 Infrastructure,Reuniones,Stakeholder Communication,2,3,0,0
+09 Infrastructure,Prompting,LLM Integration & Optimization,4,5,140,175
+09 Infrastructure,Prompting,Content Generation Templates,3,4,105,140
+09 Infrastructure,Prompting,AI Model Configuration,2,3,70,105
+10 Multi-language Support,Desarrollo Backend,Multi-language Template System,4,5,200,250
+10 Multi-language Support,Desarrollo Backend,Translation Pipeline,5,6,250,300
+10 Multi-language Support,Desarrollo Frontend,Multi-language UI Components,3,4,120,160
+10 Multi-language Support,Desarrollo Backend,Language Detection & Management,3,4,150,200

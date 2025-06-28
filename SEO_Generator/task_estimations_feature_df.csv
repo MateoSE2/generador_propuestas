@@ -1,0 +1,11 @@
+Phase/Feature,Min H,Max H,Min Cost,Max Cost
+01 User/Tenant Management,12,17,570,805
+02 Simple Dashboard,12,17,480,680
+03 Simple Parametrization,19,24,790,995
+04 WordPress Integration,20,27,1000,1350
+05 Excel Integration,21,28,960,1280
+06 Complex Dashboard,18,22,850,1040
+07 Complex Parametrization,15,19,710,900
+08 Stripe Payments,15,19,720,910
+09 Infrastructure,30,42,865,1195
+10 Multi-language Support,15,19,720,910

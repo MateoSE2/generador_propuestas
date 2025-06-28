@@ -1,4 +1,4 @@
-Feature,Tipo,Tarea,Est. mín (h),Est. máx (h)
+Phase/Feature,Type,Task,Min H,Max H
 01 User/Tenant Management,Desarrollo Backend,JWT Middleware Development,3,4
 01 User/Tenant Management,Desarrollo Backend,Service Integration,3,4
 01 User/Tenant Management,Testeo,Authentication Testing & Validation,2,3
