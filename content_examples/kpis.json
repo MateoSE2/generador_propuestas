@@ -1,0 +1,86 @@
+{
+  "title": "KPIs del Proyecto",
+  "subtitle": "Métricas clave que demuestran el impacto y valor esperado del proyecto",
+  "kpis": [
+    {
+      "id": "investors",
+      "icon": "users",
+      "value": "500+",
+      "title": "Inversoress Objetivo",
+      "description": "Usuarios registrados esperados en el primer año",
+      "color": "primary"
+    },
+    {
+      "id": "investment-volume",
+      "icon": "trending-up",
+      "value": "€2.5M",
+      "title": "Volumen de Inversión",
+      "description": "Capital total gestionado proyectado",
+      "color": "primary"
+    },
+    {
+      "id": "roi",
+      "icon": "percent",
+      "value": "12-15%",
+      "title": "ROI Promedio",
+      "description": "Retorno de inversión anual estimado",
+      "color": "primary"
+    },
+    {
+      "id": "investment-time",
+      "icon": "clock",
+      "value": "< 5 min",
+      "title": "Tiempo de Inversión",
+      "description": "Tiempo promedio para completar una inversión",
+      "color": "primary"
+    }
+  ],
+  "summary": {
+    "title": "Métricas de Éxito Medibles",
+    "description": "Estos KPIs han sido seleccionados estratégicamente para medir el impacto real del proyecto. Cada métrica representa un objetivo cuantificable que contribuye al éxito general de la plataforma y proporciona valor tangible tanto para usuarios como para el negocio."
+  },
+  "icons": {
+    "users": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",
+        "M22 21v-2a4 4 0 0 0-3-3.87",
+        "M16 3.13a4 4 0 0 1 0 7.75"
+      ],
+      "circles": [
+        { "cx": "9", "cy": "7", "r": "4" }
+      ]
+    },
+    "trending-up": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 7 22 7 22 13"
+      ],
+      "polylines": [
+        "22 7 13.5 15.5 8.5 10.5 2 17",
+        "16 7 22 7 22 13"
+      ]
+    },
+    "percent": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "lines": [
+        { "x1": "19", "x2": "5", "y1": "5", "y2": "19" }
+      ],
+      "circles": [
+        { "cx": "6.5", "cy": "6.5", "r": "2.5" },
+        { "cx": "17.5", "cy": "17.5", "r": "2.5" }
+      ]
+    },
+    "clock": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "circles": [
+        { "cx": "12", "cy": "12", "r": "10" }
+      ],
+      "polylines": [
+        "12 6 12 12 16 14"
+      ]
+    }
+  }
+} 

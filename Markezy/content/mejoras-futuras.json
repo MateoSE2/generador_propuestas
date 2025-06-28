@@ -1,0 +1,55 @@
+{
+  "title": "Mejoras Futuras",
+  "items": [
+    {
+      "id": 1,
+      "title": "Módulo Generador de Contenido",
+      "description": "Sistema de creación automática de contenido para redes sociales con calendar integrado y personalización de voz de marca"
+    },
+    {
+      "id": 2,
+      "title": "SEO E-commerce Writer",
+      "description": "Herramienta especializada para generar descripciones de productos optimizadas para SEO con integración a plataformas e-commerce"
+    },
+    {
+      "id": 3,
+      "title": "LLM Ranking Tracker",
+      "description": "Sistema de monitoreo de menciones de marca en respuestas de modelos de IA como ChatGPT con alertas de cambios"
+    },
+    {
+      "id": 4,
+      "title": "Dashboard SuperAdmin",
+      "description": "Panel administrativo global con métricas cross-agencia, gestión de plataforma y configuración de feature flags"
+    },
+    {
+      "id": 5,
+      "title": "Integración Email Marketing",
+      "description": "Automatización de secuencias de follow-up con templates personalizables y tracking avanzado de engagement"
+    },
+    {
+      "id": 6,
+      "title": "Widget WordPress Embebible",
+      "description": "Componente JavaScript para integrar el Lead Magnet directamente en sitios web de agencias como widget"
+    },
+    {
+      "id": 7,
+      "title": "App Móvil Nativa",
+      "description": "Aplicaciones iOS y Android con gestión offline de leads, notificaciones push y autenticación biométrica"
+    },
+    {
+      "id": 8,
+      "title": "Facturación y Suscripciones",
+      "description": "Sistema completo de billing con integración Stripe, gestión de planes y límites de uso por suscripción"
+    },
+    {
+      "id": 9,
+      "title": "Dominios Personalizados",
+      "description": "Configuración de subdominios custom por agencia (ej: agencia.markezy.com) con SSL automático"
+    },
+    {
+      "id": 10,
+      "title": "Integración Redes Sociales",
+      "description": "Conexión directa con APIs de Facebook, LinkedIn e Instagram para publicación automática de contenido generado"
+    }
+  ]
+} 

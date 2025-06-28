@@ -1,0 +1,52 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "name": "Análisis y Planificación",
+      "description": "Definición detallada de requisitos y arquitectura técnica del sistema",
+      "duration": "2 sem",
+      "csvKey": "09 Infrastructure"
+    },
+    {
+      "id": 1,
+      "name": "Autenticación y Base",
+      "description": "Desarrollo del sistema de usuarios y estructura fundamental de la aplicación",
+      "duration": "2-3 sem",
+      "csvKey": "01 User/Tenant Management"
+    },
+    {
+      "id": 2,
+      "name": "Dashboard Básico",
+      "description": "Creación del panel principal con widgets fundamentales y navegación",
+      "duration": "2 sem",
+      "csvKey": "02 Simple Dashboard"
+    },
+    {
+      "id": 3,
+      "name": "Parametrización Simple",
+      "description": "Sistema básico de plantillas y configuración de parámetros",
+      "duration": "3 sem",
+      "csvKey": "03 Simple Parametrization"
+    },
+    {
+      "id": 4,
+      "name": "Integración WordPress",
+      "description": "Conexión bidireccional con WordPress y sincronización de contenido",
+      "duration": "3-4 sem",
+      "csvKey": "04 WordPress Integration"
+    },
+    {
+      "id": 5,
+      "name": "Integración Excel",
+      "description": "Sistema de carga y procesamiento de archivos Excel con validación",
+      "duration": "2-3 sem",
+      "csvKey": "05 Excel Integration"
+    }
+  ],
+  "totalHours": {
+    "min": 300,
+    "max": 450
+  },
+  "totalWeeks": 15,
+  "totalPhases": 6
+} 

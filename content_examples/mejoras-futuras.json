@@ -1,0 +1,40 @@
+{
+  "title": "Mejoras Futuras",
+  "items": [
+    {
+      "id": 1,
+      "title": "Análisis predictivo con IAA",
+      "description": "Implementación de algoritmos de machine learning para predecir tendencias del mercado inmobiliario y optimizar recomendaciones de inversión"
+    },
+    {
+      "id": 2,
+      "title": "Marketplace secundario",
+      "description": "Plataforma para que los inversores puedan vender sus participaciones antes del vencimiento, proporcionando liquidez adicional"
+    },
+    {
+      "id": 3,
+      "title": "Integración con Open Banking",
+      "description": "Conexión directa con bancos para facilitar transferencias automáticas y mejorar la experiencia de usuario"
+    },
+    {
+      "id": 4,
+      "title": "App móvil nativa",
+      "description": "Desarrollo de aplicaciones iOS y Android con funcionalidades avanzadas como notificaciones push y biometría"
+    },
+    {
+      "id": 5,
+      "title": "Asesoría personalizada",
+      "description": "Servicio de consultoría financiera personalizada basada en el perfil de riesgo del inversor"
+    },
+    {
+      "id": 6,
+      "title": "Herramientas fiscales",
+      "description": "Calculadora de impuestos automática y generación de informes fiscales anuales"
+    },
+    {
+      "id": 7,
+      "title": "Comunidad de inversores",
+      "description": "Foro interno donde los usuarios pueden compartir estrategias y conocimientos"
+    }
+  ]
+} 

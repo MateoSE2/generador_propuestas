@@ -1,0 +1,109 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "name": "Inicialización / Base",
+      "description": "Configuración de arquitectura, entorno Docker, Django multi-tenant, React TypeScript y wireframes UI/UX",
+      "duration": "1-2 sem",
+      "csvKey": "01 Inicialización / Base",
+      "totalHours": {
+        "min": 21,
+        "max": 30
+      }
+    },
+    {
+      "id": 1,
+      "name": "Autenticación de Usuarios",
+      "description": "Sistema JWT multi-tenant con roles, gestión de usuarios y flujos de invitación de agencias",
+      "duration": "1 sem",
+      "csvKey": "02 Autenticación de Usuarios",
+      "totalHours": {
+        "min": 13,
+        "max": 20
+      }
+    },
+    {
+      "id": 2,
+      "name": "Interfaz Conversacional Lead Magnet",
+      "description": "Chatbot inteligente con gestión de estado, flujo dinámico de preguntas e integración OpenAI",
+      "duration": "2 sem",
+      "csvKey": "03 Interfaz Conversacional Lead Magnet",
+      "totalHours": {
+        "min": 21,
+        "max": 35
+      }
+    },
+    {
+      "id": 3,
+      "name": "Motor de Generación de Estrategias IA",
+      "description": "Pipeline de estrategias con metodología SERSEO, templates por sector y validación de calidad",
+      "duration": "2 sem",
+      "csvKey": "04 Motor de Generación de Estrategias IA",
+      "totalHours": {
+        "min": 20,
+        "max": 30
+      }
+    },
+    {
+      "id": 4,
+      "name": "Gestión de Leads e Integración Clientify",
+      "description": "Dashboard de leads, integración CRM con reintentos automáticos y monitoreo de sincronización",
+      "duration": "1-2 sem",
+      "csvKey": "05 Gestión de Leads e Integración Clientify",
+      "totalHours": {
+        "min": 17,
+        "max": 25
+      }
+    },
+    {
+      "id": 5,
+      "name": "Exportación de Estrategias PDF",
+      "description": "Generación dinámica de PDFs profesionales con branding de agencia y descarga automática",
+      "duration": "1 sem",
+      "csvKey": "06 Exportación de Estrategias PDF",
+      "totalHours": {
+        "min": 14,
+        "max": 21
+      }
+    },
+    {
+      "id": 6,
+      "name": "Cumplimiento RGPD y Protección de Datos",
+      "description": "Arquitectura RGPD, gestión de consentimientos, auditoría y políticas de retención automáticas",
+      "duration": "1 sem",
+      "csvKey": "07 Cumplimiento RGPD y Protección de Datos",
+      "totalHours": {
+        "min": 12,
+        "max": 19
+      }
+    },
+    {
+      "id": 7,
+      "name": "Responsive Móvil y Pulido UX",
+      "description": "Optimización para dispositivos móviles, responsive design y mejoras de experiencia de usuario",
+      "duration": "1 sem",
+      "csvKey": "08 Responsive Móvil y Pulido UX",
+      "totalHours": {
+        "min": 11,
+        "max": 16
+      }
+    },
+    {
+      "id": 8,
+      "name": "Finalización",
+      "description": "Testing end-to-end, configuración producción, deployment Docker Swarm y monitoreo IONOS VPS",
+      "duration": "1 sem",
+      "csvKey": "99 Finalización",
+      "totalHours": {
+        "min": 12,
+        "max": 19
+      }
+    }
+  ],
+  "totalHours": {
+    "min": 141,
+    "max": 215
+  },
+  "totalWeeks": 12,
+  "totalPhases": 9
+} 

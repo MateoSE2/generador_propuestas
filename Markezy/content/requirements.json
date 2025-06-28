@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "totalRequirements": 10,
+    "totalHours": 178,
+    "totalAreas": 3,
+    "lastUpdated": "2025-01-28"
+  },
+  "functionalAreas": [
+    {
+      "id": "core-platform",
+      "title": "Plataforma Central",
+      "description": "Funcionalidades esenciales del MVP para captación y gestión de leads",
+      "totalRequirements": 7,
+      "projectPercentage": 80,
+      "requirements": [
+        {
+          "id": "user-auth",
+          "title": "Autenticación Multi-tenant",
+          "description": "Sistema de gestión de usuarios con roles (SuperAdmin, AgencyAdmin, Agent) y aislamiento de datos por agencia",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "conversational-interface",
+          "title": "Interfaz Conversacional Lead Magnet",
+          "description": "Chatbot inteligente para cualificación de leads con flujo dinámico de preguntas y persistencia de estado",
+          "priority": "alta",
+          "developmentAreas": ["Frontend", "Backend", "UI/UX", "Prompting"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "ai-strategy-engine",
+          "title": "Motor de Generación de Estrategias IA",
+          "description": "Sistema automático de creación de estrategias de marketing utilizando metodología SERSEO y OpenAI",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend", "Prompting"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "lead-capture",
+          "title": "Captura de Leads RGPD",
+          "description": "Sistema completo de captura de datos con gestión de consentimientos y cumplimiento RGPD automático",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend", "Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "pdf-export",
+          "title": "Exportación PDF Estrategias",
+          "description": "Generación automática de documentos PDF profesionales con branding de agencia y contenido personalizado",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend", "UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "lead-dashboard",
+          "title": "Dashboard de Leads",
+          "description": "Panel de visualización básica de leads capturados con filtros, búsqueda y exportación de datos",
+          "priority": "media",
+          "developmentAreas": ["Frontend", "Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "clientify-integration",
+          "title": "Integración Clientify",
+          "description": "Sincronización en tiempo real con CRM Clientify incluyendo manejo de errores y reintentos automáticos",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Testing"],
+          "priorityColor": "red"
+        }
+      ]
+    },
+    {
+      "id": "advanced-features",
+      "title": "Características Avanzadas",
+      "description": "Funcionalidades opcionales para expansión internacional y gestión avanzada",
+      "totalRequirements": 3,
+      "projectPercentage": 20,
+      "requirements": [
+        {
+          "id": "analytics-dashboard",
+          "title": "Dashboard de Analíticas Avanzadas",
+          "description": "Visualización de métricas de rendimiento, conversión y análisis comparativo entre agencias",
+          "priority": "media",
+          "developmentAreas": ["Frontend", "Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "multilanguage-support",
+          "title": "Soporte Multi-idioma",
+          "description": "Localización completa de UI y generación de estrategias en múltiples idiomas europeos (EN, FR, DE, IT)",
+          "priority": "media",
+          "developmentAreas": ["Frontend", "Backend", "Prompting"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "enhanced-crm",
+          "title": "Gestión CRM Avanzada",
+          "description": "Funcionalidades completas de CRM con gestión de estados, actividades, scoring y asignación de leads",
+          "priority": "baja",
+          "developmentAreas": ["Frontend", "Backend"],
+          "priorityColor": "green"
+        }
+      ]
+    }
+  ],
+  "priorityConfig": {
+    "alta": {
+      "label": "Alta",
+      "colorClasses": "text-red-600 bg-red-50 border-red-200",
+      "icon": "circle-alert"
+    },
+    "media": {
+      "label": "Media",
+      "colorClasses": "text-yellow-600 bg-yellow-50 border-yellow-200",
+      "icon": "circle"
+    },
+    "baja": {
+      "label": "Baja",
+      "colorClasses": "text-green-600 bg-green-50 border-green-200",
+      "icon": "circle"
+    }
+  }
+} 

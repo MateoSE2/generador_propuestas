@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "totalRequirements": 6,
+    "totalHours": 86,
+    "totalAreas": 2,
+    "lastUpdated": "2024-12-19"
+  },
+  "functionalAreas": [
+    {
+      "id": "panel-control",
+      "title": "Panel de Control",
+      "description": "Área de administración y gestión del usuario",
+      "totalRequirements": 3,
+      "projectPercentage": 40,
+      "requirements": [
+        {
+          "id": "dashboard-inversiones",
+          "title": "Dashboard de inversiones",
+          "description": "Panel principal con resumen de todas las inversiones activas, métricas de rendimiento y alertas importantes",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend", "UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "gestion-perfil",
+          "title": "Gestión de perfil",
+          "description": "Configuración de datos personales, preferencias de inversión y documentación KYC",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "historico-transacciones",
+          "title": "Histórico de transacciones",
+          "description": "Registro completo de todas las operaciones realizadas con filtros y exportación",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "gestion-inversiones",
+      "title": "Gestión de Inversiones",
+      "description": "Área de exploración y gestión de oportunidades de inversión",
+      "totalRequirements": 3,
+      "projectPercentage": 60,
+      "requirements": [
+        {
+          "id": "catalogo-oportunidades",
+          "title": "Catálogo de oportunidades",
+          "description": "Exploración y filtrado de proyectos inmobiliarios disponibles para inversión",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend", "UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "proceso-inversion",
+          "title": "Proceso de Inversión",
+          "description": "Flujo completo desde la selección hasta la confirmación de la inversión",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend", "Testing"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "seguimiento-rendimientos",
+          "title": "Seguimiento de rendimientos",
+          "description": "Monitorización en tiempo real del rendimiento de las inversiones",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        }
+      ]
+    }
+  ],
+  "priorityConfig": {
+    "alta": {
+      "label": "Alta",
+      "colorClasses": "text-red-600 bg-red-50 border-red-200",
+      "icon": "circle-alert"
+    },
+    "media": {
+      "label": "Media",
+      "colorClasses": "text-yellow-600 bg-yellow-50 border-yellow-200",
+      "icon": "circle"
+    },
+    "baja": {
+      "label": "Baja",
+      "colorClasses": "text-green-600 bg-green-50 border-green-200",
+      "icon": "circle"
+    }
+  }
+} 
