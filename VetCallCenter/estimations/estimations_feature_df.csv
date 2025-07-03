@@ -1,0 +1,16 @@
+Phase/Feature,Min H,Max H,Min Cost,Max Cost
+01 Infraestructura Voz,64.0,81.0,1600.0,2025.0
+02 Gestión Conversacional,110.0,140.0,2442.5,3110.0
+03 Sistema Citas,45.0,57.0,1125.0,1425.0
+04 Gestión Datos,41.0,53.0,1025.0,1325.0
+05 Dashboard Web,49.0,63.0,1040.0,1340.0
+06 Seguridad,31.0,38.0,775.0,950.0
+07 Testing QA,39.0,49.0,682.5,857.5
+08 Design UX/UI,14.0,18.0,280.0,360.0
+09 Deployment,46.0,56.0,1150.0,1400.0
+10 Project Management,6.0,9.0,0.0,0.0
+11 Legal Compliance,9.0,12.0,0.0,0.0
+12 Veterinary Domain,19.0,24.0,140.0,175.0
+13 Captación Comercial,115.0,148.0,2645.0,3410.0
+14 Marketing,150.0,191.0,3472.5,4415.0
+99 Future Enhancements,431.5,554.0,9670.0,12397.5

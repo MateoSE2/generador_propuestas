@@ -1,0 +1,180 @@
+Phase/Feature,Type,Task,Min H,Max H,Min Cost,Max Cost
+01 Infraestructura Voz,CTO/Arquitectura,VOICE-001.1 - Set up Twilio account with EU Regional Voice,3.0,4.0,75.0,100.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-001.2 - Acquire Spanish phone numbers,1.0,2.0,25.0,50.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-001.3 - Configure webhook endpoints for call handling,3.0,4.0,75.0,100.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-001.4 - Implement basic call routing and IVR structure,5.0,6.0,125.0,150.0
+01 Infraestructura Voz,CTO/Arquitectura,VOICE-001.5 - Set up call recording with GDPR compliance,5.0,6.0,125.0,150.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-001.6 - Configure Media Streams for real-time audio processing,4.0,5.0,100.0,125.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.1 - Integrate Google Cloud STT with Spanish telephony model,5.0,6.0,125.0,150.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.2 - Implement real-time streaming transcription,6.0,8.0,150.0,200.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.3 - Configure Azure Neural TTS with Spanish voices,4.0,5.0,100.0,125.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.4 - Optimize audio quality and latency,8.0,10.0,200.0,250.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.5 - Implement audio buffering and error handling,5.0,6.0,125.0,150.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.6 - Set up monitoring for speech quality metrics,3.0,4.0,75.0,100.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-003.1 - Implement voice activity detection,5.0,6.0,125.0,150.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-003.3 - Configure DTMF tone detection for fallback navigation,2.0,3.0,50.0,75.0
+01 Infraestructura Voz,Desarrollo Backend,VOICE-003.5 - Add multi-tenant audio routing per clinic,5.0,6.0,125.0,150.0
+02 Gestión Conversacional,Prompting,CONV-001.1 - Set up OpenAI GPT-4 with veterinary system prompts,8.0,10.0,140.0,175.0
+02 Gestión Conversacional,Prompting,CONV-001.2 - Create Spanish veterinary terminology and context database,15.0,20.0,262.5,350.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-001.3 - Implement intent classification,5.0,6.0,125.0,150.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-001.4 - Develop entity extraction for pets services dates times,6.0,8.0,150.0,200.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-001.5 - Create conversation context management system,7.0,9.0,175.0,225.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-001.6 - Implement fallback handling for unrecognized intents,4.0,5.0,100.0,125.0
+02 Gestión Conversacional,CTO/Arquitectura,CONV-002.1 - Design finite state machine for conversation flows,10.0,12.0,250.0,300.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-002.2 - Implement appointment booking multi-step workflow,8.0,10.0,200.0,250.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-002.3 - Create FAQ response system with dynamic content,5.0,6.0,125.0,150.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-002.4 - Develop emergency triage and escalation logic,6.0,8.0,150.0,200.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-002.5 - Add conversation recovery and clarification handling,5.0,7.0,125.0,175.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-002.6 - Implement conversation summary and logging,4.0,5.0,100.0,125.0
+02 Gestión Conversacional,Prompting,CONV-003.1 - Create template-based response system with variables,10.0,12.0,175.0,210.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-003.2 - Implement dynamic content integration,6.0,8.0,150.0,200.0
+02 Gestión Conversacional,Prompting,CONV-003.3 - Add personality and tone consistency for veterinary context,8.0,10.0,140.0,175.0
+02 Gestión Conversacional,Desarrollo Backend,CONV-003.4 - Create SSML markup for natural speech patterns,3.0,4.0,75.0,100.0
+03 Sistema Citas,CTO/Arquitectura,APPT-001.1 - Research and select calendar API,6.0,8.0,150.0,200.0
+03 Sistema Citas,Desarrollo Backend,APPT-001.2 - Implement calendar authentication and permissions,4.0,5.0,100.0,125.0
+03 Sistema Citas,Desarrollo Backend,APPT-001.3 - Create availability checking with time slot algorithms,6.0,8.0,150.0,200.0
+03 Sistema Citas,Desarrollo Backend,APPT-001.4 - Develop conflict detection and resolution logic,7.0,9.0,175.0,225.0
+03 Sistema Citas,Desarrollo Backend,APPT-001.5 - Implement appointment creation with metadata,5.0,6.0,125.0,150.0
+03 Sistema Citas,Desarrollo Backend,APPT-002.1 - Create multi-step appointment booking conversation flow,8.0,10.0,200.0,250.0
+03 Sistema Citas,Desarrollo Backend,APPT-002.2 - Implement pet identification and service selection,5.0,6.0,125.0,150.0
+03 Sistema Citas,Desarrollo Backend,APPT-002.4 - Add confirmation process with appointment details,4.0,5.0,100.0,125.0
+04 Gestión Datos,Desarrollo Backend,DATA-001.2 - Implement client and pet data models with encryption,6.0,8.0,150.0,200.0
+04 Gestión Datos,Desarrollo Backend,DATA-001.3 - Create data access layer with audit logging,7.0,9.0,175.0,225.0
+04 Gestión Datos,Desarrollo Backend,DATA-002.1 - Develop caller identification system,6.0,8.0,150.0,200.0
+04 Gestión Datos,Desarrollo Backend,DATA-002.2 - Create client profile management with pet associations,7.0,9.0,175.0,225.0
+04 Gestión Datos,Desarrollo Backend,DATA-002.3 - Implement interaction history tracking and analytics,6.0,8.0,150.0,200.0
+04 Gestión Datos,Desarrollo Backend,DATA-002.4 - Add consent management for data processing and call recording,5.0,6.0,125.0,150.0
+04 Gestión Datos,Desarrollo Backend,DATA-002.5 - Create client preference storage,4.0,5.0,100.0,125.0
+05 Dashboard Web,Desarrollo Frontend,WEB-001.1 - Set up React.js project with TypeScript and Tailwind CSS,3.0,4.0,60.0,80.0
+05 Dashboard Web,Desarrollo Backend,WEB-001.2 - Implement authentication system with basic access,6.0,8.0,150.0,200.0
+05 Dashboard Web,Desarrollo Frontend,WEB-001.3 - Create responsive layout with clinic branding customization,8.0,10.0,160.0,200.0
+05 Dashboard Web,Desarrollo Backend,WEB-001.4 - Develop real-time WebSocket connection for live call monitoring,6.0,8.0,150.0,200.0
+05 Dashboard Web,Desarrollo Frontend,WEB-001.5 - Add multi-language support,5.0,6.0,100.0,120.0
+05 Dashboard Web,Desarrollo Frontend,WEB-002.1 - Create real-time call dashboard with active call display,8.0,10.0,160.0,200.0
+05 Dashboard Web,Desarrollo Frontend,WEB-002.2 - Implement call transcription viewing with live updates,6.0,8.0,120.0,160.0
+05 Dashboard Web,Desarrollo Frontend,WEB-002.4 - Create call recording playback with transcript synchronization,7.0,9.0,140.0,180.0
+06 Seguridad,CTO/Arquitectura,SEC-001.1 - Implement end-to-end encryption for all data transmission,10.0,12.0,250.0,300.0
+06 Seguridad,CTO/Arquitectura,SEC-001.2 - Set up database encryption at rest with key management,8.0,10.0,200.0,250.0
+06 Seguridad,Desarrollo Backend,SEC-001.3 - Configure secure API authentication with JWT and rate limiting,5.0,6.0,125.0,150.0
+06 Seguridad,CTO/Arquitectura,SEC-001.4 - Implement network security with VPC and firewall rules,8.0,10.0,200.0,250.0
+07 Testing QA,Testeo,QA-001 - Unit testing implementation for core components,10.0,12.0,175.0,210.0
+07 Testing QA,Testeo,QA-002 - Integration testing for STT/TTS pipeline,6.0,8.0,105.0,140.0
+07 Testing QA,Testeo,QA-003 - Basic voice conversation testing,8.0,10.0,140.0,175.0
+07 Testing QA,Testeo,QA-004 - Basic performance testing with concurrent calls,6.0,8.0,105.0,140.0
+07 Testing QA,Testeo,QA-005 - Spanish language accuracy testing,5.0,6.0,87.5,105.0
+07 Testing QA,Testeo,QA-006 - Basic GDPR compliance testing,4.0,5.0,70.0,87.5
+08 Design UX/UI,Diseño UI/UX,UX-001 - Basic veterinary conversation flow design,4.0,5.0,80.0,100.0
+08 Design UX/UI,Diseño UI/UX,UX-002 - Basic dashboard user interface design,5.0,6.0,100.0,120.0
+08 Design UX/UI,Diseño UI/UX,UX-003 - Basic voice personality and tone design,2.0,3.0,40.0,60.0
+08 Design UX/UI,Diseño UI/UX,UX-004 - Simple emergency triage logic design,3.0,4.0,60.0,80.0
+09 Deployment,CTO/Arquitectura,DEPLOY-001 - Production infrastructure setup,16.0,20.0,400.0,500.0
+09 Deployment,CTO/Arquitectura,DEPLOY-002 - CI/CD pipeline configuration,10.0,12.0,250.0,300.0
+09 Deployment,CTO/Arquitectura,DEPLOY-003 - Basic monitoring and logging setup,8.0,10.0,200.0,250.0
+09 Deployment,CTO/Arquitectura,DEPLOY-004 - Load balancing and auto-scaling configuration,12.0,14.0,300.0,350.0
+10 Project Management,Reuniones,PM-001 - Sprint planning and daily standups,1.0,2.0,0.0,0.0
+10 Project Management,Reuniones,PM-002 - Weekly stakeholder updates,1.0,1.0,0.0,0.0
+10 Project Management,Reuniones,PM-003 - Monthly retrospectives and planning,3.0,4.0,0.0,0.0
+10 Project Management,Reuniones,PM-004 - Client demos and feedback sessions,1.0,2.0,0.0,0.0
+11 Legal Compliance,Reuniones,LEGAL-001 - Basic GDPR compliance review sessions,3.0,4.0,0.0,0.0
+11 Legal Compliance,Reuniones,LEGAL-002 - Data processing agreement preparation,3.0,4.0,0.0,0.0
+11 Legal Compliance,Reuniones,LEGAL-003 - Basic privacy policy and terms of service creation,3.0,4.0,0.0,0.0
+12 Veterinary Domain,Reuniones,VET-001 - Basic veterinary domain expert consultations,6.0,8.0,0.0,0.0
+12 Veterinary Domain,Prompting,VET-002 - Basic Spanish veterinary terminology research,8.0,10.0,140.0,175.0
+12 Veterinary Domain,Reuniones,VET-003 - Basic clinic workflow analysis sessions,5.0,6.0,0.0,0.0
+99 Future Enhancements,CTO/Arquitectura,DATA-001.1 - Design GDPR-compliant database schema for EU,10.0,12.0,250.0,300.0
+99 Future Enhancements,CTO/Arquitectura,DATA-001.4 - Set up database clustering and backup in EU region,10.0,12.0,250.0,300.0
+99 Future Enhancements,Desarrollo Backend,DATA-001.5 - Implement data retention and deletion policies,4.0,5.0,100.0,125.0
+99 Future Enhancements,Desarrollo Backend,DATA-001.6 - Add database migration and versioning system,5.0,6.0,125.0,150.0
+99 Future Enhancements,Desarrollo Backend,SEC-002.1 - Implement comprehensive audit logging for all data access,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,SEC-002.2 - Create GDPR-compliant consent management system,7.0,9.0,175.0,225.0
+99 Future Enhancements,Desarrollo Backend,SEC-002.3 - Add data subject rights handling,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,SEC-002.4 - Implement data retention policies with automated deletion,5.0,6.0,125.0,150.0
+99 Future Enhancements,Desarrollo Backend,SEC-002.5 - Create compliance reporting dashboard and documentation,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,VOICE-003.2 - Add noise reduction and audio preprocessing,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,VOICE-003.4 - Implement call transfer capabilities to human agents,4.0,5.0,100.0,125.0
+99 Future Enhancements,Desarrollo Backend,CONV-003.5 - Implement response optimization for different call types,5.0,6.0,125.0,150.0
+99 Future Enhancements,Desarrollo Backend,APPT-001.6 - Add appointment modification and cancellation features,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,APPT-002.3 - Develop time preference collection and matching,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,APPT-002.5 - Create waiting list functionality for busy time slots,5.0,7.0,125.0,175.0
+99 Future Enhancements,Desarrollo Backend,APPT-002.6 - Implement booking modification via voice interface,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,APPT-003.1 - Add recurring appointment scheduling,8.0,10.0,200.0,250.0
+99 Future Enhancements,Desarrollo Backend,APPT-003.2 - Implement emergency appointment prioritization,5.0,6.0,125.0,150.0
+99 Future Enhancements,Desarrollo Backend,APPT-003.3 - Create appointment reminder system,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,APPT-003.4 - Add calendar sync with multiple clinic management systems,10.0,12.0,250.0,300.0
+99 Future Enhancements,Desarrollo Backend,APPT-003.5 - Develop capacity management and clinic availability rules,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,DATA-002.6 - Develop data export capabilities for GDPR compliance,5.0,7.0,125.0,175.0
+99 Future Enhancements,CTO/Arquitectura,DATA-003.1 - Research veterinary practice management software APIs,8.0,10.0,200.0,250.0
+99 Future Enhancements,Desarrollo Backend,DATA-003.2 - Implement data synchronization with existing clinic systems,10.0,12.0,250.0,300.0
+99 Future Enhancements,Desarrollo Backend,DATA-003.3 - Create conflict resolution for data discrepancies,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Backend,DATA-003.4 - Add real-time data validation and quality checks,5.0,6.0,125.0,150.0
+99 Future Enhancements,Desarrollo Backend,DATA-003.5 - Implement bulk data import/export for clinic onboarding,6.0,8.0,150.0,200.0
+99 Future Enhancements,Desarrollo Frontend,WEB-001.6 - Implement PWA capabilities for mobile clinic staff,5.0,7.0,100.0,140.0
+99 Future Enhancements,Desarrollo Frontend,WEB-002.3 - Add call intervention capabilities,5.0,6.0,100.0,120.0
+99 Future Enhancements,Desarrollo Frontend,WEB-002.5 - Develop call quality metrics and alerts,5.0,6.0,100.0,120.0
+99 Future Enhancements,Desarrollo Frontend,WEB-002.6 - Add call filtering and search capabilities,6.0,8.0,120.0,160.0
+99 Future Enhancements,Desarrollo Frontend,WEB-003.1 - Create call volume and performance analytics dashboard,8.0,10.0,160.0,200.0
+99 Future Enhancements,Desarrollo Backend,WEB-003.2 - Implement appointment booking success rate tracking,5.0,6.0,125.0,150.0
+99 Future Enhancements,Desarrollo Frontend,WEB-003.3 - Add client satisfaction and NPS score monitoring,6.0,8.0,120.0,160.0
+99 Future Enhancements,Desarrollo Backend,WEB-003.4 - Develop cost analysis and ROI reporting,7.0,9.0,175.0,225.0
+99 Future Enhancements,Desarrollo Frontend,WEB-003.5 - Create customizable reports and data export,6.0,8.0,120.0,160.0
+99 Future Enhancements,Desarrollo Backend,WEB-003.6 - Add predictive analytics for call volume planning,10.0,12.0,250.0,300.0
+99 Future Enhancements,CTO/Arquitectura,SEC-001.5 - Add intrusion detection and monitoring systems,12.0,16.0,300.0,400.0
+99 Future Enhancements,CTO/Arquitectura,SEC-001.6 - Set up backup encryption and secure disaster recovery,10.0,14.0,250.0,350.0
+99 Future Enhancements,CTO/Arquitectura,SEC-002.6 - Add incident response procedures and breach notification,8.0,10.0,200.0,250.0
+99 Future Enhancements,Testeo,SEC-003.1 - Conduct penetration testing of voice and web interfaces,16.0,20.0,280.0,350.0
+99 Future Enhancements,CTO/Arquitectura,SEC-003.2 - Implement continuous security monitoring and alerting,14.0,18.0,350.0,450.0
+99 Future Enhancements,Testeo,SEC-003.3 - Add vulnerability scanning and dependency checking,6.0,8.0,105.0,140.0
+99 Future Enhancements,Reuniones,SEC-003.4 - Create security training materials for development team,6.0,8.0,0.0,0.0
+99 Future Enhancements,CTO/Arquitectura,SEC-003.5 - Implement security code review processes and tools,8.0,10.0,200.0,250.0
+99 Future Enhancements,Testeo,QA-ADVANCED-001 - Comprehensive unit testing for all components,16.0,20.0,280.0,350.0
+99 Future Enhancements,Testeo,QA-ADVANCED-002 - Load testing with high concurrent calls,10.0,14.0,175.0,245.0
+99 Future Enhancements,Testeo,QA-ADVANCED-003 - Advanced Spanish language accuracy testing,8.0,11.0,140.0,192.5
+99 Future Enhancements,Testeo,QA-ADVANCED-004 - Comprehensive GDPR compliance testing,6.0,8.0,105.0,140.0
+99 Future Enhancements,Testeo,QA-ADVANCED-005 - User acceptance testing with clinic staff,12.0,16.0,210.0,280.0
+99 Future Enhancements,Testeo,QA-ADVANCED-006 - Performance optimization testing,10.0,12.0,175.0,210.0
+99 Future Enhancements,Diseño UI/UX,UX-ADVANCED-001 - Advanced veterinary conversation flow design,6.0,8.0,120.0,160.0
+99 Future Enhancements,Diseño UI/UX,UX-ADVANCED-002 - Professional dashboard user interface design,7.5,9.5,150.0,190.0
+99 Future Enhancements,Diseño UI/UX,UX-ADVANCED-003 - Advanced voice personality and tone design,4.0,5.0,80.0,100.0
+99 Future Enhancements,Diseño UI/UX,UX-ADVANCED-004 - Complex emergency triage logic design,5.0,6.5,100.0,130.0
+99 Future Enhancements,Diseño UI/UX,UX-ADVANCED-005 - Multi-pet household logic design,4.0,5.0,80.0,100.0
+99 Future Enhancements,CTO/Arquitectura,ARCH-ADVANCED-001 - Integration architecture design,10.0,12.0,250.0,300.0
+99 Future Enhancements,CTO/Arquitectura,ARCH-ADVANCED-002 - Advanced scalability planning,8.0,10.0,200.0,250.0
+99 Future Enhancements,CTO/Arquitectura,ARCH-ADVANCED-003 - Enterprise-grade adapter patterns,10.0,14.0,250.0,350.0
+13 Captación Comercial,CTO/Arquitectura,COMM-001.1 - Design lead management system architecture,5.0,6.0,125.0,150.0
+13 Captación Comercial,Desarrollo Backend,COMM-001.2 - Implement lead tracking and status management,6.0,8.0,150.0,200.0
+13 Captación Comercial,Desarrollo Backend,COMM-001.3 - Create automated follow-up call scheduling system,7.0,9.0,175.0,225.0
+13 Captación Comercial,Desarrollo Backend,COMM-001.4 - Develop lead scoring and prioritization algorithms,6.0,8.0,150.0,200.0
+13 Captación Comercial,Desarrollo Backend,COMM-001.5 - Implement CRM integration for lead data synchronization,5.0,7.0,125.0,175.0
+13 Captación Comercial,Desarrollo Backend,COMM-002.1 - Create quote management and tracking system,6.0,8.0,150.0,200.0
+13 Captación Comercial,Desarrollo Backend,COMM-002.2 - Implement automated quote recovery workflows,7.0,9.0,175.0,225.0
+13 Captación Comercial,Desarrollo Backend,COMM-002.3 - Develop quote expiration and reminder notifications,4.0,5.0,100.0,125.0
+13 Captación Comercial,Prompting,COMM-002.4 - Create persuasive recovery conversation scripts,8.0,10.0,140.0,175.0
+13 Captación Comercial,Desarrollo Backend,COMM-002.5 - Add quote comparison and negotiation handling,6.0,8.0,150.0,200.0
+13 Captación Comercial,Desarrollo Backend,COMM-003.1 - Implement client service history analysis,6.0,8.0,150.0,200.0
+13 Captación Comercial,Desarrollo Backend,COMM-003.2 - Create cross-selling opportunity detection system,8.0,10.0,200.0,250.0
+13 Captación Comercial,Prompting,COMM-003.3 - Develop upselling conversation flows for veterinary services,10.0,12.0,175.0,210.0
+13 Captación Comercial,Desarrollo Backend,COMM-003.4 - Implement product recommendation engine,7.0,9.0,175.0,225.0
+13 Captación Comercial,Desarrollo Backend,COMM-003.5 - Add sales performance tracking and analytics,5.0,6.0,125.0,150.0
+13 Captación Comercial,Desarrollo Frontend,COMM-004.1 - Create commercial dashboard for sales team,8.0,10.0,160.0,200.0
+13 Captación Comercial,Desarrollo Frontend,COMM-004.2 - Implement lead management interface,6.0,8.0,120.0,160.0
+13 Captación Comercial,Desarrollo Frontend,COMM-004.3 - Add campaign performance visualization,5.0,7.0,100.0,140.0
+14 Marketing,CTO/Arquitectura,MARK-001.1 - Design AI-driven marketing system architecture,8.0,10.0,200.0,250.0
+14 Marketing,Desarrollo Backend,MARK-001.2 - Implement customer data aggregation and preprocessing,6.0,8.0,150.0,200.0
+14 Marketing,Desarrollo Backend,MARK-001.3 - Create machine learning pipeline for campaign personalization,10.0,12.0,250.0,300.0
+14 Marketing,Desarrollo Backend,MARK-001.4 - Develop automated campaign trigger system,7.0,9.0,175.0,225.0
+14 Marketing,Prompting,MARK-001.5 - Create AI-generated personalized marketing content templates,12.0,15.0,210.0,262.5
+14 Marketing,Desarrollo Backend,MARK-001.6 - Implement A/B testing framework for campaigns,8.0,10.0,200.0,250.0
+14 Marketing,Desarrollo Backend,MARK-002.1 - Create customer behavior tracking system,8.0,10.0,200.0,250.0
+14 Marketing,Desarrollo Backend,MARK-002.2 - Implement interaction pattern analysis algorithms,10.0,12.0,250.0,300.0
+14 Marketing,Desarrollo Backend,MARK-002.3 - Develop customer lifetime value prediction models,8.0,10.0,200.0,250.0
+14 Marketing,Desarrollo Backend,MARK-002.4 - Create churn prediction and retention workflows,9.0,11.0,225.0,275.0
+14 Marketing,Desarrollo Backend,MARK-002.5 - Add behavioral scoring and risk assessment,6.0,8.0,150.0,200.0
+14 Marketing,Desarrollo Backend,MARK-003.1 - Implement customer segmentation algorithms,8.0,10.0,200.0,250.0
+14 Marketing,Desarrollo Backend,MARK-003.2 - Create dynamic segment management system,6.0,8.0,150.0,200.0
+14 Marketing,Desarrollo Backend,MARK-003.3 - Develop automated action triggers per segment,7.0,9.0,175.0,225.0
+14 Marketing,Desarrollo Backend,MARK-003.4 - Implement real-time segmentation updates,5.0,7.0,125.0,175.0
+14 Marketing,Desarrollo Frontend,MARK-004.1 - Create marketing analytics dashboard,8.0,10.0,160.0,200.0
+14 Marketing,Desarrollo Frontend,MARK-004.2 - Implement campaign management interface,7.0,9.0,140.0,180.0
+14 Marketing,Desarrollo Frontend,MARK-004.3 - Add customer segmentation visualization tools,6.0,8.0,120.0,160.0
+14 Marketing,Testeo,MARK-005.1 - AI model accuracy testing for marketing predictions,6.0,8.0,105.0,140.0
+14 Marketing,Testeo,MARK-005.2 - Campaign performance testing and optimization,5.0,7.0,87.5,122.5

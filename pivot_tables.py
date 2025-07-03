@@ -11,6 +11,14 @@ from rich.theme import Theme
 path = sys.argv[1]                 # ruta al CSV pasada por CLI
 df   = pd.read_csv(path)
 
+# ── 1.1. Procesar formato decimal europeo (comas) ──────────────────────────────
+# Convertir valores con comas decimales a puntos para evitar errores de multiplicación
+for col in ['Min H', 'Max H']:
+    if col in df.columns:
+        # Convertir valores string con comas a puntos, luego a numeric
+        df[col] = df[col].astype(str).str.replace(',', '.', regex=False)
+        df[col] = pd.to_numeric(df[col], errors='coerce')
+
 # Mostrar todas las filas sin truncar
 pd.set_option('display.max_rows', None)
 pd.set_option('display.width', None)      # NO limitar el ancho
