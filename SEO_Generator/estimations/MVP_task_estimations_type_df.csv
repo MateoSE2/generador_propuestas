@@ -1,0 +1,5 @@
+Type,Min H,Max H,Min Cost,Max Cost
+CTO/Arquitectura,1.0,2.0,50.0,100.0
+Desarrollo Backend,16.0,19.5,800.0,975.0
+Desarrollo Frontend,9.0,10.5,360.0,420.0
+Prompting,6.0,7.0,210.0,245.0

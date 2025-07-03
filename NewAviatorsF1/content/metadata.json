@@ -1,0 +1,19 @@
+{
+  "title": "Plataforma de Formación Aeronáutica - Versión 1 Post-MVP",
+  "date": "01 de julio de 2025",
+  "location": "Terrassa, Barcelona",
+  "metaTitle": "Propuesta para Plataforma de Formación Aeronáutica",
+  "metaDescription": "Propuesta detallada para el desarrollo de la Versión 1 Post-MVP de la plataforma de formación aeronáutica, incluyendo exámenes avanzados, reportes, tutor IA y herramientas administrativas.",
+  "sections": {
+    "header": true,
+    "hero": true,
+    "description": true,
+    "requirements": true,
+    "methodology": false,
+    "phases": true,
+    "budget": true,
+    "kpis": false,
+    "mockup": false,
+    "footer": true
+  }
+} 

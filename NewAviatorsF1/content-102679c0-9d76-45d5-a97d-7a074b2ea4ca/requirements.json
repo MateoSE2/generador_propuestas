@@ -1,0 +1,328 @@
+{
+  "metadata": {
+    "totalRequirements": 23,
+    "totalHours": 125,
+    "totalAreas": 5,
+    "lastUpdated": "2025-07-01"
+  },
+  "functionalAreas": [
+    {
+      "id": "examenes-avanzados",
+      "title": "Exámenes Avanzados",
+      "description": "Sistema de evaluación técnica avanzada con herramientas especializadas para formación aeronáutica",
+      "totalRequirements": 7,
+      "projectPercentage": 25,
+      "requirements": [
+        {
+          "id": "seleccion-preguntas",
+          "title": "Selección manual de preguntas",
+          "description": "Permitir a los instructores componer exámenes eligiendo ítems específicos del banco oficial",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "configurador-examenes",
+          "title": "Configurador de exámenes",
+          "description": "UI intuitiva para la creación y configuración de exámenes personalizados",
+          "priority": "alta",
+          "developmentAreas": ["Frontend", "UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "modo-bloqueo",
+          "title": "Modo examen con bloqueo",
+          "description": "Sistema de bloqueo completo de la plataforma durante los exámenes",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "interfaz-kiosk",
+          "title": "Interfaz kiosk",
+          "description": "Modo kiosk con control total de salida para entorno de examen seguro",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "herramienta-dibujo",
+          "title": "Herramienta de dibujo",
+          "description": "Canvas con líneas y ángulos para responder diagramas técnicos",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "visor-imagenes",
+          "title": "Visor de imágenes avanzado",
+          "description": "Visualización con zoom y pantalla completa para cartas y diagramas",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "testing-examenes",
+          "title": "Testing de exámenes",
+          "description": "Pruebas completas de escenarios de bloqueo y herramientas",
+          "priority": "media",
+          "developmentAreas": ["Testing"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "reportes-avanzados",
+      "title": "Reportes Avanzados",
+      "description": "Sistema de analítica y reporting para seguimiento académico integral",
+      "totalRequirements": 9,
+      "projectPercentage": 30,
+      "requirements": [
+        {
+          "id": "endpoints-reportes",
+          "title": "Endpoints de reportes",
+          "description": "APIs con filtros granulares para generación de reportes por alumno",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "dashboards-interactivos",
+          "title": "Dashboards interactivos",
+          "description": "Gráficas y visualizaciones interactivas del progreso académico",
+          "priority": "alta",
+          "developmentAreas": ["Frontend", "UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "reportes-grupo",
+          "title": "Reportes por grupo",
+          "description": "Sistema de reportes y filtros para instructores por grupo",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "estadisticas-globales",
+          "title": "Estadísticas globales",
+          "description": "Métricas por período y asignatura con filtros avanzados",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "modal-estadisticas",
+          "title": "Modal de estadísticas",
+          "description": "Interfaz para visualización de estadísticas con filtros",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "filtros-notas",
+          "title": "Filtros de notas",
+          "description": "Sistema de filtrado específico por examen y grupo",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "reportes-individuales",
+          "title": "Reportes individuales",
+          "description": "Vista detallada de reportes por alumno individual",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "exportacion-pdf",
+          "title": "Exportación a PDF",
+          "description": "Funcionalidad de exportación profesional de reportes",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "testing-reportes",
+          "title": "Testing de reportes",
+          "description": "Suite completa de pruebas para reportes y filtros",
+          "priority": "baja",
+          "developmentAreas": ["Testing"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "tutor-ia",
+      "title": "Tutor IA Mejorado",
+      "description": "Asistente inteligente con capacidades avanzadas para formación técnica",
+      "totalRequirements": 6,
+      "projectPercentage": 20,
+      "requirements": [
+        {
+          "id": "historial-conversacion",
+          "title": "Historial de conversación",
+          "description": "Persistencia y recuperación de conversaciones anteriores",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "carga-historial",
+          "title": "Carga de historial",
+          "description": "Interfaz para visualización y carga de historial al reabrir",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "prompts-optimizados",
+          "title": "Prompts optimizados",
+          "description": "Ajuste de prompts para explicaciones paso a paso especializadas",
+          "priority": "alta",
+          "developmentAreas": ["Prompting"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "render-latex",
+          "title": "Renderizado LaTeX",
+          "description": "Soporte para fórmulas matemáticas y notación técnica",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "fuentes-referencias",
+          "title": "Fuentes y referencias",
+          "description": "Sistema de asociación y visualización de fuentes oficiales",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "testing-ia",
+          "title": "Testing de IA",
+          "description": "Pruebas de funcionalidades de historial y referencias",
+          "priority": "baja",
+          "developmentAreas": ["Testing"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "organizacion",
+      "title": "Organización",
+      "description": "Herramientas administrativas para gestión flexible de exámenes",
+      "totalRequirements": 7,
+      "projectPercentage": 15,
+      "requirements": [
+        {
+          "id": "pin-on-top",
+          "title": "Pin-on-top de exámenes",
+          "description": "Funcionalidad para priorizar exámenes en listados",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "api-pin",
+          "title": "API de gestión de pin",
+          "description": "Servicios backend para gestión de estados de priorización",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "modal-edicion",
+          "title": "Modal de edición",
+          "description": "Interfaz reutilizable para edición de exámenes existentes",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "endpoints-edicion",
+          "title": "Endpoints de edición",
+          "description": "APIs para edición y eliminación de exámenes",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "buscador-alumnos",
+          "title": "Buscador de alumnos",
+          "description": "Sistema de búsqueda y selector de alumnos individuales",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "api-asignacion",
+          "title": "API de asignación",
+          "description": "Servicios para asignación individual de alumnos",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "testing-organizacion",
+          "title": "Testing de organización",
+          "description": "Pruebas de funcionalidades administrativas",
+          "priority": "baja",
+          "developmentAreas": ["Testing"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "responsividad",
+      "title": "Responsividad Total",
+      "description": "Experiencia completa multiplataforma para cualquier dispositivo",
+      "totalRequirements": 3,
+      "projectPercentage": 10,
+      "requirements": [
+        {
+          "id": "auditoria-responsive",
+          "title": "Auditoría responsive",
+          "description": "Análisis completo de responsividad en tablet y móvil",
+          "priority": "media",
+          "developmentAreas": ["UI/UX"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "refactor-css",
+          "title": "Refactor CSS",
+          "description": "Reestructuración de layouts para responsividad avanzada",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "qa-multidispositivo",
+          "title": "QA multidispositivo",
+          "description": "Pruebas exhaustivas en múltiples dispositivos",
+          "priority": "baja",
+          "developmentAreas": ["Testing"],
+          "priorityColor": "green"
+        }
+      ]
+    }
+  ],
+  "priorityConfig": {
+    "alta": {
+      "label": "Alta",
+      "colorClasses": "text-red-600 bg-red-50 border-red-200",
+      "icon": "circle-alert"
+    },
+    "media": {
+      "label": "Media",
+      "colorClasses": "text-yellow-600 bg-yellow-50 border-yellow-200",
+      "icon": "circle"
+    },
+    "baja": {
+      "label": "Baja",
+      "colorClasses": "text-green-600 bg-green-50 border-green-200",
+      "icon": "circle"
+    }
+  }
+} 

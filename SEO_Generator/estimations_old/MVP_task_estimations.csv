@@ -1,4 +1,4 @@
-Feature,Tipo,Tarea,Est. mín (h),Est. máx (h)
+Phase/Feature,Type,Task,Min H,Max H
 01 Core Authentication,Desarrollo Backend,Basic JWT Authentication,1,1
 01 Core Authentication,Desarrollo Backend,Simple User Management,1,1
 02 Simple Dashboard,Desarrollo Frontend,React Setup & Basic Layout,1,2

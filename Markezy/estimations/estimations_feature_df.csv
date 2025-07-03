@@ -1,10 +1,9 @@
 Phase/Feature,Min H,Max H,Min Cost,Max Cost
-01 Init / Foundation,21,30,910,1280
-02 User Authentication,13,20,605,930
-03 Lead Magnet Conversational Interface,24,35,1035,1515
-04 AI Strategy Generation Engine,20,30,855,1290
-05 Lead Management & Clientify Integration,17,25,750,1105
-06 PDF Strategy Export,14,21,635,950
-07 RGPD Compliance & Data Protection,12,19,565,890
-08 Mobile Responsiveness & UX Polish,11,16,430,625
-99 Finalisation,14,21,560,815
+01 Inicialización / Base,18,26,790,1120
+02 Autenticación de Usuarios,13,20,605,930
+03 Interfaz Conversacional Lead Magnet,22,32,955,1395
+04 Motor de Generación de Estrategias IA,15,22,605,890
+05 Gestión de Leads e Integración Clientify,15,22,650,955
+06 Exportación de Estrategias PDF,12,19,555,870
+08 Responsive Móvil y Pulido UX,9,14,350,545
+99 Finalización,14,21,560,815

@@ -1,0 +1,30 @@
+{
+  "title": "Mejoras Futuras",
+  "items": [
+    {
+      "id": 1,
+      "title": "Notificaciones por correo electrónico",
+      "description": "Integración con servicio SMTP para avisos de publicación de exámenes, resultados, recordatorios de estudio y mensajes del tutor IA"
+    },
+    {
+      "id": 2,
+      "title": "Tutor IA 3.0",
+      "description": "Personalización profunda con recomendaciones de estudio basadas en errores frecuentes, explicaciones adaptadas al estilo de aprendizaje y feedback motivacional"
+    },
+    {
+      "id": 3,
+      "title": "Etiquetado flexible de preguntas",
+      "description": "Sistema para marcar preguntas como favoritas, complicadas o con etiquetas personalizadas (IFR, Reglamentación, etc.)"
+    },
+    {
+      "id": 4,
+      "title": "Estadísticas de rendimiento de preguntas",
+      "description": "Índice de dificultad, tasa de fallo/superación y evolución histórica para depurar el banco y crear exámenes equilibrados"
+    },
+    {
+      "id": 5,
+      "title": "Importación masiva de usuarios vía CSV",
+      "description": "Subida de archivos con plantillas predefinidas para registrar lotes de estudiantes, instructores o administradores"
+    }
+  ]
+} 

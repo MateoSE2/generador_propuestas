@@ -1,0 +1,36 @@
+Phase/Feature,Type,Task,Min H,Max H,Min Cost,Max Cost
+01 Exámenes Avanzados,Desarrollo Backend,Selección de preguntas concretas del banco al crear examen,3,4,75.0,100.0
+01 Exámenes Avanzados,Desarrollo Frontend,UI selector de preguntas en configurador de exámenes,4,5,80.0,100.0
+01 Exámenes Avanzados,Desarrollo Backend,Flag «modo examen» + servicios de bloqueo/kiosk,4,4,100.0,100.0
+01 Exámenes Avanzados,Desarrollo Frontend,Interfaz de bloqueo total (kiosk) y control de salida,5,6,100.0,120.0
+01 Exámenes Avanzados,Desarrollo Frontend,Herramienta de líneas/ángulos sobre imágenes (Canvas),6,8,120.0,160.0
+01 Exámenes Avanzados,Desarrollo Frontend,Visor de imágenes con pantalla completa + zoom,3,4,60.0,80.0
+01 Exámenes Avanzados,Testeo,"Escenarios de examen: bloqueo, drawing tool, selector",3,3,52.5,52.5
+02 Reportes Avanzados,Desarrollo Backend,Endpoints de reportes con filtros (alumno),3,4,75.0,100.0
+02 Reportes Avanzados,Desarrollo Frontend,Dashboards/gráficas del alumno,5,6,100.0,120.0
+02 Reportes Avanzados,Desarrollo Backend,Endpoints por grupo/instructor,3,4,75.0,100.0
+02 Reportes Avanzados,Desarrollo Frontend,Reportes y filtros por grupo para instructores,4,4,80.0,80.0
+02 Reportes Avanzados,Desarrollo Backend,Estadísticas globales de exámenes por período y asignatura,4,5,100.0,125.0
+02 Reportes Avanzados,Desarrollo Frontend,Modal de estadísticas con filtros avanzados (período + asignatura),3,4,60.0,80.0
+02 Reportes Avanzados,Desarrollo Frontend,Filtro de notas por examen y grupo,2,2,40.0,40.0
+02 Reportes Avanzados,Desarrollo Backend,Reportes de alumno con filtros (período + asignatura),3,4,75.0,100.0
+02 Reportes Avanzados,Desarrollo Frontend,Vista de reportes individuales de alumno,3,4,60.0,80.0
+02 Reportes Avanzados,Desarrollo Frontend,Funcionalidad de exportación a PDF de reportes,4,5,80.0,100.0
+02 Reportes Avanzados,Testeo,Suite completa de reportes y filtros avanzados,3,4,52.5,70.0
+03 Tutor IA Mejorado,Desarrollo Backend,Persistencia y recuperación del historial de conversación,3,4,75.0,100.0
+03 Tutor IA Mejorado,Desarrollo Frontend,Carga/visualización del historial al reabrir tutor,4,5,80.0,100.0
+03 Tutor IA Mejorado,Prompting,Ajuste de prompts para paso a paso y referencias a fuentes,5,6,87.5,105.0
+03 Tutor IA Mejorado,Desarrollo Frontend,Render LaTeX/MathJax de pasos matemáticos,2,3,40.0,60.0
+03 Tutor IA Mejorado,Desarrollo Backend,Asociación de fuentes (capítulo + página) a la respuesta,3,4,75.0,100.0
+03 Tutor IA Mejorado,Desarrollo Frontend,Mostrar fuentes clicables en la conversación,3,4,60.0,80.0
+03 Tutor IA Mejorado,Testeo,"Historial, paso-a-paso, fuentes",2,3,35.0,52.5
+04 Organización,Desarrollo Frontend,Funcionalidad pin-on-top de exámenes en tablas,4,5,80.0,100.0
+04 Organización,Desarrollo Backend,API para gestión de estado de pin-on-top,3,4,75.0,100.0
+04 Organización,Desarrollo Frontend,Modal de edición de exámenes reutilizando creación,4,5,80.0,100.0
+04 Organización,Desarrollo Backend,Endpoints para edición y eliminación de exámenes,3,4,75.0,100.0
+04 Organización,Desarrollo Frontend,Buscador y selector de alumnos individuales,5,6,100.0,120.0
+04 Organización,Desarrollo Backend,API de búsqueda y asignación individual de alumnos,4,5,100.0,125.0
+04 Organización,Testeo,Pruebas de funcionalidades de organización,3,4,52.5,70.0
+05 Responsividad Total,Diseño UI/UX,Auditoría responsive global (tablet/móvil),2,3,40.0,60.0
+05 Responsividad Total,Desarrollo Frontend,Refactor CSS/layouts para responsividad avanzada,8,10,160.0,200.0
+05 Responsividad Total,Testeo,QA responsive multi-dispositivo,2,3,35.0,52.5

@@ -1,0 +1,82 @@
+{
+  "title": "KPIs del Proyecto",
+  "subtitle": "Métricas clave que demuestran el impacto y valor esperado del generador SEO",
+  "kpis": [
+    {
+      "id": "productos-optimizados",
+      "icon": "shopping-cart",
+      "value": "2,000+",
+      "title": "Productos Optimizados",
+      "description": "Total de productos de World Shishas con contenido SEO generado automáticamente",
+      "color": "primary"
+    },
+    {
+      "id": "tiempo-generacion",
+      "icon": "clock",
+      "value": "< 2 min",
+      "title": "Tiempo de Generación",
+      "description": "Tiempo promedio para generar contenido SEO por producto",
+      "color": "primary"
+    },
+    {
+      "id": "mejora-ctr",
+      "icon": "trending-up",
+      "value": "25-40%",
+      "title": "Mejora CTR Orgánico",
+      "description": "Incremento esperado en click-through rate desde búsquedas orgánicas",
+      "color": "primary"
+    },
+    {
+      "id": "ahorro-tiempo",
+      "icon": "timer",
+      "value": "95%",
+      "title": "Reducción Tiempo",
+      "description": "Ahorro en tiempo de creación de contenido comparado con proceso manual",
+      "color": "primary"
+    }
+  ],
+  "summary": {
+    "title": "Métricas de Impacto SEO Medibles",
+    "description": "Estos KPIs han sido seleccionados para medir el impacto directo del generador SEO en la operativa de World Shishas. Cada métrica representa un objetivo cuantificable que contribuye al éxito del e-commerce y proporciona valor tangible en términos de eficiencia operativa y mejora del posicionamiento orgánico."
+  },
+  "icons": {
+    "shopping-cart": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2z",
+        "M20 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2z",
+        "M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+      ]
+    },
+    "clock": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "circles": [
+        { "cx": "12", "cy": "12", "r": "10" }
+      ],
+      "polylines": [
+        "12 6 12 12 16 14"
+      ]
+    },
+    "trending-up": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 7 22 7 22 13"
+      ],
+      "polylines": [
+        "22 7 13.5 15.5 8.5 10.5 2 17",
+        "16 7 22 7 22 13"
+      ]
+    },
+    "timer": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M10 2h4",
+        "M12 14v-4"
+      ],
+      "circles": [
+        { "cx": "12", "cy": "14", "r": "8" }
+      ]
+    }
+  }
+} 

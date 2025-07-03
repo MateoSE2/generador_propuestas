@@ -1,0 +1,8 @@
+Phase/Feature,Min H,Max H,Min Cost,Max Cost
+01 Fundación Inicial,4.0,6.0,150.0,215.0
+02 API de Búsqueda Híbrida,1.5,2.0,75.0,100.0
+03 Plugin de Búsqueda WordPress,5.0,7.0,200.0,280.0
+04 Optimización de Resultados,1.5,2.5,75.0,125.0
+05 Manejo de Errores y Feedback,1.0,1.5,40.0,60.0
+06 Optimización de Rendimiento,0.5,1.0,20.0,40.0
+99 Finalización,3.0,4.5,92.5,130.0

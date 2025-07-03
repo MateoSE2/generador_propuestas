@@ -1,0 +1,93 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "name": "Fundación Inicial",
+      "description": "Setup de infraestructura Django + React, extensión byNeural, wireframes UI/UX y configuración base",
+      "duration": "2 días",
+      "csvKey": "01 Fundación Inicial",
+      "totalHours": {
+        "min": 4.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": 1,
+      "name": "API de Búsqueda Híbrida",
+      "description": "Desarrollo del endpoint híbrido que combina búsqueda exacta MySQL con semántica mediante IA",
+      "duration": "1 día",
+      "csvKey": "02 API de Búsqueda Híbrida",
+      "totalHours": {
+        "min": 1.5,
+        "max": 2.0
+      }
+    },
+    {
+      "id": 2,
+      "name": "Plugin de Búsqueda WordPress",
+      "description": "Desarrollo completo del plugin React/TypeScript con modal, barra búsqueda y integración API",
+      "duration": "2 días",
+      "csvKey": "03 Plugin de Búsqueda WordPress",
+      "totalHours": {
+        "min": 5.0,
+        "max": 7.0
+      }
+    },
+    {
+      "id": 3,
+      "name": "Optimización de Resultados",
+      "description": "Implementación del algoritmo de scoring inteligente y sistema de deduplicación",
+      "duration": "1 día",
+      "csvKey": "04 Optimización de Resultados",
+      "totalHours": {
+        "min": 1.5,
+        "max": 2.5
+      }
+    },
+    {
+      "id": 4,
+      "name": "Manejo de Errores y Feedback",
+      "description": "Sistema integral de gestión de errores en español con retry automático y degradación elegante",
+      "duration": "1 día",
+      "csvKey": "05 Manejo de Errores y Feedback",
+      "totalHours": {
+        "min": 1.0,
+        "max": 1.5
+      }
+    },
+    {
+      "id": 5,
+      "name": "Optimización de Rendimiento", 
+      "description": "Implementación de optimizaciones frontend para garantía de SLA menor a 3 segundos",
+      "duration": "0.5 días",
+      "csvKey": "06 Optimización de Rendimiento",
+      "totalHours": {
+        "min": 0.5,
+        "max": 1.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "Finalización y Entrega",
+      "description": "Testing end-to-end, empaquetado plugin ZIP y handoff al cliente",
+      "duration": "1.5 días",
+      "csvKey": "99 Finalización",
+      "totalHours": {
+        "min": 3.0,
+        "max": 4.5
+      }
+    }
+  ],
+  "totalHours": {
+    "min": 16.5,
+    "max": 24.5
+  },
+  "totalWeeks": 1,
+  "totalPhases": 7,
+  "methodology": {
+    "approach": "Desarrollo ágil intensivo en 1 semana",
+    "riskMitigation": "Dependencias mínimas entre fases 04-06 permiten paralelización parcial",
+    "criticalPath": "Fase 02 (API) debe completarse antes de Fase 03 (Frontend)",
+    "deliveryStrategy": "Entrega incremental con testing continuo"
+  }
+} 

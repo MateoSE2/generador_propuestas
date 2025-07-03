@@ -1,0 +1,16 @@
+Phase/Feature,Type,Task,Min H,Max H,Min Cost,Max Cost
+01 Inicialización,CTO/Arquitectura,Configuración de entorno,1.0,2.0,50.0,100.0
+02 Login & Usuarios,Desarrollo Backend,Autenticación básica,2.0,2.5,100.0,125.0
+02 Login & Usuarios,Desarrollo Backend,Gestión de usuarios,2.0,2.5,100.0,125.0
+03 Panel Visualización,Desarrollo Frontend,Interfaz dashboard en WordPress,2.0,2.5,80.0,100.0
+03 Panel Visualización,Desarrollo Frontend,Visualización de generaciones,2.0,2.5,80.0,100.0
+03 Panel Visualización,Desarrollo Frontend,Widgets informativos,2.0,2.0,80.0,80.0
+04 Panel Configuración,Desarrollo Backend,API CRUD plantillas,3.0,3.5,150.0,175.0
+04 Panel Configuración,Desarrollo Backend,Gestión de parámetros,2.0,2.5,100.0,125.0
+04 Panel Configuración,Desarrollo Frontend,Editor de plantillas en WordPress,2.0,2.5,80.0,100.0
+04 Panel Configuración,Desarrollo Frontend,Configurador de parámetros,1.0,1.0,40.0,40.0
+05 Generador SEO,Prompting,Integración con LLM,3.0,3.5,105.0,122.5
+05 Generador SEO,Prompting,Motor de generación,3.0,3.5,105.0,122.5
+06 Integración WordPress,Desarrollo Backend,Mejora plugin WordPress,2.5,3.0,125.0,150.0
+06 Integración WordPress,Desarrollo Backend,Sincronización bidireccional,3.0,3.5,150.0,175.0
+06 Integración WordPress,Desarrollo Backend,Cliente API integrado,1.5,2.0,75.0,100.0

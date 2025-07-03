@@ -1,0 +1,52 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "name": "Inicialización",
+      "description": "Configuración básica de entorno para integración WordPress",
+      "duration": "1 sem",
+      "csvKey": "01 Inicialización"
+    },
+    {
+      "id": 1,
+      "name": "Login & Usuarios",
+      "description": "Sistema de autenticación seguro y gestión básica de usuarios",
+      "duration": "1 sem",
+      "csvKey": "02 Login & Usuarios"
+    },
+    {
+      "id": 2,
+      "name": "Panel Visualización",
+      "description": "Dashboard integrado en WordPress para visualizar resultados de generaciones SEO",
+      "duration": "2 sem",
+      "csvKey": "03 Panel Visualización"
+    },
+    {
+      "id": 3,
+      "name": "Panel Configuración",
+      "description": "Sistema CRUD de plantillas y configuración de parámetros integrado en WordPress",
+      "duration": "2 sem",
+      "csvKey": "04 Panel Configuración"
+    },
+    {
+      "id": 4,
+      "name": "Generador SEO",
+      "description": "Motor de generación de contenido SEO con integración LLM y procesamiento por lotes",
+      "duration": "2 sem",
+      "csvKey": "05 Generador SEO"
+    },
+    {
+      "id": 5,
+      "name": "Integración WordPress",
+      "description": "Plugin WordPress mejorado con sincronización bidireccional completa y revisión integrada",
+      "duration": "2 sem",
+      "csvKey": "06 Integración WordPress"
+    }
+  ],
+  "totalHours": {
+    "min": 32,
+    "max": 39
+  },
+  "totalWeeks": 8,
+  "totalPhases": 6
+} 

@@ -1,0 +1,19 @@
+{
+  "title": "SEO Generator – World Shishas",
+  "date": "2024-12-19",
+  "location": "Terrassa, España",
+  "metaTitle": "Propuesta para SEO Generator – World Shishas",
+  "metaDescription": "Propuesta detallada para el generador SEO de World Shishas - Automatización de contenido SEO para más de 2,000 productos.",
+  "sections": {
+    "header": true,
+    "hero": true,
+    "description": true,
+    "requirements": true,
+    "methodology": true,
+    "phases": true,
+    "budget": true,
+    "kpis": true,
+    "mockup": false,
+    "footer": false
+  }
+} 

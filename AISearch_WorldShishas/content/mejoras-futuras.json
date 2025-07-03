@@ -1,0 +1,35 @@
+{
+  "title": "Mejoras Futuras",
+  "items": [
+    {
+      "id": 1,
+      "title": "Dashboard de Analytics de Búsqueda",
+      "description": "Sistema completo de análisis de patrones de búsqueda, términos populares y métricas de conversión por query"
+    },
+    {
+      "id": 2,
+      "title": "Filtros Avanzados y Facetas",
+      "description": "Sistema de filtrado por precio, marca, categoría, color, tamaño y disponibilidad con interfaz moderna"
+    },
+    {
+      "id": 3,
+      "title": "Resultados Personalizados",
+      "description": "Inteligencia artificial que aprende del comportamiento del usuario para personalizar el ranking de resultados"
+    },
+    {
+      "id": 4,
+      "title": "Panel de Configuración Avanzado",
+      "description": "Interfaz de administración para ajustar parámetros del sistema y monitorizar rendimiento"
+    },
+    {
+      "id": 5,
+      "title": "Soporte Multiidioma",
+      "description": "Extensión para búsquedas en inglés y otros idiomas con procesamiento semántico multilingüe"
+    },
+    {
+      "id": 6,
+      "title": "Búsqueda por Voz",
+      "description": "Integración de búsqueda hablada para dispositivos móviles usando reconocimiento de voz"
+    }
+  ]
+} 

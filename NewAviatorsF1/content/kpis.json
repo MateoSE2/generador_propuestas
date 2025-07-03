@@ -1,0 +1,102 @@
+{
+  "title": "KPIs del Proyecto",
+  "subtitle": "Métricas clave que demuestran el impacto y valor esperado de la plataforma de formación aeronáutica",
+  "kpis": [
+    {
+      "id": "exam-completion",
+      "icon": "clock",
+      "value": "35 min",
+      "title": "Tiempo de Examen",
+      "description": "Tiempo promedio para completar evaluaciones técnicas avanzadas",
+      "color": "primary"
+    },
+    {
+      "id": "ai-usage",
+      "icon": "users",
+      "value": "75%",
+      "title": "Uso del Tutor IA",
+      "description": "Porcentaje de alumnos que utilizan activamente el asistente inteligente",
+      "color": "primary"
+    },
+    {
+      "id": "evaluation-accuracy",
+      "icon": "percent",
+      "value": "92%",
+      "title": "Precisión de Evaluación",
+      "description": "Mejora en la precisión de evaluación de competencias aeronáuticas",
+      "color": "primary"
+    },
+    {
+      "id": "reports-generated",
+      "icon": "trending-up",
+      "value": "25/mes",
+      "title": "Reportes por Instructor",
+      "description": "Número de reportes académicos generados mensualmente por instructor",
+      "color": "primary"
+    },
+    {
+      "id": "mobile-load",
+      "icon": "clock",
+      "value": "< 2 seg",
+      "title": "Carga Móvil",
+      "description": "Tiempo de carga optimizado en dispositivos móviles",
+      "color": "primary"
+    },
+    {
+      "id": "ai-resolution",
+      "icon": "percent",
+      "value": "85%",
+      "title": "Consultas IA Resueltas",
+      "description": "Porcentaje de consultas técnicas resueltas por el Tutor IA",
+      "color": "primary"
+    }
+  ],
+  "summary": {
+    "title": "Métricas de Éxito en Formación Aeronáutica",
+    "description": "Estos KPIs han sido seleccionados estratégicamente para medir el impacto real de la plataforma en la formación de pilotos. Cada métrica representa un objetivo cuantificable que contribuye al éxito de la escuela de vuelo y proporciona valor tangible tanto para instructores como para estudiantes."
+  },
+  "icons": {
+    "users": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",
+        "M22 21v-2a4 4 0 0 0-3-3.87",
+        "M16 3.13a4 4 0 0 1 0 7.75"
+      ],
+      "circles": [
+        { "cx": "9", "cy": "7", "r": "4" }
+      ]
+    },
+    "trending-up": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 7 22 7 22 13"
+      ],
+      "polylines": [
+        "22 7 13.5 15.5 8.5 10.5 2 17",
+        "16 7 22 7 22 13"
+      ]
+    },
+    "percent": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "lines": [
+        { "x1": "19", "x2": "5", "y1": "5", "y2": "19" }
+      ],
+      "circles": [
+        { "cx": "6.5", "cy": "6.5", "r": "2.5" },
+        { "cx": "17.5", "cy": "17.5", "r": "2.5" }
+      ]
+    },
+    "clock": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "circles": [
+        { "cx": "12", "cy": "12", "r": "10" }
+      ],
+      "polylines": [
+        "12 6 12 12 16 14"
+      ]
+    }
+  }
+} 

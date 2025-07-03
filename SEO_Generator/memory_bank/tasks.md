@@ -1,693 +1,276 @@
-# Implementation Plan: SEO Product Description Platform
+# Plan de Implementación: SEO Generator MVP - World Shishas
 
-_Feature-Based Implementation Plan with Cost Calculation per Feature_
+_Plan de Implementación MVP con Alcance Reducido y Backend Reutilizable_
 
-## 📋 REQUIREMENTS ANALYSIS
+## 📋 ANÁLISIS DE REQUISITOS MVP
 
-### Functional Requirements
+### Requisitos Funcionales Mínimos (CORE)
 
-- **Multi-tenant SaaS architecture** with isolated tenant data and configurations
-- **Microservices integration** with existing AI assistants platform for user/tenant management
-- **WordPress plugin enhancement** from unidirectional to bidirectional sync
-- **Excel file processing** with column mapping and batch operations
-- **AI-powered content generation** with template system and parameter management
-- **Real-time job execution monitoring** with progress tracking and error handling
-- **Subscription management** with Stripe integration and usage limits
-- **Dashboard analytics** with metrics, reporting, and data visualization
+- **Login de usuarios** con autenticación segura
+- **Panel de visualización** de resultados y generaciones SEO
+- **Panel de configuración** de parámetros del generador SEO
+- **Módulo de generación SEO** (motor que redacta texto con IA)
+- **Integración WordPress bidireccional** (importa datos + envía textos)
 
-### Non-Functional Requirements
+### Requisitos No Funcionales
 
-- **Performance**: Handle 1000+ concurrent users, process large Excel files (10k+ rows)
-- **Scalability**: Horizontal scaling via Kubernetes, auto-scaling workers
-- **Security**: Multi-tenant isolation, encrypted credentials, audit logging
-- **Reliability**: 99.9% uptime, circuit breakers, retry mechanisms
-- **Usability**: Responsive UI, real-time updates, intuitive workflows
+- **Performance**: Manejo básico de productos de World Shishas (~2,000 productos)
+- **Seguridad**: Autenticación segura y acceso controlado
+- **Usabilidad**: Interfaz integrada en WordPress para gestión de contenido SEO
 
-### Integration Requirements
+### Arquitectura Simplificada
 
-- **AI Assistants Platform**: JWT authentication, user/tenant sync, shared permissions
-- **WordPress/WooCommerce**: REST API integration, product data sync, content push
-- **LLM Providers**: OpenAI, Anthropic, local models with fallback mechanisms
-- **Payment Processing**: Stripe subscriptions, usage tracking, billing automation
+- **Backend**: Django existente reutilizable
+- **Frontend**: Plugin WordPress (no React separado)
+- **Integración**: Directa con WooCommerce existente
 
-## 🏗️ COMPONENT ARCHITECTURE
+## 🏗️ FASES DE IMPLEMENTACIÓN MVP
 
-### Backend Components
+---
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                Django Backend Architecture              │
-├─────────────────────────────────────────────────────────┤
-│ Authentication │ Templates │ Executions │ Integrations  │
-│ Middleware     │ Service   │ Service    │ Service       │
-├─────────────────────────────────────────────────────────┤
-│ User/Tenant    │ WordPress │ Excel      │ Stripe        │
-│ Sync Service   │ Client    │ Processor  │ Integration   │
-├─────────────────────────────────────────────────────────┤
-│ Celery Workers │ Redis     │ MySQL      │ File Storage  │
-│ (Async Tasks)  │ (Cache)   │ (Data)     │ (S3/Local)    │
-└─────────────────────────────────────────────────────────┘
-```
+### **FASE 01: Inicialización**
 
-### Frontend Components
+**Duración**: 1-2 horas | **Responsable**: CTO/Arquitectura
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                React Frontend Architecture              │
-├─────────────────────────────────────────────────────────┤
-│ Auth Context │ Dashboard │ Templates │ Executions      │
-│ Provider     │ Pages     │ Manager   │ Monitor         │
-├─────────────────────────────────────────────────────────┤
-│ API Client   │ State     │ UI        │ Routing         │
-│ (TanStack)   │ (Zustand) │ Components│ (React Router)  │
-├─────────────────────────────────────────────────────────┤
-│ Error        │ Loading   │ Form      │ Data            │
-│ Boundaries   │ States    │ Validation│ Visualization   │
-└─────────────────────────────────────────────────────────┘
-```
-
-### External Integrations
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                External Systems Integration             │
-├─────────────────────────────────────────────────────────┤
-│ AI Assistants │ WordPress │ Stripe    │ LLM Providers   │
-│ Platform      │ Plugin    │ API       │ (OpenAI/etc)    │
-├─────────────────────────────────────────────────────────┤
-│ JWT Auth      │ REST API  │ Webhooks  │ Content         │
-│ User/Tenant   │ Product   │ Billing   │ Generation      │
-│ Sync          │ Sync      │ Events    │ API             │
-└─────────────────────────────────────────────────────────┘
-```
-
-## 🎯 IMPLEMENTATION STRATEGY
-
-### Development Approach
-
-1. **Feature-Driven Development**: Each feature is a complete vertical slice
-2. **Microservices Integration First**: Establish authentication and user sync early
-3. **WordPress Plugin Enhancement**: Leverage existing 20% foundation
-4. **Progressive Enhancement**: Simple features first, complex features later
-5. **Parallel Development**: Frontend and backend teams work simultaneously
-6. **Continuous Integration**: Automated testing and deployment pipeline
-
-### Risk Mitigation Strategy
-
-1. **Technical Risks**: Circuit breakers, retry mechanisms, fallback systems
-2. **Integration Risks**: Mock services for development, comprehensive testing
-3. **Performance Risks**: Load testing, monitoring, auto-scaling
-4. **Security Risks**: Multi-tenant isolation testing, security audits
-5. **Business Risks**: Feature flags, phased rollouts, user feedback loops
-
-### Quality Assurance Strategy
-
-1. **Unit Testing**: 80%+ coverage for critical business logic
-2. **Integration Testing**: API endpoints, database operations, external services
-3. **End-to-End Testing**: Complete user workflows, cross-feature interactions
-4. **Performance Testing**: Load testing, stress testing, scalability validation
-5. **Security Testing**: Penetration testing, vulnerability scanning
-
-## 🏗️ FEATURE BREAKDOWN & COST ESTIMATION
-
-### FEATURE-01: User/Tenant Management
-
-**Estimated Cost**: $1,900 - $2,750 | **Duration**: 19-35 hours
-
-#### TASK-F01-001: JWT Middleware Development
+#### TASK-F01-001: Configuración Básica
 
 **Status**: NOT_STARTED  
 **Priority**: 🔴 HIGH  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 4-6 hours  
-**Dependencies**: None
-
-**Requirements Analysis**:
-
-- Integration with existing AI assistants platform JWT system
-- Tenant-scoped middleware for all API requests
-- Token validation and refresh mechanisms
-- Service-to-service authentication for internal APIs
+**Estimated Effort**: 1-2 horas  
+**Type**: CTO/Arquitectura
 
 **Implementation Steps**:
 
-1. **JWT Middleware Development** (4-6h)
-   - Create Django middleware for JWT validation
-   - Implement tenant context injection
-   - Add token refresh logic
-   - Configure Redis caching for tokens
+1. **Configuración de entorno** (1-2h)
+   - Configuración básica para integración WordPress
+   - Setup de variables de entorno y conexiones
 
 **Acceptance Criteria**:
 
-- [ ] JWT token validation middleware functional
-- [ ] Integration with existing user management service
-- [ ] Tenant-scoped API requests working
-- [ ] Performance benchmarks met (< 50ms token validation)
+- [ ] Entorno configurado para desarrollo
+- [ ] Conexiones básicas establecidas
 
 ---
 
-#### TASK-F01-002: Service Integration
+### **FASE 02: Login & Usuarios**
+
+**Duración**: 4-5 horas | **Responsable**: Backend Developer
+
+#### TASK-F02-001: Sistema de Autenticación
 
 **Status**: NOT_STARTED  
 **Priority**: 🔴 HIGH  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 4-6 hours  
-**Dependencies**: TASK-F01-001
+**Estimated Effort**: 4-5 horas  
+**Type**: Desarrollo Backend
 
 **Implementation Steps**:
 
-1. **Service Integration** (4-6h)
-   - Set up API client for AI assistants platform
-   - Implement circuit breaker pattern
-   - Add service discovery configuration
-   - Create health check endpoints
+1. **Autenticación básica** (2-2.5h)
+   - Implementación de login/logout seguro
+   - Gestión de sesiones de usuario
+   - Middleware de autenticación
+2. **Gestión de usuarios** (2-2.5h)
+   - Modelo de usuario básico
+   - Registro y gestión de perfiles
+   - Permisos y accesos controlados
 
 **Acceptance Criteria**:
 
-- [ ] API client for AI assistants platform functional
-- [ ] Circuit breaker pattern implemented
-- [ ] Service discovery configured
-- [ ] Health check endpoints active
+- [ ] Sistema de login funcional
+- [ ] Gestión básica de usuarios
+- [ ] Acceso controlado a la aplicación
 
 ---
 
-#### TASK-F01-003: Database Schema & Sync
+### **FASE 03: Panel Visualización**
+
+**Duración**: 6-7 horas | **Responsable**: Frontend Developer
+
+#### TASK-F03-001: Dashboard en WordPress
 
 **Status**: NOT_STARTED  
 **Priority**: 🔴 HIGH  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 8-13 hours  
-**Dependencies**: TASK-F01-001
+**Estimated Effort**: 6-7 horas  
+**Type**: Desarrollo Frontend
 
 **Implementation Steps**:
 
-1. **Database Design & Models** (3-5h)
-2. **Migration System Setup** (2-3h)
-3. **Data Sync Service** (3-5h)
+1. **Interfaz dashboard en WordPress** (2-2.5h)
+   - Panel de administración WordPress
+   - Navegación integrada en WordPress admin
+   - Estructura responsive dentro de WordPress
+2. **Visualización de generaciones** (2-2.5h)
+   - Lista de contenidos generado
+   - Estado de sincronización con WooCommerce
+   - Filtros básicos por fecha/estado
+3. **Widgets informativos** (2h)
+   - Métricas básicas (productos procesados, pendientes)
+   - Indicadores de estado del sistema
 
 **Acceptance Criteria**:
 
-- [ ] MySQL database setup with proper indexes
-- [ ] User/tenant tables with existing UUIDs
-- [ ] Django models for all entities
-- [ ] Data sync validation endpoints
+- [ ] Dashboard funcional integrado en WordPress
+- [ ] Visualización de contenidos generados
+- [ ] Métricas básicas visibles
 
 ---
 
-#### TASK-F01-004: Testing & Validation
+### **FASE 04: Panel Configuración**
 
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 3-5 hours  
-**Dependencies**: All above tasks
+**Duración**: 8-9 horas | **Responsable**: Full Stack
 
-**Acceptance Criteria**:
-
-- [ ] Unit tests for authentication components
-- [ ] Integration tests with AI assistants platform
-- [ ] Performance testing completed
-
----
-
-### FEATURE-02: Simple Dashboard
-
-**Estimated Cost**: $1,575 - $2,325 | **Duration**: 21-33 hours
-
-#### TASK-F02-001: React Frontend Setup
+#### TASK-F04-001: Sistema de Plantillas Backend
 
 **Status**: NOT_STARTED  
 **Priority**: 🔴 HIGH  
-**Assignee**: Frontend Developer  
-**Estimated Effort**: 8-14 hours  
-**Dependencies**: None
+**Estimated Effort**: 5-5.5 horas  
+**Type**: Desarrollo Backend
 
 **Implementation Steps**:
 
-1. **Project Setup & Configuration** (3-5h)
-2. **Core Infrastructure Setup** (3-5h)
-3. **Development Tools Configuration** (2-4h)
+1. **API CRUD plantillas** (3-3.5h)
+   - Modelo de plantillas SEO
+   - Endpoints para crear/editar/eliminar
+   - Validación de plantillas
+2. **Gestión de parámetros** (2h)
+   - Sistema de variables dinámicas
+   - Configuración de parámetros por plantilla
 
 **Acceptance Criteria**:
 
-- [ ] React 18+ with TypeScript setup
-- [ ] Vite build configuration functional
-- [ ] TailwindCSS or UI component library integrated
-- [ ] Authentication context provider implemented
+- [ ] CRUD completo de plantillas funcionando
+- [ ] Sistema de parámetros configurables
 
----
-
-#### TASK-F02-002: Dashboard Components
-
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Frontend Developer  
-**Estimated Effort**: 13-19 hours  
-**Dependencies**: TASK-F02-001, TASK-F01-001
-
-**Implementation Steps**:
-
-1. **Layout & Navigation Components** (4-6h)
-2. **Dashboard Widgets Development** (6-8h)
-3. **UI Polish & Cross-browser Testing** (3-5h)
-
-**Acceptance Criteria**:
-
-- [ ] Header with tenant/user information
-- [ ] Sidebar navigation menu with role-based access
-- [ ] Dashboard metrics widgets displaying key data
-- [ ] Responsive design implementation
-
----
-
-### FEATURE-03: Simple Parametrization
-
-**Estimated Cost**: $1,950 - $2,775 | **Duration**: 33-45 hours
-
-#### TASK-F03-001: Template Management Backend
-
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 13-19 hours  
-**Dependencies**: TASK-F01-003
-
-**Implementation Steps**:
-
-1. **Template Model & API Development** (6-8h)
-2. **Advanced Template Features** (4-6h)
-3. **Template Backend Testing & Optimization** (3-5h)
-
-**Acceptance Criteria**:
-
-- [ ] Template model with parameter support
-- [ ] REST API endpoints for templates
-- [ ] Template validation logic implemented
-- [ ] Template search and filtering
-
----
-
-#### TASK-F03-002: Template Management UI
-
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Frontend Developer  
-**Estimated Effort**: 20-26 hours  
-**Dependencies**: TASK-F03-001, TASK-F02-001
-
-**Implementation Steps**:
-
-1. **Template Editor Development** (8-10h)
-2. **Parameter Management Interface** (6-8h)
-3. **Template Library & Management** (6-8h)
-
-**Acceptance Criteria**:
-
-- [ ] Template creation/editing form with rich text support
-- [ ] Parameter variable editor with drag-and-drop
-- [ ] Template preview functionality with real-time updates
-- [ ] Template library with search and filtering
-
----
-
-### FEATURE-04: WordPress Integration
-
-**Estimated Cost**: $2,325 - $3,375 | **Duration**: 31-45 hours
-
-#### TASK-F04-001: WordPress Plugin Enhancement
-
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: WordPress Developer  
-**Estimated Effort**: 18-26 hours  
-**Dependencies**: TASK-F01-001
-
-**Implementation Steps**:
-
-1. **WordPress Plugin Architecture Review** (4-6h)
-2. **WordPress Bidirectional Sync Implementation** (10-14h)
-3. **WordPress Admin Interface & Security** (4-6h)
-
-**Acceptance Criteria**:
-
-- [ ] API endpoint for receiving generated content
-- [ ] WordPress authentication integration
-- [ ] Plugin configuration interface enhanced
-- [ ] Bulk sync functionality implemented
-
----
-
-#### TASK-F04-002: Django WordPress Client
-
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 13-19 hours  
-**Dependencies**: TASK-F04-001, TASK-F01-003
-
-**Implementation Steps**:
-
-1. **WordPress API Client Development** (6-8h)
-2. **WordPress Sync Operations** (4-6h)
-3. **WordPress Monitoring & Logging** (3-5h)
-
-**Acceptance Criteria**:
-
-- [ ] WordPress API authentication working
-- [ ] Product data fetching with pagination
-- [ ] Generated content push functionality
-- [ ] Sync status tracking implemented
-
----
-
-### FEATURE-05: Excel Integration
-
-**Estimated Cost**: $2,025 - $2,925 | **Duration**: 27-39 hours
-
-#### TASK-F05-001: Excel Processing Backend
-
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 20-26 hours  
-**Dependencies**: TASK-F01-003
-
-**Implementation Steps**:
-
-1. **Excel File Upload & Validation** (6-8h)
-2. **Excel Processing Engine** (8-10h)
-3. **Excel Export & Reporting** (6-8h)
-
-**Acceptance Criteria**:
-
-- [ ] Excel file upload endpoint functional
-- [ ] File validation and parsing working
-- [ ] Column mapping functionality implemented
-- [ ] Export functionality for results
-
----
-
-#### TASK-F05-002: Excel Integration UI
-
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Frontend Developer  
-**Estimated Effort**: 13-19 hours  
-**Dependencies**: TASK-F05-001, TASK-F02-001
-
-**Implementation Steps**:
-
-1. **Excel File Upload Interface** (4-6h)
-2. **Excel Column Mapping Interface** (6-8h)
-3. **Excel Progress & Results Display** (3-5h)
-
-**Acceptance Criteria**:
-
-- [ ] File upload component with drag-and-drop
-- [ ] Column mapping interface with visual feedback
-- [ ] Progress tracking display with real-time updates
-- [ ] Export download functionality
-
----
-
-### FEATURE-06: Complex Dashboard
-
-**Estimated Cost**: $2,100 - $2,700 | **Duration**: 28-36 hours
-
-#### TASK-F06-001: Advanced Analytics Backend
-
-**Status**: NOT_STARTED  
-**Priority**: 🟢 LOW  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 20-26 hours  
-**Dependencies**: All Core Features
-
-**Implementation Steps**:
-
-1. **Usage Statistics Aggregation** (6-8h)
-2. **Custom Report Generation System** (8-10h)
-3. **Real-time Metrics & Analytics** (6-8h)
-
-**Acceptance Criteria**:
-
-- [ ] Usage statistics aggregation functional
-- [ ] Custom report generation available
-- [ ] Real-time metrics updates active
-
----
-
-#### TASK-F06-002: Advanced Dashboard UI
-
-**Status**: NOT_STARTED  
-**Priority**: 🟢 LOW  
-**Assignee**: Frontend Developer  
-**Estimated Effort**: 8-10 hours  
-**Dependencies**: TASK-F06-001
-
-**Acceptance Criteria**:
-
-- [ ] Advanced dashboard UI with data visualization
-- [ ] Interactive charts and metrics
-- [ ] Custom report display interface
-
----
-
-### FEATURE-07: Complex Parametrization
-
-**Estimated Cost**: $2,250 - $2,850 | **Duration**: 30-38 hours
-
-#### TASK-F07-001: Advanced Template System
-
-**Status**: NOT_STARTED  
-**Priority**: 🟢 LOW  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 24-30 hours  
-**Dependencies**: TASK-F03-001
-
-**Implementation Steps**:
-
-1. **Advanced Template Engine** (10-12h)
-2. **Template Inheritance & Versioning** (8-10h)
-3. **Multi-language Support** (6-8h)
-
-**Acceptance Criteria**:
-
-- [ ] Conditional logic in templates functional
-- [ ] Template inheritance system implemented
-- [ ] Multi-language support operational
-
----
-
-#### TASK-F07-002: Advanced Template UI
-
-**Status**: NOT_STARTED  
-**Priority**: 🟢 LOW  
-**Assignee**: Frontend Developer  
-**Estimated Effort**: 6-8 hours  
-**Dependencies**: TASK-F07-001
-
-**Acceptance Criteria**:
-
-- [ ] Advanced template UI with conditional logic
-- [ ] Template inheritance interface
-- [ ] Multi-language template management
-
----
-
-### FEATURE-08: Stripe Payments
-
-**Estimated Cost**: $1,650 - $2,250 | **Duration**: 22-30 hours
-
-#### TASK-F08-001: Stripe Integration Backend
-
-**Status**: NOT_STARTED  
-**Priority**: 🟢 LOW  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 18-24 hours  
-**Dependencies**: TASK-F01-003
-
-**Implementation Steps**:
-
-1. **Stripe API Integration** (6-8h)
-2. **Subscription Management System** (8-10h)
-3. **Payment Webhook Processing** (4-6h)
-
-**Acceptance Criteria**:
-
-- [ ] Stripe API integration functional
-- [ ] Subscription management operational
-- [ ] Webhook processing functional
-
----
-
-#### TASK-F08-002: Payment & Billing UI
-
-**Status**: NOT_STARTED  
-**Priority**: 🟢 LOW  
-**Assignee**: Frontend Developer  
-**Estimated Effort**: 4-6 hours  
-**Dependencies**: TASK-F08-001
-
-**Acceptance Criteria**:
-
-- [ ] Payment method handling interface
-- [ ] Billing history display
-- [ ] Subscription management UI
-
----
-
-## 📋 INFRASTRUCTURE TASKS
-
-**Estimated Cost**: $2,025 - $2,775 | **Duration**: 27-37 hours
-
-#### TASK-INF-001: Development Environment
+#### TASK-F04-002: Interfaz de Configuración WordPress
 
 **Status**: NOT_STARTED  
 **Priority**: 🔴 HIGH  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 14-19 hours
+**Estimated Effort**: 3-3.5 horas  
+**Type**: Desarrollo Frontend
 
 **Implementation Steps**:
 
-1. **Docker Compose Configuration** (6-8h)
-2. **Testing Framework Backend Setup** (4-6h)
-3. **Testing Framework Frontend Setup** (3-5h)
-4. **CI Pipeline Integration** (3-5h)
+1. **Editor de plantillas en WordPress** (2-2.5h)
+   - Interfaz WordPress para crear/editar plantillas
+   - Preview de plantillas en tiempo real
+2. **Configurador de parámetros** (1h)
+   - Interface WordPress para gestión de variables
+   - Validación de parámetros
+
+**Acceptance Criteria**:
+
+- [ ] Editor de plantillas integrado en WordPress
+- [ ] Configurador de parámetros funcional
 
 ---
 
-#### TASK-INF-002: Production & Operations
+### **FASE 05: Generador SEO**
+
+**Duración**: 6-7 horas | **Responsable**: Prompting Specialist
+
+#### TASK-F05-001: Motor de Generación IA
 
 **Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 18-24 hours
+**Priority**: 🔴 HIGH  
+**Estimated Effort**: 6-7 horas  
+**Type**: Prompting
 
 **Implementation Steps**:
 
-1. **Production Deployment Setup** (6-8h)
-2. **Performance Testing & Optimization** (6-8h)
-3. **Security Audit & Hardening** (6-8h)
+1. **Integración con LLM** (3-3.5h)
+   - Conexión con API de OpenAI/similar
+   - Configuración de prompts base
+   - Manejo de respuestas y errores
+2. **Motor de generación** (3-3.5h)
+   - Lógica de generación por lotes
+   - Aplicación de plantillas y parámetros
+   - Sistema de cola básico para procesar productos
+
+**Acceptance Criteria**:
+
+- [ ] Integración LLM funcional
+- [ ] Generación de contenido SEO operativa
+- [ ] Procesamiento por lotes implementado
 
 ---
 
-#### TASK-INF-003: Project Management
+### **FASE 06: Integración WordPress**
+
+**Duración**: 7-8 horas | **Responsable**: Backend Developer
+
+#### TASK-F06-001: Conexión WordPress/WooCommerce
 
 **Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Project Manager  
-**Estimated Effort**: 18-26 hours
+**Priority**: 🔴 HIGH  
+**Estimated Effort**: 7-8 horas  
+**Type**: Desarrollo Backend
 
 **Implementation Steps**:
 
-1. **Project Planning & Coordination** (8-12h)
-2. **Weekly Progress Reviews** (6-8h)
-3. **Stakeholder Communication** (4-6h)
+1. **Mejora plugin WordPress** (2.5-3h)
+   - Extensión del plugin existente
+   - Endpoints para recibir contenido generado
+   - Configuración desde WordPress admin
+2. **Sincronización bidireccional** (3-3.5h)
+   - Importación de datos de productos desde WooCommerce
+   - Envío de contenido generado de vuelta
+   - Validación y manejo de errores
+3. **Cliente API integrado** (1.5-2h)
+   - Cliente para WordPress REST API
+   - Autenticación con WordPress
+   - Logging básico de operaciones
+
+**Acceptance Criteria**:
+
+- [ ] Plugin WordPress mejorado funcional
+- [ ] Importación de productos desde WooCommerce
+- [ ] Envío de contenido generado a WordPress
+- [ ] Revisión y sincronización integradas en el workflow
 
 ---
 
-#### TASK-INF-004: AI Integration
+## 📊 RESUMEN DE COSTES
 
-**Status**: NOT_STARTED  
-**Priority**: 🟡 MEDIUM  
-**Assignee**: Backend Developer  
-**Estimated Effort**: 18-24 hours
+### Total de Horas Estimadas
 
-**Implementation Steps**:
+- **Mínimo**: 32 horas
+- **Máximo**: 38 horas
+- **Promedio**: 35 horas
 
-1. **LLM Integration & Optimization** (8-10h)
-2. **Content Generation Templates** (6-8h)
-3. **AI Model Configuration** (4-6h)
+### Distribución por Tipo de Trabajo
 
----
+- **Desarrollo Backend**: 16-18.5h (50%)
+- **Desarrollo Frontend**: 9-10.5h (28%)
+- **Prompting**: 6-7h (18%)
+- **CTO/Arquitectura**: 1-2h (4%)
 
-## 📊 FEATURE COST SUMMARY
+### Coste Estimado (a 38€/h promedio)
 
-| Feature                    | Min Hours | Max Hours | Min Cost ($75/h) | Max Cost ($75/h) |
-| -------------------------- | --------- | --------- | ---------------- | ---------------- |
-| 01 User/Tenant Management  | 12        | 17        | $900             | $1,275           |
-| 02 Simple Dashboard        | 12        | 17        | $900             | $1,275           |
-| 03 Simple Parametrization  | 19        | 24        | $1,425           | $1,800           |
-| 04 WordPress Integration   | 20        | 27        | $1,500           | $2,025           |
-| 05 Excel Integration       | 17        | 22        | $1,275           | $1,650           |
-| 06 Complex Dashboard       | 18        | 22        | $1,350           | $1,650           |
-| 07 Complex Parametrization | 15        | 19        | $1,125           | $1,425           |
-| 08 Stripe Payments         | 15        | 19        | $1,125           | $1,425           |
-| 09 Infrastructure (MVP)    | 27        | 36        | $2,025           | $2,700           |
-| 10 Multi-language Support  | 15        | 19        | $1,125           | $1,425           |
+- **Mínimo**: 1,216€
+- **Máximo**: 1,444€
+- **Objetivo**: 1,500€ - 1,900€ ✅ (bien por debajo)
 
-**Total Project Cost (MVP Core Features)**: $10,650 - $15,150  
-**Total Hours (MVP Core Features)**: 142 - 202 hours  
-**Timeline**: 3-4 weeks with proper team allocation
+## 🎯 FUNCIONALIDADES INCLUIDAS VS EXCLUIDAS
 
-**With All Features**: $12,750 - $18,150  
-**Total Hours (All Features)**: 170 - 242 hours  
-**Timeline**: 4-5 weeks with proper team allocation
+### ✅ INCLUIDAS (CORE)
 
-## 🎯 CRITICAL PATH & DEPENDENCIES
+- Login y gestión de usuarios
+- Dashboard de visualización integrado en WordPress
+- Sistema de plantillas y configuración
+- Generador SEO con IA
+- Integración WordPress bidireccional completa
 
-### Phase 1: Foundation (Week 1)
+### ❌ EXCLUIDAS (ELIMINADAS)
 
-- 01 User/Tenant Management → 02 Simple Dashboard → 09 Infrastructure (Development)
+- Setup completo Django/React (backend reutilizable)
+- Fase de revisión manual separada (integrada en workflow)
+- Fase de finalización/testing separada (integrado)
+- Infraestructura avanzada (Docker, CI/CD)
+- Frontend React independiente (todo en WordPress)
 
-### Phase 2: Core Features (Weeks 2-3)
+## 🏃‍♂️ CRONOGRAMA ESTIMADO
 
-- 03 Simple Parametrization → 04 WordPress Integration + 05 Excel Integration (parallel)
-
-### Phase 3: Advanced Features (Week 4-5) - Optional
-
-- 06 Complex Dashboard + 07 Complex Parametrization + 08 Stripe Payments (parallel)
-- 10 Multi-language Support (can be added later)
-
-## 📋 KEY CHANGES MADE
-
-### ✅ **Removed Tasks**
-
-- Migration System Setup (integrated into Database Design)
-- Advanced Template Features (simplified to AIConfig model)
-- UI Polish & Cross-browser Testing (MVP approach)
-
-### ⚡ **Significantly Reduced**
-
-- **Prompting tasks**: Reduced by 50%
-- **All other tasks**: Reduced by 30-40%
-- **WordPress Integration**: Reduced from 31-45h to 20-27h
-- **Excel Processing Engine**: Reduced from 8-10h to 4-6h
-
-### 🆕 **New Separate Feature**
-
-- **10 Multi-language Support**: Extracted from Complex Parametrization
-  - Multi-language Template System (4-5h)
-  - Translation Pipeline (5-6h)
-  - Multi-language UI Components (3-4h)
-  - Language Detection & Management (3-4h)
-
-### 🚀 **MVP Infrastructure Simplified**
-
-- Removed: Performance Testing, Security Audit, Integration Testing, End-to-End Testing
-- Kept: Docker, Basic Testing, CI Pipeline, Production Setup, Project Management, LLM Integration
-
-## 💡 **MVP Recommendation**
-
-**Core MVP Features (142-202 hours, $10,650-$15,150)**:
-
-1. 01 User/Tenant Management
-2. 02 Simple Dashboard
-3. 03 Simple Parametrization
-4. 04 WordPress Integration
-5. 05 Excel Integration
-6. 09 Infrastructure
-
-**Future Enhancements**:
-
-- 06 Complex Dashboard
-- 07 Complex Parametrization
-- 08 Stripe Payments
-- 10 Multi-language Support
-
----
-
-**Implementation Plan Status**: ✅ **OPTIMIZED FOR MVP**  
-**Cost Calculation**: Feature-based with MVP focus  
-**Timeline**: 3-4 weeks MVP, 4-5 weeks full features  
-**Total Investment**: $10,650 - $18,150 depending on feature selection
+- **Duración total**: 4-5 semanas
+- **Fases críticas**: 04, 05, 06
+- **Dependencias**: Fases secuenciales, algunas paralelizables
+- **Entrega**: Sistema MVP funcional integrado en WordPress para World Shishas

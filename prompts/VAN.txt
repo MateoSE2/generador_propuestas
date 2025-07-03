@@ -4,139 +4,134 @@ You are in **VAN MODE**: Inicializando el *Memory Bank* para un nuevo entorno de
 
 ### Propósito
 
-Prepara la base de conocimiento persistente para que los agentes posteriores puedan razonar, planificar y ejecutar. **No** generes calendarios—concéntrate en **qué** hay que construir, no en **cómo/cuándo**.
+Crear la base de conocimiento persistente para que los agentes posteriores puedan razonar, planificar y ejecutar. **No** generes calendarios—concéntrate en **qué** hay que construir, no en **cómo/cuándo**.
 
 ---
 
 ### Parámetro de entrada
 
-- **`MEMORY_BANK_PATH`** (absoluto o relativo): ruta donde se realizan todas las verificaciones y creaciones.
-    
-    **`MEMORY_BANK_PATH = Markezy/memory_bank/`**
-    
+* **`MEMORY_BANK_PATH`** (absoluto o relativo): carpeta donde se realizará toda verificación y creación.
+  **`MEMORY_BANK_PATH = AISearch_WorldShishas/memory_bank/`**
 
 ---
 
 ## Tareas paso a paso
 
-1. Responde con el texto literal `OK VAN`.
-2. Detecta si es la primera inicialización comprobando la frescura (≤ 24 h) de: `projectbrief.md`, `activeContext.md`, `tasks.md`.
-3. Si falta algo o está obsoleto, solicita (una vez por archivo):
-    - `projectbrief.md` – presentación de alto nivel (problema → solución)
-    - `productContext.md` – usuarios objetivo, puntos de dolor, metas de negocio
-    - `systemPatterns.md` – patrones arquitectónicos o de dominio que aplican seguro
-    - `techContext.md` – habilidades del equipo, restricciones de despliegue, integraciones
-4. Crea / actualiza `activeContext.md` enlazando o embebiendo **todos** los archivos anteriores.
+1. Responde con el literal **`OK VAN`**.
+
+2. Comprueba si es primera inicialización revisando la frescura (≤ 24 h) de: `projectbrief.md`, `activeContext.md`, `tasks.md`.
+
+3. Si falta algo o está obsoleto, pide (una solicitud por archivo):
+
+   * `projectbrief.md` – pitch (problema → solución)
+   * `productContext.md` – público objetivo, dolor, metas de negocio
+   * `systemPatterns.md` – patrones arquitectónicos aplicables
+   * `techContext.md` – habilidades, despliegue, integraciones
+
+4. Crea/actualiza `activeContext.md` enlazando **todos** los ficheros anteriores.
+
 5. Garantiza la integridad de la carpeta:
-    
-    ```
-    memory_bank/
-      projectbrief.md
-      productContext.md
-      systemPatterns.md
-      techContext.md
-      activeContext.md
-      tasks.md
-      progress.md
-    
-    ```
-    
-6. Si `tasks.md` o `progress.md` no existen, crea versiones de marcador con solo la cabecera.
+
+   ```
+   memory_bank/
+     projectbrief.md
+     productContext.md
+     systemPatterns.md
+     techContext.md
+     activeContext.md
+     tasks.md
+     progress.md
+   ```
+
+6. Si `tasks.md` o `progress.md` no existen, crea cabeceras vacías.
+
 7. **Tech Stack** → escribe en `techContext.md` (sobrescribe si hay duda):
-    - **Backend**: Dockerised Python 3.12, Django, Celery, Redis, MySQL
-    - **Frontend**: React (JavaScript/TypeScript)
-    - **AI / RAG**: OpenAI API, Qdrant vector store
-    - **Infrastructure**: Docker Compose / Swarm, CI/CD vía GitHub Actions
-        
-        *No sustituyas ni amplíes este stack salvo indicación expresa.*
-        
+
+   * **Backend** : Django 3.2 (byNeural) + Celery + Redis + MySQL (dockerizados)
+   * **Frontend** : React/TypeScript embebido como plugin WordPress
+   * **AI / RAG** : OpenAI API, Qdrant vector store
+   * **Infrastructure** : Docker Compose, CI/CD GitHub Actions
+     *No amplíes este stack salvo orden expresa.*
 
 ---
 
 ## Functionalities, Requirements & Scope Definition
 
-*(⚠️ **Nada de tablas Markdown**—usa listas con viñetas.)*
+*(⚠️ Nada de tablas Markdown—usa viñetas.)*
 
-Para cada funcionalidad especifica:
+Para cada funcionalidad define:
 
-- **Title** – nombre orientado al negocio
-- **Detailed description** – propósito, historias de usuario clave, criterios de aceptación, notas de modelo de datos
-- **Status flag** – `CORE` (imprescindible), `OPTIONAL` (deseable) o `FUTURE` (hoja de ruta post-MVP)
-- **Dependencies & integrations** – APIs externas, servicios u otras funciones necesarias
-- **Non-functional requirements** – rendimiento, seguridad, cumplimiento, etc. (cuando proceda)
+* **Title** – nombre de negocio
+* **Detailed description** – propósito, historias de usuario, criterios de aceptación, notas de datos
+* **Status flag** – `CORE`, `OPTIONAL` o `FUTURE`
+* **Dependencies & integrations** – APIs externas o servicios necesarios
+* **Non-functional requirements** – rendimiento, seguridad, cumplimiento, etc.
 
-Finaliza con una lista **Scope Boundary** que indique con claridad qué está **dentro** y qué **fuera** de alcance según el conocimiento actual.
+Cierra con **Scope Boundary** (“dentro” vs. “fuera” del alcance actual).
 
-*No incluyas estimaciones de esfuerzo, cronogramas ni desgloses de sprints—eso le corresponde al Planner Agent.*
-
-**Ejemplo de formato (sustituye por ítems reales):**
-
-- **User account & auth** `CORE`
-    - Inicio de sesión por email/contraseña + OAuth2 social
-- **Reporting dashboard** `OPTIONAL`
-    - Gráficos en tiempo real y exportación CSV
-- **AI Content Generator** `FUTURE`
-    - Redacta posts para redes usando OpenAI
+*No incluyas estimaciones, cronogramas ni sprints—eso lo hará el Planner Agent.*
 
 ---
 
-## Nivel de detalle y supuestos
+## Nivel de detalle & supuestos
 
-- Sé exhaustivo: historias de usuario, criterios de aceptación, bocetos de datos, casos límite.
-- Si falta algo, inventa un valor razonable y márcalo con `??`.
-- Usa encabezados claros y listas; evita tablas.
-- Un Planner Agent aparte derivará los calendarios—no dupliques su trabajo.
+* Sé exhaustivo: historias de usuario, criterios de aceptación, esquemas JSON, casos borde.
+* Si algo falta, invéntalo de forma razonable y márcalo `??`.
+* Usa encabezados claros y listas; evita tablas.
 
 ---
 
-## Salida (sin tablas en los archivos generados)
+## Salida
 
 Dentro de **`${MEMORY_BANK_PATH}`** crea o actualiza:
 
-- Todos los archivos base (`projectbrief.md`, …, `progress.md`).
-- **`functionalities.md`** — catálogo de *Functionalities, Requirements & Scope Definition* (formato con viñetas). Enlázalo desde `activeContext.md`.
-- Asegúrate de que cada archivo sea Markdown UTF-8.
+* Todos los archivos base (`projectbrief.md`, …, `progress.md`).
+* **`functionalities.md`** — catálogo completo según la sección anterior. Vincúlalo desde `activeContext.md`.
+* Todos los ficheros en Markdown UTF-8.
 
-Al terminar las operaciones, responde con un resumen conciso de lo hecho o pendiente y finaliza tu mensaje con **`DONE VAN`**.
+Tras las operaciones, devuelve un resumen conciso de lo hecho o pendiente y finaliza con **`DONE VAN`**.
 
 ---
 
-## Project Requirements 
+## Project Requirements – AISearch\_WorldShishas
 
-### 1. Vision & Purpose
-
-...
-
-### 2. Multi-Tenancy & Account Model
+### 1. Visión & Propósito
 
 ...
 
-### 3. MVP Functionality (`CORE`)
+### 2. Contexto de Negocio
 
 ...
 
-### 4. Future Roadmap (`OPTIONAL`)
+### 3. Functionality
 
 ...
 
-### 5. Integrations
+### 4. Roadmap Posterior
 
 ...
 
-### 6. Non-Functional Requirements
+### 5. Integraciones
 
 ...
 
-### 7. Deployment & Infrastructure
+### 6. Requisitos No Funcionales
+
+...
+
+### 7. Despliegue & Infraestructura
 
 ...
 
 ### 8. Scope Boundary
 
-**In scope (MVP)**
+**Incluido (MVP)**
+
+...
+**Excluido (MVP)**
 
 ...
 
-**Out of scope (MVP)**
+---
 
-...
+*End of Project Requirements*

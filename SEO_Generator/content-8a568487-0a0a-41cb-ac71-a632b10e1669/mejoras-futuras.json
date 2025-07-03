@@ -1,0 +1,15 @@
+{
+  "title": "Mejoras Futuras",
+  "items": [
+    {
+      "id": 1,
+      "title": "Generación multiidioma",
+      "description": "Expansión del sistema para generar contenido SEO en múltiples idiomas automáticamente, adaptando el tono cultural específico"
+    },
+    {
+      "id": 2,
+      "title": "Generación de imágenes AI",
+      "description": "Integración con herramientas de generación de imágenes por AI para crear contenido visual optimizado automáticamente"
+    }
+  ]
+} 

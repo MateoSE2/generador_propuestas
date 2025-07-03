@@ -1,0 +1,19 @@
+{
+  "title": "AISearch - World Shishas",
+  "date": "30 de junio de 2025", 
+  "location": "Terrassa, España",
+  "metaTitle": "Propuesta AISearch para World Shishas",
+  "metaDescription": "Propuesta detallada para el desarrollo del sistema de búsqueda inteligente AISearch, combinando IA y búsqueda híbrida para World Shishas.",
+  "sections": {
+    "header": true,
+    "hero": true,
+    "description": true,
+    "requirements": true,
+    "methodology": true,
+    "phases": true,
+    "budget": true,
+    "kpis": true,
+    "mockup": false,
+    "footer": true
+  }
+} 

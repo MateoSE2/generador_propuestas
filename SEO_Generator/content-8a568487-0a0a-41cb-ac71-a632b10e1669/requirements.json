@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "totalRequirements": 5,
+    "totalHours": 36,
+    "totalAreas": 4,
+    "lastUpdated": "2024-12-19"
+  },
+  "functionalAreas": [
+    {
+      "id": "inicializacion-usuarios",
+      "title": "Inicialización y Usuarios",
+      "description": "Configuración básica de entorno y sistema de autenticación",
+      "totalRequirements": 2,
+      "projectPercentage": 20,
+      "requirements": [
+        {
+          "id": "inicializacion",
+          "title": "Inicialización",
+          "description": "Configuración básica de entorno para integración WordPress",
+          "priority": "alta",
+          "developmentAreas": ["CTO/Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "login-usuarios",
+          "title": "Login & Usuarios",
+          "description": "Sistema de autenticación seguro y gestión básica de usuarios",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        }
+      ]
+    },
+    {
+      "id": "visualizacion-configuracion",
+      "title": "Visualización y Configuración",
+      "description": "Dashboard de resultados y sistema de configuración",
+      "totalRequirements": 2,
+      "projectPercentage": 30,
+      "requirements": [
+        {
+          "id": "panel-visualizacion",
+          "title": "Panel Visualización",
+          "description": "Dashboard integrado en WordPress para visualizar resultados de generaciones SEO",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "panel-configuracion",
+          "title": "Panel Configuración",
+          "description": "Sistema CRUD de plantillas y configuración de parámetros integrado en WordPress",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        }
+      ]
+    },
+    {
+      "id": "generacion-integracion",
+      "title": "Generación e Integración",
+      "description": "Motor SEO y conexión con WordPress",
+      "totalRequirements": 2,
+      "projectPercentage": 50,
+      "requirements": [
+        {
+          "id": "generador-seo",
+          "title": "Generador SEO",
+          "description": "Motor de generación de contenido SEO con integración LLM y procesamiento por lotes",
+          "priority": "alta",
+          "developmentAreas": ["Prompting"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "integracion-wordpress",
+          "title": "Integración WordPress",
+          "description": "Plugin WordPress mejorado con sincronización bidireccional completa y revisión integrada",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        }
+      ]
+    }
+  ],
+  "developmentAreas": [
+    {
+      "name": "Backend",
+      "percentage": 50,
+      "description": "Desarrollo de APIs, integración WordPress y sistemas de autenticación"
+    },
+    {
+      "name": "Frontend", 
+      "percentage": 28,
+      "description": "Interfaces integradas en WordPress para dashboard y configuración"
+    },
+    {
+      "name": "Prompting",
+      "percentage": 18,
+      "description": "Integración LLM y generación de contenido SEO"
+    },
+    {
+      "name": "CTO/Arquitectura",
+      "percentage": 4,
+      "description": "Configuración básica de entorno"
+    }
+  ],
+  "priorityConfig": {
+    "alta": {
+      "label": "Alta",
+      "colorClasses": "text-red-600 bg-red-50 border-red-200",
+      "icon": "circle-alert"
+    },
+    "media": {
+      "label": "Media",
+      "colorClasses": "text-yellow-600 bg-yellow-50 border-yellow-200",
+      "icon": "circle"
+    },
+    "baja": {
+      "label": "Baja",
+      "colorClasses": "text-green-600 bg-green-50 border-green-200",
+      "icon": "circle"
+    }
+  }
+} 

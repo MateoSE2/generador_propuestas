@@ -1,0 +1,6 @@
+Phase/Feature,Min H,Max H,Min Cost,Max Cost
+01 Core Authentication,2,2,100,100
+02 Simple Dashboard,3,4,120,160
+03 Simple Parametrization,5,7,220,310
+04 WordPress Integration,3,4,150,200
+05 MVP Infrastructure,4,4,170,170

@@ -1,0 +1,45 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "name": "Exámenes Avanzados",
+      "description": "Implementación de sistema de evaluación técnica avanzada con herramientas especializadas para formación aeronáutica",
+      "duration": "1 sem",
+      "csvKey": "01 Exámenes Avanzados"
+    },
+    {
+      "id": 1,
+      "name": "Reportes Avanzados",
+      "description": "Sistema de analítica y reporting para seguimiento académico integral y toma de decisiones basada en datos",
+      "duration": "1 sem",
+      "csvKey": "02 Reportes Avanzados"
+    },
+    {
+      "id": 2,
+      "name": "Tutor IA Mejorado",
+      "description": "Evolución del asistente inteligente con capacidades avanzadas para formación técnica aeronáutica",
+      "duration": "0.5 sem",
+      "csvKey": "03 Tutor IA Mejorado"
+    },
+    {
+      "id": 3,
+      "name": "Organización",
+      "description": "Herramientas administrativas para gestión flexible de exámenes y asignación de estudiantes",
+      "duration": "0.3 sem",
+      "csvKey": "04 Organización"
+    },
+    {
+      "id": 4,
+      "name": "Responsividad Total",
+      "description": "Implementación de experiencia completa multiplataforma para acceso desde cualquier dispositivo",
+      "duration": "0.2 sem",
+      "csvKey": "05 Responsividad Total"
+    }
+  ],
+  "totalHours": {
+    "min": 125,
+    "max": 158
+  },
+  "totalWeeks": 3,
+  "totalPhases": 5
+} 

@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "totalRequirements": 4,
+    "totalHours": 20.5,
+    "totalAreas": 2,
+    "lastUpdated": "2025-06-30"
+  },
+  "functionalAreas": [
+    {
+      "id": "search-intelligence",
+      "title": "Motor de Búsqueda Inteligente",
+      "description": "Sistema que comprende consultas en lenguaje natural y encuentra productos relevantes",
+      "totalRequirements": 2,
+      "projectPercentage": 50,
+      "requirements": [
+        {
+          "id": "hybrid-search",
+          "title": "Búsqueda híbrida inteligente",
+          "description": "Sistema que combina búsqueda tradicional con inteligencia artificial para comprender consultas como 'cachimba para principiantes' o 'sabor intenso'",
+          "priority": "alta",
+          "developmentAreas": ["Desarrollo Backend", "Integración IA"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "result-ranking",
+          "title": "Ranking inteligente de resultados",
+          "description": "Algoritmo que ordena los productos por relevancia, eliminando duplicados y mostrando primero los más apropiados",
+          "priority": "alta",
+          "developmentAreas": ["Desarrollo Backend"],
+          "priorityColor": "red"
+        }
+      ]
+    },
+    {
+      "id": "user-experience",
+      "title": "Interfaz y Experiencia de Usuario",
+      "description": "Plugin WordPress moderno que facilita la búsqueda de productos",
+      "totalRequirements": 2,
+      "projectPercentage": 50,
+      "requirements": [
+        {
+          "id": "search-interface",
+          "title": "Interfaz de búsqueda moderna",
+          "description": "Barra de búsqueda elegante con modal que muestra resultados de forma atractiva, optimizada para móviles y escritorio",
+          "priority": "alta",
+          "developmentAreas": ["Desarrollo Frontend", "Diseño UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "user-feedback",
+          "title": "Gestión inteligente de errores",
+          "description": "Sistema que informa al usuario de forma clara cuando no hay resultados o hay problemas técnicos, con mensajes útiles en español",
+          "priority": "media",
+          "developmentAreas": ["Desarrollo Frontend", "Diseño UI/UX"],
+          "priorityColor": "yellow"
+        }
+      ]
+    }
+  ],
+  "developmentAreas": [
+    {
+      "name": "Desarrollo Backend",
+      "description": "Sistema de búsqueda inteligente y procesamiento de datos",
+      "color": "blue"
+    },
+    {
+      "name": "Desarrollo Frontend", 
+      "description": "Interfaz de usuario y plugin WordPress",
+      "color": "green"
+    },
+    {
+      "name": "Integración IA",
+      "description": "Conexión con servicios de inteligencia artificial",
+      "color": "purple"
+    },
+    {
+      "name": "Diseño UI/UX",
+      "description": "Diseño visual y experiencia de usuario",
+      "color": "pink"
+    },
+    {
+      "name": "Testeo",
+      "description": "Pruebas de funcionamiento y calidad",
+      "color": "orange"
+    },
+    {
+      "name": "Reuniones",
+      "description": "Coordinación y entrega de proyecto",
+      "color": "gray"
+    }
+  ],
+  "priorityConfig": {
+    "alta": {
+      "label": "Alta",
+      "colorClasses": "text-red-600 bg-red-50 border-red-200",
+      "icon": "circle-alert"
+    },
+    "media": {
+      "label": "Media", 
+      "colorClasses": "text-yellow-600 bg-yellow-50 border-yellow-200",
+      "icon": "circle"
+    },
+    "baja": {
+      "label": "Baja",
+      "colorClasses": "text-green-600 bg-green-50 border-green-200", 
+      "icon": "circle"
+    }
+  }
+} 

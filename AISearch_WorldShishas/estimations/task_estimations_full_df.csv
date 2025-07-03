@@ -1,0 +1,17 @@
+Phase/Feature,Type,Task,Min H,Max H,Min Cost,Max Cost
+01 Fundación Inicial,CTO/Arquitectura,Extensión Django byNeural para endpoint híbrido,1.0,1.5,50.0,75.0
+01 Fundación Inicial,Diseño UI/UX,Wireframes modal búsqueda y componentes,1.5,2.0,60.0,80.0
+01 Fundación Inicial,Desarrollo Frontend,Setup inicial React/TypeScript WordPress plugin,1.0,1.5,40.0,60.0
+01 Fundación Inicial,Reuniones,Kickoff técnico y validación arquitectura,0.5,1.0,0.0,0.0
+02 API de Búsqueda Híbrida,Desarrollo Backend,Implementar lógica búsqueda híbrida y scoring,1.5,2.0,75.0,100.0
+03 Plugin de Búsqueda WordPress,Desarrollo Frontend,Componente barra búsqueda responsive,1.5,2.0,60.0,80.0
+03 Plugin de Búsqueda WordPress,Desarrollo Frontend,Modal con backdrop y estados de carga,1.5,2.0,60.0,80.0
+03 Plugin de Búsqueda WordPress,Desarrollo Frontend,Integración API y manejo respuestas,1.0,1.5,40.0,60.0
+03 Plugin de Búsqueda WordPress,Diseño UI/UX,Estilos encapsulados y mobile-first,1.0,1.5,40.0,60.0
+04 Optimización de Resultados,Desarrollo Backend,Implementar weighted scoring (60/40),1.0,1.5,50.0,75.0
+04 Optimización de Resultados,Desarrollo Backend,Lógica deduplicación y ranking,0.5,1.0,25.0,50.0
+05 Manejo de Errores y Feedback,Desarrollo Frontend,Estados error y retry automático,1.0,1.5,40.0,60.0
+06 Optimización de Rendimiento,Desarrollo Frontend,WordPress transients y lazy loading,0.5,1.0,20.0,40.0
+99 Finalización,Testeo,Integración end-to-end y cross-browser,1.5,2.0,52.5,70.0
+99 Finalización,Desarrollo Frontend,Build plugin ZIP y configuración admin,1.0,1.5,40.0,60.0
+99 Finalización,Reuniones,Demo y hand-off cliente,0.5,1.0,0.0,0.0
