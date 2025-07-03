@@ -1,8 +1,8 @@
 Type,Min H,Max H,Min Cost,Max Cost
-CTO/Arquitectura,217.0,272.0,5425.0,6800.0
-Desarrollo Backend,549.0,702.0,13725.0,17550.0
-Desarrollo Frontend,118.0,152.0,2360.0,3040.0
-Diseño UI/UX,40.5,52.0,810.0,1040.0
-Prompting,79.0,99.0,1382.5,1732.5
-Reuniones,32.0,43.0,0.0,0.0
-Testeo,134.0,173.0,2345.0,3027.5
+CTO/Arquitectura,109,134,5450,6700
+Desarrollo Backend,428,535,21400,26750
+Desarrollo Frontend,77,99,3080,3960
+Diseño UI/UX,14,18,560,720
+Prompting,79,99,2765,3465
+Reuniones,26,35,0,0
+Testeo,50,64,1750,2240

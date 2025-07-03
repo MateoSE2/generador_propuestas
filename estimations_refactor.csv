@@ -3,18 +3,17 @@ Phase/Feature,Type,Task,Min H,Max H
 01 Infraestructura Voz,Desarrollo Backend,VOICE-001.2 - Acquire Spanish phone numbers,1,2
 01 Infraestructura Voz,Desarrollo Backend,VOICE-001.3 - Configure webhook endpoints for call handling,3,4
 01 Infraestructura Voz,Desarrollo Backend,VOICE-001.4 - Implement basic call routing and IVR structure,5,6
-01 Infraestructura Voz,CTO/Arquitectura,VOICE-001.5 - Set up call recording with GDPR compliance,5,6
+01 Infraestructura Voz,CTO/Arquitectura,VOICE-001.5 - Set up call recording with GDPR compliance,6,7
 01 Infraestructura Voz,Desarrollo Backend,VOICE-001.6 - Configure Media Streams for real-time audio processing,4,5
-01 Infraestructura Voz,Desarrollo Backend,VOICE-002.1 - Integrate Google Cloud STT with Spanish telephony model,5,6
-01 Infraestructura Voz,Desarrollo Backend,VOICE-002.2 - Implement real-time streaming transcription,6,8
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.1 - Integrate Google Cloud STT with Spanish telephony model,7,8
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.2 - Implement real-time streaming transcription,8,10
 01 Infraestructura Voz,Desarrollo Backend,VOICE-002.3 - Configure Azure Neural TTS with Spanish voices,4,5
-01 Infraestructura Voz,Desarrollo Backend,VOICE-002.4 - Optimize audio quality and latency,8,10
+01 Infraestructura Voz,Desarrollo Backend,VOICE-002.4 - Optimize audio quality and latency,10,12
 01 Infraestructura Voz,Desarrollo Backend,VOICE-002.5 - Implement audio buffering and error handling,5,6
 01 Infraestructura Voz,Desarrollo Backend,VOICE-002.6 - Set up monitoring for speech quality metrics,3,4
 01 Infraestructura Voz,Desarrollo Backend,VOICE-003.1 - Implement voice activity detection,5,6
 01 Infraestructura Voz,Desarrollo Backend,VOICE-003.3 - Configure DTMF tone detection for fallback navigation,2,3
-01 Infraestructura Voz,Desarrollo Backend,VOICE-003.5 - Add multi-tenant audio routing per clinic,5,6
-01 Infraestructura Voz,Desarrollo Backend,VOICE-004.1 - Implement advanced voice processing optimization,10,10
+01 Infraestructura Voz,Desarrollo Backend,VOICE-003.5 - Add multi-tenant audio routing per clinic,6,7
 02 Gestión Conversacional,Prompting,CONV-001.1 - Set up OpenAI GPT-4 with veterinary system prompts,8,10
 02 Gestión Conversacional,Prompting,CONV-001.2 - Create Spanish veterinary terminology and context database,15,20
 02 Gestión Conversacional,Desarrollo Backend,CONV-001.3 - Implement intent classification,5,6
@@ -31,15 +30,14 @@ Phase/Feature,Type,Task,Min H,Max H
 02 Gestión Conversacional,Desarrollo Backend,CONV-003.2 - Implement dynamic content integration,6,8
 02 Gestión Conversacional,Prompting,CONV-003.3 - Add personality and tone consistency for veterinary context,8,10
 02 Gestión Conversacional,Desarrollo Backend,CONV-003.4 - Create SSML markup for natural speech patterns,3,4
-03 Sistema Citas,CTO/Arquitectura,APPT-001.1 - Research and select calendar API,6,8
+03 Sistema Citas,CTO/Arquitectura,APPT-001.1 - Research and select calendar API,8,10
 03 Sistema Citas,Desarrollo Backend,APPT-001.2 - Implement calendar authentication and permissions,4,5
-03 Sistema Citas,Desarrollo Backend,APPT-001.3 - Create availability checking with time slot algorithms,6,8
-03 Sistema Citas,Desarrollo Backend,APPT-001.4 - Develop conflict detection and resolution logic,7,9
-03 Sistema Citas,Desarrollo Backend,APPT-001.5 - Implement appointment creation with metadata,5,6
-03 Sistema Citas,Desarrollo Backend,APPT-002.1 - Create multi-step appointment booking conversation flow,8,10
-03 Sistema Citas,Desarrollo Backend,APPT-002.2 - Implement pet identification and service selection,5,6
+03 Sistema Citas,Desarrollo Backend,APPT-001.3 - Create availability checking with time slot algorithms,8,10
+03 Sistema Citas,Desarrollo Backend,APPT-001.4 - Develop conflict detection and resolution logic,10,12
+03 Sistema Citas,Desarrollo Backend,APPT-001.5 - Implement appointment creation with metadata,6,7
+03 Sistema Citas,Desarrollo Backend,APPT-002.1 - Create multi-step appointment booking conversation flow,12,15
+03 Sistema Citas,Desarrollo Backend,APPT-002.2 - Implement pet identification and service selection,6,7
 03 Sistema Citas,Desarrollo Backend,APPT-002.4 - Add confirmation process with appointment details,4,5
-03 Sistema Citas,Desarrollo Backend,APPT-003.1 - Implement advanced appointment system backend,20,20
 04 Gestión Datos,Desarrollo Backend,DATA-001.2 - Implement client and pet data models with encryption,6,8
 04 Gestión Datos,Desarrollo Backend,DATA-001.3 - Create data access layer with audit logging,7,9
 04 Gestión Datos,Desarrollo Backend,DATA-002.1 - Develop caller identification system,6,8
@@ -69,11 +67,10 @@ Phase/Feature,Type,Task,Min H,Max H
 08 Design UX/UI,Diseño UI/UX,UX-002 - Basic dashboard user interface design,5,6
 08 Design UX/UI,Diseño UI/UX,UX-003 - Basic voice personality and tone design,2,3
 08 Design UX/UI,Diseño UI/UX,UX-004 - Simple emergency triage logic design,3,4
-09 Deployment,CTO/Arquitectura,DEPLOY-001 - Production infrastructure setup,16,20
-09 Deployment,CTO/Arquitectura,DEPLOY-002 - CI/CD pipeline configuration,10,12
-09 Deployment,CTO/Arquitectura,DEPLOY-003 - Basic monitoring and logging setup,8,10
-09 Deployment,CTO/Arquitectura,DEPLOY-004 - Load balancing and auto-scaling configuration,12,14
-09 Deployment,Desarrollo Backend,DEPLOY-005 - Advanced deployment backend optimization,15,15
+09 Deployment,CTO/Arquitectura,DEPLOY-001 - Production infrastructure setup,20,25
+09 Deployment,CTO/Arquitectura,DEPLOY-002 - CI/CD pipeline configuration,12,15
+09 Deployment,CTO/Arquitectura,DEPLOY-003 - Basic monitoring and logging setup,10,12
+09 Deployment,CTO/Arquitectura,DEPLOY-004 - Load balancing and auto-scaling configuration,15,17
 10 Project Management,Reuniones,PM-001 - Sprint planning and daily standups,1,2
 10 Project Management,Reuniones,PM-002 - Weekly stakeholder updates,1,1
 10 Project Management,Reuniones,PM-003 - Monthly retrospectives and planning,3,4

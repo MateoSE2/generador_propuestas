@@ -24,26 +24,26 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.width', None)      # NO limitar el ancho
 
 # ── 2. Calcular costes ─────────────────────────────────────────────────────────
-# cost = {
-#     "Desarrollo Frontend": 40,
-#     "Diseño UI/UX":        40,
-#     "CTO/Arquitectura":    50,
-#     "Desarrollo Backend":  50,
-#     "Prompting":           35,
-#     "Testeo":              35,
-#     "Reuniones":            0
-# }
-
-#cost/2
 cost = {
-    "Desarrollo Frontend": 20,
-    "Diseño UI/UX":        20,
-    "CTO/Arquitectura":    25,
-    "Desarrollo Backend":  25,
-    "Prompting":           17.5,
-    "Testeo":              17.5,
+    "Desarrollo Frontend": 40,
+    "Diseño UI/UX":        40,
+    "CTO/Arquitectura":    50,
+    "Desarrollo Backend":  50,
+    "Prompting":           35,
+    "Testeo":              35,
     "Reuniones":            0
 }
+
+#cost/2
+# cost = {
+#     "Desarrollo Frontend": 20,
+#     "Diseño UI/UX":        20,
+#     "CTO/Arquitectura":    25,
+#     "Desarrollo Backend":  25,
+#     "Prompting":           17.5,
+#     "Testeo":              17.5,
+#     "Reuniones":            0
+# }
 
 df["Min Cost"] = df["Min H"] * df["Type"].map(cost)
 df["Max Cost"] = df["Max H"] * df["Type"].map(cost)
