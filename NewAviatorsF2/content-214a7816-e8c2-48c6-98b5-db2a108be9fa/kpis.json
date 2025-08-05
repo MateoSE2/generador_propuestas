@@ -1,0 +1,117 @@
+{
+  "title": "KPIs del Proyecto",
+  "subtitle": "Métricas clave que demuestran el impacto y valor esperado de la Fase 2 de NewAviators para estudiantes e instructores de aviación",
+  "kpis": [
+    {
+      "id": "dual-license-support",
+      "icon": "users",
+      "value": "2",
+      "title": "Tipos de Licencia",
+      "description": "Soporte completo para licencias ATPL y PPL en una plataforma unificada",
+      "color": "primary"
+    },
+    {
+      "id": "study-efficiency",
+      "icon": "trending-up",
+      "value": "40%",
+      "title": "Mejora en Eficiencia",
+      "description": "Aumento en eficiencia de estudio con herramientas personalizadas y organización avanzada",
+      "color": "primary"
+    },
+    {
+      "id": "instructor-productivity",
+      "icon": "clock",
+      "value": "50%",
+      "title": "Productividad Instructores",
+      "description": "Reducción en tiempo de gestión administrativa gracias a herramientas automatizadas",
+      "color": "primary"
+    },
+    {
+      "id": "user-satisfaction",
+      "icon": "percent",
+      "value": "90%+",
+      "title": "Satisfacción Usuario",
+      "description": "Estudiantes satisfechos con las nuevas herramientas de estudio y experiencia mejorada",
+      "color": "primary"
+    },
+    {
+      "id": "mobile-accessibility",
+      "icon": "target",
+      "value": "100%",
+      "title": "Accesibilidad Móvil",
+      "description": "Funcionalidades optimizadas para estudio en dispositivos móviles y tablets",
+      "color": "primary"
+    },
+    {
+      "id": "collaborative-learning",
+      "icon": "star",
+      "value": "85%",
+      "title": "Aprendizaje Colaborativo",
+      "description": "Estudiantes que utilizan activamente las funciones de comentarios y estudio grupal",
+      "color": "primary"
+    }
+  ],
+  "summary": {
+    "title": "Métricas de Impacto Educativo",
+    "description": "Estos KPIs han sido diseñados específicamente para medir el impacto de las nuevas funcionalidades en la experiencia educativa de aviación. Cada métrica refleja objetivos cuantificables que demuestran la mejora en la calidad del aprendizaje y la eficiencia operativa de la plataforma."
+  },
+  "icons": {
+    "users": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",
+        "M22 21v-2a4 4 0 0 0-3-3.87",
+        "M16 3.13a4 4 0 0 1 0 7.75"
+      ],
+      "circles": [
+        { "cx": "9", "cy": "7", "r": "4" }
+      ]
+    },
+    "trending-up": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 7 22 7 22 13"
+      ],
+      "polylines": [
+        "22 7 13.5 15.5 8.5 10.5 2 17",
+        "16 7 22 7 22 13"
+      ]
+    },
+    "percent": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "lines": [
+        { "x1": "19", "x2": "5", "y1": "5", "y2": "19" }
+      ],
+      "circles": [
+        { "cx": "6.5", "cy": "6.5", "r": "2.5" },
+        { "cx": "17.5", "cy": "17.5", "r": "2.5" }
+      ]
+    },
+    "clock": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "circles": [
+        { "cx": "12", "cy": "12", "r": "10" }
+      ],
+      "polylines": [
+        "12 6 12 12 16 14"
+      ]
+    },
+    "target": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "circles": [
+        { "cx": "12", "cy": "12", "r": "10" },
+        { "cx": "12", "cy": "12", "r": "6" },
+        { "cx": "12", "cy": "12", "r": "2" }
+      ]
+    },
+    "star": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+      ]
+    }
+  }
+}

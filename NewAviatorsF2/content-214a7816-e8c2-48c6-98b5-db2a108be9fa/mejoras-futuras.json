@@ -1,0 +1,83 @@
+{
+  "title": "Mejoras Futuras",
+  "categories": {
+    "licencias": "Nuevas Licencias",
+    "herramientas": "Herramientas Avanzadas",
+    "integraciones": "Integraciones",
+    "mejoras": "Mejoras Técnicas"
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "[Licencias] Banco de Preguntas CPL",
+      "description": "Incorporación del banco de preguntas para Licencia de Piloto Comercial (CPL) con preguntas específicas y simuladores avanzados",
+      "category": "licencias"
+    },
+    {
+      "id": 2,
+      "title": "[Licencias] Soporte para Habilitaciones IR/ME",
+      "description": "Módulos especializados para habilitaciones de vuelo por instrumentos (IR) y multimotor (ME) con simulaciones específicas",
+      "category": "licencias"
+    },
+    {
+      "id": 3,
+      "title": "[Herramientas] Simulador de Vuelo Integrado",
+      "description": "Simulador básico de vuelo embebido en la plataforma para práctica de procedimientos y navegación",
+      "category": "herramientas"
+    },
+    {
+      "id": 4,
+      "title": "[Herramientas] IA Tutora Personalizada",
+      "description": "Sistema de inteligencia artificial que analiza el progreso del estudiante y ofrece recomendaciones personalizadas de estudio",
+      "category": "herramientas"
+    },
+    {
+      "id": 5,
+      "title": "[Herramientas] Generador de Exámenes IA",
+      "description": "Sistema que genera automáticamente exámenes adaptativos basados en el rendimiento histórico del estudiante",
+      "category": "herramientas"
+    },
+    {
+      "id": 6,
+      "title": "[Herramientas] App Móvil Nativa",
+      "description": "Aplicaciones iOS y Android con funcionalidad offline para estudio sin conexión y sincronización automática",
+      "category": "herramientas"
+    },
+    {
+      "id": 7,
+      "title": "[Integraciones] Conectores LMS Externos",
+      "description": "Integración con plataformas LMS como Moodle y Blackboard para escuelas de aviación que usen sistemas múltiples",
+      "category": "integraciones"
+    },
+    {
+      "id": 8,
+      "title": "[Integraciones] API para Escuelas",
+      "description": "API pública que permita a escuelas de aviación integrar NewAviators con sus sistemas internos de gestión",
+      "category": "integraciones"
+    },
+    {
+      "id": 9,
+      "title": "[Integraciones] Sincronización con Autoridades",
+      "description": "Conexión directa con bases de datos de autoridades aeronáuticas para actualizaciones automáticas de normativas",
+      "category": "integraciones"
+    },
+    {
+      "id": 10,
+      "title": "[Mejoras] Análisis Predictivo",
+      "description": "Sistema de machine learning que predice probabilidades de éxito en exámenes oficiales basado en el rendimiento de práctica",
+      "category": "mejoras"
+    },
+    {
+      "id": 11,
+      "title": "[Mejoras] Realidad Aumentada",
+      "description": "Visualización de instrumentos de cabina y procedimientos usando AR para práctica inmersiva en dispositivos móviles",
+      "category": "mejoras"
+    },
+    {
+      "id": 12,
+      "title": "[Mejoras] Gamificación Avanzada",
+      "description": "Sistema completo de logros, rankings, competiciones entre escuelas y recompensas para motivar el estudio continuado",
+      "category": "mejoras"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+Phase/Feature,Min H,Max H,Min Cost,Max Cost
+01 Banco de Preguntas PPL,6.7,11.6,304.0,530.0
+02 Carpetas para Exámenes,6.3,10.0,280.0,450.0
+03 Creación de Preguntas por Instructores,5.0,7.6000000000000005,219.0,334.0
+04 Editar Exámenes Existentes,3.8,5.2,175.0,238.0
+05 Modo Oscuro,3.8,5.2,155.0,214.0
+06 Navegación por Teclado,2.2,3.2,87.0,126.0
+07 E6B Integrado,3.4,4.8,135.0,190.0
+08 Anotaciones Personales,2.2,3.4000000000000004,95.0,151.0
+09 Flags Multicolor,2.6,3.4,107.0,139.0
+10 Comentarios Públicos,5.0,6.800000000000001,223.0,302.0
+11 Vista Previa en Progress Test,1.4,1.8,55.0,71.0
+12 Instructores Realizando Tests,1.8,2.6,79.0,115.0
+13 Gestión de Errores al Crear Usuario,1.4000000000000001,2.2,63.0,99.0
+14 Ordenación y Filtros en Paginación,1.8,2.6,79.0,115.0
+15 Editar Perfiles,1.8,2.6,79.0,115.0
+16 Información Adicional en Lista,1.0,1.8,43.0,79.0
+17 Métricas Revisadas,2.6,3.6,115.0,158.0
+18 Historial Completo de Alumno,1.0,1.4,47.0,67.0
+19 Reportes PDF Mejorados,1.4,1.8,67.0,87.0
+20 Permisos en Exámenes,1.4,1.8,67.0,87.0
+21 Selector de Preguntas Mejorado,2.2,3.0,87.0,119.0
+22 Códigos de Colores y Aleatoriedad,1.8,2.6,79.0,115.0
+23 Ordenación de Syllabus,1.7999999999999998,2.6,75.0,111.0
+24 Menú Responsive,1.0,1.4,39.0,55.0
+25 Selector Mobile,1.4,1.8,55.0,71.0
+26 Reuniones y Coordinación,1.6,3.2,0.0,0.0

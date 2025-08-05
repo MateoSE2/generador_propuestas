@@ -1,0 +1,19 @@
+{
+  "title": "NewAviators Fase 2 - Funcionalidades Avanzadas",
+  "date": "5 de agosto de 2025",
+  "location": "Terrassa, España",
+  "metaTitle": "Propuesta para NewAviators Fase 2",
+  "metaDescription": "Propuesta detallada para el desarrollo de funcionalidades avanzadas en la plataforma educativa de aviación NewAviators.",
+  "sections": {
+    "header": true,
+    "hero": true,
+    "description": true,
+    "requirements": true,
+    "methodology": false,
+    "phases": true,
+    "budget": true,
+    "kpis": true,
+    "mockup": false,
+    "footer": true
+  }
+}

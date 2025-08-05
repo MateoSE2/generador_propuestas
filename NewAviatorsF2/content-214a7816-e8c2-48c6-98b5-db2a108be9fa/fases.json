@@ -1,0 +1,120 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "name": "Banco de Preguntas PPL",
+      "description": "Incorporación completa del banco de preguntas PPL con abstracción del sistema de licencias para soporte unificado ATPL/PPL",
+      "duration": "1-2 sem",
+      "csvKey": "01 Banco de Preguntas PPL",
+      "totalHours": {
+        "min": 6.7,
+        "max": 11.6
+      }
+    },
+    {
+      "id": 1,
+      "name": "Carpetas para Exámenes",
+      "description": "Sistema de organización jerárquica de exámenes con carpetas compartidas y permisos granulares para instructores",
+      "duration": "1-2 sem",
+      "csvKey": "02 Carpetas para Exámenes",
+      "totalHours": {
+        "min": 6.3,
+        "max": 10.0
+      }
+    },
+    {
+      "id": 2,
+      "name": "Creación de Preguntas por Instructores",
+      "description": "Herramienta para que instructores puedan crear y gestionar preguntas personalizadas con editor completo",
+      "duration": "1 sem",
+      "csvKey": "03 Creación de Preguntas por Instructores",
+      "totalHours": {
+        "min": 5.0,
+        "max": 7.6
+      }
+    },
+    {
+      "id": 3,
+      "name": "Mejoras de Experiencia de Usuario",
+      "description": "Modo oscuro, navegación por teclado, optimizaciones responsive y mejoras visuales generales",
+      "duration": "1-2 sem",
+      "csvKey": "05 Modo Oscuro,06 Navegación por Teclado,24 Menú Responsive,25 Selector Mobile",
+      "totalHours": {
+        "min": 8.4,
+        "max": 11.6
+      }
+    },
+    {
+      "id": 4,
+      "name": "Herramientas de Estudio Avanzadas",
+      "description": "E6B integrado, anotaciones personales, flags multicolor y comentarios públicos para mejorar el estudio colaborativo",
+      "duration": "1-2 sem",
+      "csvKey": "07 E6B Integrado,08 Anotaciones Personales,09 Flags Multicolor,10 Comentarios Públicos",
+      "totalHours": {
+        "min": 13.2,
+        "max": 18.4
+      }
+    },
+    {
+      "id": 5,
+      "name": "Funcionalidades para Instructores",
+      "description": "Edición de exámenes, permisos refinados, vistas previas mejoradas y herramientas de gestión avanzada",
+      "duration": "1 sem",
+      "csvKey": "04 Editar Exámenes Existentes,11 Vista Previa en Progress Test,12 Instructores Realizando Tests,20 Permisos en Exámenes,21 Selector de Preguntas Mejorado",
+      "totalHours": {
+        "min": 11.6,
+        "max": 16.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "Gestión de Usuarios y Administración",
+      "description": "Mejoras en gestión de errores, ordenación, filtros, edición de perfiles e información adicional en listados",
+      "duration": "1 sem",
+      "csvKey": "13 Gestión de Errores al Crear Usuario,14 Ordenación y Filtros en Paginación,15 Editar Perfiles,16 Información Adicional en Lista",
+      "totalHours": {
+        "min": 6.0,
+        "max": 9.2
+      }
+    },
+    {
+      "id": 7,
+      "name": "Métricas y Reportes",
+      "description": "Revisión de métricas, historial completo de alumnos, reportes PDF mejorados y optimizaciones de visualización",
+      "duration": "1 sem",
+      "csvKey": "17 Métricas Revisadas,18 Historial Completo de Alumno,19 Reportes PDF Mejorados",
+      "totalHours": {
+        "min": 5.0,
+        "max": 6.8
+      }
+    },
+    {
+      "id": 8,
+      "name": "Mejoras de Interfaz y Organización",
+      "description": "Códigos de colores, aleatoriedad mejorada, ordenación de syllabus y optimizaciones finales de UI",
+      "duration": "1 sem",
+      "csvKey": "22 Códigos de Colores y Aleatoriedad,23 Ordenación de Syllabus",
+      "totalHours": {
+        "min": 3.6,
+        "max": 5.2
+      }
+    },
+    {
+      "id": 9,
+      "name": "Coordinación y Cierre",
+      "description": "Reuniones de seguimiento, coordinación del proyecto y revisión final de todas las funcionalidades implementadas",
+      "duration": "Durante todo el proyecto",
+      "csvKey": "26 Reuniones y Coordinación",
+      "totalHours": {
+        "min": 1.6,
+        "max": 3.2
+      }
+    }
+  ],
+  "totalHours": {
+    "min": 66.4,
+    "max": 98.0
+  },
+  "totalWeeks": 10,
+  "totalPhases": 10
+}

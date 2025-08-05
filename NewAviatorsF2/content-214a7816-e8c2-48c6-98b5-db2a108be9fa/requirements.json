@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "totalRequirements": 31,
+    "totalHours": 66.4,
+    "totalAreas": 10,
+    "lastUpdated": "2025-08-05",
+    "location": "Terrassa, España"
+  },
+  "functionalAreas": [
+    {
+      "id": "banco-licencias",
+      "title": "Banco de Preguntas y Licencias",
+      "description": "Ampliación del sistema para soporte de múltiples tipos de licencias",
+      "totalRequirements": 3,
+      "projectPercentage": 17,
+      "requirements": [
+        {
+          "id": "abstraccion-licencias",
+          "title": "Abstracción Sistema de Licencias",
+          "description": "Refactorización completa del modelo de licencias para soporte unificado de ATPL y PPL con migración de datos",
+          "priority": "alta",
+          "developmentAreas": ["Arquitectura", "Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "banco-ppl",
+          "title": "Integración Banco PPL",
+          "description": "Incorporación completa del banco de preguntas PPL con endpoints específicos y filtrado dinámico",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "selector-licencias",
+          "title": "Selector de Licencias",
+          "description": "Interfaz global para cambio de contexto entre tipos de licencia con estado persistente",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        }
+      ]
+    },
+    {
+      "id": "organizacion-examenes",
+      "title": "Organización y Gestión de Exámenes",
+      "description": "Herramientas avanzadas para organización y gestión de exámenes",
+      "totalRequirements": 4,
+      "projectPercentage": 19,
+      "requirements": [
+        {
+          "id": "carpetas-examenes",
+          "title": "Sistema de Carpetas",
+          "description": "Organización jerárquica de exámenes con carpetas compartidas y sistema de permisos granular",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "edicion-examenes",
+          "title": "Edición de Exámenes",
+          "description": "Capacidad de editar exámenes existentes con validaciones de estado y restricciones apropiadas",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "selector-mejorado",
+          "title": "Selector de Preguntas Mejorado",
+          "description": "Interfaz mejorada para selección de preguntas con vista previa completa y selección masiva",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "permisos-examenes",
+          "title": "Permisos Refinados",
+          "description": "Sistema de permisos mejorado con distinción entre instructor y administrador",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "herramientas-estudio",
+      "title": "Herramientas de Estudio Avanzadas",
+      "description": "Funcionalidades especializadas para optimizar el estudio de aviación",
+      "totalRequirements": 6,
+      "projectPercentage": 20,
+      "requirements": [
+        {
+          "id": "e6b-integrado",
+          "title": "Calculadora E6B Nativa",
+          "description": "Calculadora E6B completamente integrada con funciones aeronáuticas específicas y acceso desde exámenes",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "anotaciones-personales",
+          "title": "Sistema de Anotaciones",
+          "description": "Herramienta para que estudiantes añadan notas privadas a preguntas con editor de texto enriquecido",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "flags-multicolor",
+          "title": "Marcado Multicolor",
+          "description": "Sistema de marcado de preguntas con múltiples colores para clasificación personal y filtrado",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "comentarios-publicos",
+          "title": "Comentarios Colaborativos",
+          "description": "Sistema de comentarios públicos en preguntas con moderación básica para fomentar aprendizaje colaborativo",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "creacion-preguntas",
+          "title": "Creación de Preguntas",
+          "description": "Herramienta para instructores para crear preguntas personalizadas con editor completo y gestión independiente",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "codigos-colores",
+          "title": "Códigos de Color Inteligentes",
+          "description": "Sistema de colores automático basado en porcentaje de acierto con lógica configurable",
+          "priority": "baja",
+          "developmentAreas": ["Frontend", "Backend"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "experiencia-usuario",
+      "title": "Experiencia de Usuario",
+      "description": "Mejoras en accesibilidad, usabilidad y experiencia visual",
+      "totalRequirements": 4,
+      "projectPercentage": 12,
+      "requirements": [
+        {
+          "id": "modo-oscuro",
+          "title": "Tema Oscuro",
+          "description": "Implementación completa de modo oscuro con toggle de usuario y verificación de contraste en toda la aplicación",
+          "priority": "media",
+          "developmentAreas": ["Frontend", "Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "navegacion-teclado",
+          "title": "Navegación por Teclado",
+          "description": "Soporte completo para navegación y operación mediante teclado con indicadores visuales",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "responsive-mobile",
+          "title": "Optimización Móvil",
+          "description": "Mejoras específicas para dispositivos móviles y tablets con componentes optimizados",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "organizacion-syllabus",
+          "title": "Organización de Syllabus",
+          "description": "Sistema de reordenación drag & drop para temas y estructura del syllabus",
+          "priority": "baja",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "funcionalidades-instructores",
+      "title": "Herramientas para Instructores",
+      "description": "Funcionalidades específicas para mejorar la experiencia de los instructores",
+      "totalRequirements": 3,
+      "projectPercentage": 9,
+      "requirements": [
+        {
+          "id": "vista-previa-tests",
+          "title": "Vista Previa Completa",
+          "description": "Visualización completa de preguntas durante la configuración de Progress Tests",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "instructores-tests",
+          "title": "Instructores en Tests",
+          "description": "Capacidad para que instructores realicen tests como estudiantes con permisos apropiados",
+          "priority": "baja",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "green"
+        },
+        {
+          "id": "gestion-avanzada",
+          "title": "Gestión Avanzada",
+          "description": "Herramientas mejoradas de gestión incluyendo información adicional en listados y filtros avanzados",
+          "priority": "baja",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "administracion",
+      "title": "Administración y Gestión",
+      "description": "Mejoras en herramientas administrativas y de gestión",
+      "totalRequirements": 4,
+      "projectPercentage": 9,
+      "requirements": [
+        {
+          "id": "gestion-errores",
+          "title": "Gestión de Errores Mejorada",
+          "description": "Validaciones mejoradas y mensajes de error específicos en creación de usuarios",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "ordenacion-filtros",
+          "title": "Ordenación y Filtros Globales",
+          "description": "Sistema de ordenación y filtrado que aplica al dataset completo, no solo a la página actual",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "edicion-perfiles",
+          "title": "Edición de Perfiles",
+          "description": "Capacidad de editar perfiles de usuario incluyendo cambio de roles con validaciones apropiadas",
+          "priority": "baja",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "green"
+        },
+        {
+          "id": "informacion-adicional",
+          "title": "Información Extendida",
+          "description": "Visualización de información adicional como nombre, apellido y grupo en listados de usuarios",
+          "priority": "baja",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "metricas-reportes",
+      "title": "Métricas y Reportes",
+      "description": "Mejoras en sistema de métricas y generación de reportes",
+      "totalRequirements": 3,
+      "projectPercentage": 8,
+      "requirements": [
+        {
+          "id": "metricas-revisadas",
+          "title": "Optimización de Métricas",
+          "description": "Revisión y mejora de cálculos de métricas con componentes de visualización más claros",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "historial-completo",
+          "title": "Historial Completo",
+          "description": "Visualización de historial completo de alumnos incluyendo exámenes de todos los grupos",
+          "priority": "baja",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "green"
+        },
+        {
+          "id": "reportes-mejorados",
+          "title": "Reportes PDF Mejorados",
+          "description": "Mejoras en generación de PDFs incluyendo nombre del alumno y descarga individual",
+          "priority": "baja",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "green"
+        }
+      ]
+    }
+  ],
+  "priorityConfig": {
+    "alta": {
+      "label": "Alta",
+      "colorClasses": "text-red-600 bg-red-50 border-red-200",
+      "icon": "circle-alert"
+    },
+    "media": {
+      "label": "Media",
+      "colorClasses": "text-yellow-600 bg-yellow-50 border-yellow-200",
+      "icon": "circle-alert"
+    },
+    "baja": {
+      "label": "Baja",
+      "colorClasses": "text-green-600 bg-green-50 border-green-200",
+      "icon": "circle-alert"
+    }
+  },
+  "developmentAreas": [
+    {
+      "id": "arquitectura",
+      "title": "CTO/Arquitectura",
+      "description": "Diseño de sistemas, planificación técnica y decisiones arquitectónicas",
+      "totalHours": 1.0,
+      "projectPercentage": 2
+    },
+    {
+      "id": "backend",
+      "title": "Desarrollo Backend",
+      "description": "APIs, lógica de negocio, base de datos y servicios del servidor",
+      "totalHours": 23.2,
+      "projectPercentage": 35
+    },
+    {
+      "id": "frontend",
+      "title": "Desarrollo Frontend",
+      "description": "Interfaces de usuario, componentes React y experiencia de usuario",
+      "totalHours": 35.6,
+      "projectPercentage": 54
+    },
+    {
+      "id": "testing",
+      "title": "Testing",
+      "description": "Pruebas unitarias, integración y validación de funcionalidades",
+      "totalHours": 5.0,
+      "projectPercentage": 7
+    },
+    {
+      "id": "reuniones",
+      "title": "Coordinación",
+      "description": "Reuniones de seguimiento y coordinación del proyecto",
+      "totalHours": 1.6,
+      "projectPercentage": 2
+    }
+  ]
+}

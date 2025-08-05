@@ -1,0 +1,88 @@
+Phase/Feature,Type,Task,Min H,Max H,Min Cost,Max Cost
+01 Banco de Preguntas PPL,CTO/Arquitectura,Planificar abstracción del sistema de licencias,0.5,0.8,25.0,40.0
+01 Banco de Preguntas PPL,Desarrollo Backend,Refactorizar modelo License para soportar ATPL y PPL,0.8,1.6,40.0,80.0
+01 Banco de Preguntas PPL,Desarrollo Backend,Migración de datos existentes manteniendo integridad,0.8,1.6,40.0,80.0
+01 Banco de Preguntas PPL,Desarrollo Backend,Adaptar modelo de preguntas con license_type y relaciones,0.8,1.2,40.0,60.0
+01 Banco de Preguntas PPL,Desarrollo Backend,Crear endpoints filtrados por tipo de licencia,0.8,1.6,40.0,80.0
+01 Banco de Preguntas PPL,Desarrollo Frontend,Selector de licencia en navegación global,1.2,2.0,48.0,80.0
+01 Banco de Preguntas PPL,Desarrollo Frontend,Filtrado dinámico en interfaces de preguntas y exámenes,1.6,2.4,64.0,96.0
+01 Banco de Preguntas PPL,Testeo,Testing de integridad de datos y endpoints por licencia,0.2,0.4,7.0,14.0
+02 Carpetas para Exámenes,CTO/Arquitectura,Diseñar sistema de carpetas jerárquicas y permisos,0.5,0.8,25.0,40.0
+02 Carpetas para Exámenes,Desarrollo Backend,Crear modelo ExamFolder con jerarquía,0.8,1.6,40.0,80.0
+02 Carpetas para Exámenes,Desarrollo Backend,Sistema de permisos para carpetas con herencia,0.8,1.6,40.0,80.0
+02 Carpetas para Exámenes,Desarrollo Backend,Endpoints CRUD completo para gestión de carpetas,0.8,1.2,40.0,60.0
+02 Carpetas para Exámenes,Desarrollo Frontend,Interfaz de carpetas tipo árbol con drag & drop,2.0,2.8,80.0,112.0
+02 Carpetas para Exámenes,Desarrollo Frontend,Gestión de carpetas con modal de permisos,1.2,1.6,48.0,64.0
+02 Carpetas para Exámenes,Testeo,Testing de jerarquía de permisos y operaciones CRUD,0.2,0.4,7.0,14.0
+03 Creación de Preguntas por Instructores,Desarrollo Backend,Distinción preguntas oficiales/personalizadas en modelo,0.8,1.2,40.0,60.0
+03 Creación de Preguntas por Instructores,Desarrollo Backend,Endpoints CRUD para preguntas personalizadas,1.2,2.0,60.0,100.0
+03 Creación de Preguntas por Instructores,Desarrollo Frontend,Editor de preguntas con formulario y validaciones,1.6,2.4,64.0,96.0
+03 Creación de Preguntas por Instructores,Desarrollo Frontend,Gestión de preguntas del instructor con filtros,1.2,1.6,48.0,64.0
+03 Creación de Preguntas por Instructores,Testeo,Testing de permisos y segregación de datos,0.2,0.4,7.0,14.0
+04 Editar Exámenes Existentes,Desarrollo Backend,Validaciones de edición según estado del examen,1.2,1.6,60.0,80.0
+04 Editar Exámenes Existentes,Desarrollo Backend,Endpoints de edición con verificación de condiciones,1.2,1.6,60.0,80.0
+04 Editar Exámenes Existentes,Desarrollo Frontend,Interfaz de edición con validaciones contextuales,1.2,1.6,48.0,64.0
+04 Editar Exámenes Existentes,Testeo,Testing de casos edge y validaciones de edición,0.2,0.4,7.0,14.0
+05 Modo Oscuro,Desarrollo Backend,Campo theme_preference en perfil de usuario,0.4,0.8,20.0,40.0
+05 Modo Oscuro,Desarrollo Frontend,Sistema de temas con variables CSS claro/oscuro,1.2,1.6,48.0,64.0
+05 Modo Oscuro,Desarrollo Frontend,Aplicar tema a toda la aplicación y verificar contraste,2.0,2.4,80.0,96.0
+05 Modo Oscuro,Testeo,Testing de cambio de tema y persistencia,0.2,0.4,7.0,14.0
+06 Navegación por Teclado,Desarrollo Frontend,Atajos de teclado en módulo de exámenes,1.2,1.6,48.0,64.0
+06 Navegación por Teclado,Desarrollo Frontend,Indicadores visuales de atajos disponibles,0.8,1.2,32.0,48.0
+06 Navegación por Teclado,Testeo,Testing de eventos de teclado y accesibilidad,0.2,0.4,7.0,14.0
+07 E6B Integrado,Desarrollo Frontend,Calculadora E6B nativa con funciones aeronáuticas,2.0,2.8,80.0,112.0
+07 E6B Integrado,Desarrollo Frontend,Integración en plataforma con modal/sidebar,1.2,1.6,48.0,64.0
+07 E6B Integrado,Testeo,Testing de precisión de cálculos y UI,0.2,0.4,7.0,14.0
+08 Anotaciones Personales,Desarrollo Backend,Modelo de anotaciones Usuario-Pregunta-Nota,0.4,0.8,20.0,40.0
+08 Anotaciones Personales,Desarrollo Backend,Endpoints CRUD para notas personales,0.4,0.8,20.0,40.0
+08 Anotaciones Personales,Desarrollo Frontend,Editor de notas con rich text básico,1.2,1.6,48.0,64.0
+08 Anotaciones Personales,Testeo,Testing de CRUD y persistencia de notas,0.2,0.2,7.0,7.0
+09 Flags Multicolor,Desarrollo Backend,Modelo de flags Usuario-Pregunta-Color,0.4,0.4,20.0,20.0
+09 Flags Multicolor,Desarrollo Frontend,Sistema de marcado con selector de colores,1.2,1.6,48.0,64.0
+09 Flags Multicolor,Desarrollo Frontend,Filtros por color en listados de preguntas,0.8,1.2,32.0,48.0
+09 Flags Multicolor,Testeo,Testing de marcado y filtros por color,0.2,0.2,7.0,7.0
+10 Comentarios Públicos,Desarrollo Backend,Modelo de comentarios con sistema de moderación,1.2,1.6,60.0,80.0
+10 Comentarios Públicos,Desarrollo Backend,Endpoints CRUD y moderación de comentarios,1.2,1.6,60.0,80.0
+10 Comentarios Públicos,Desarrollo Frontend,Interfaz de comentarios por pregunta,1.2,1.6,48.0,64.0
+10 Comentarios Públicos,Desarrollo Frontend,Panel de moderación para instructores,1.2,1.6,48.0,64.0
+10 Comentarios Públicos,Testeo,Testing de comentarios y moderación,0.2,0.4,7.0,14.0
+11 Vista Previa en Progress Test,Desarrollo Frontend,Mejorar UI de selección con enunciado completo,1.2,1.6,48.0,64.0
+11 Vista Previa en Progress Test,Testeo,Testing de UI y performance con muchas preguntas,0.2,0.2,7.0,7.0
+12 Instructores Realizando Tests,Desarrollo Backend,Permisos para instructores en tests con rol mixto,0.8,1.2,40.0,60.0
+12 Instructores Realizando Tests,Desarrollo Frontend,Reutilizar componentes de test para instructores,0.8,1.2,32.0,48.0
+12 Instructores Realizando Tests,Testeo,Testing de permisos y reutilización de componentes,0.2,0.2,7.0,7.0
+13 Gestión de Errores al Crear Usuario,Desarrollo Backend,Validaciones mejoradas con mensajes específicos,0.8,1.2,40.0,60.0
+13 Gestión de Errores al Crear Usuario,Desarrollo Frontend,Feedback de errores específicos en formulario,0.4,0.8,16.0,32.0
+13 Gestión de Errores al Crear Usuario,Testeo,Testing de validaciones y mensajes de error,0.2,0.2,7.0,7.0
+14 Ordenación y Filtros en Paginación,Desarrollo Backend,Ordenación global antes de paginar con filtros,0.8,1.2,40.0,60.0
+14 Ordenación y Filtros en Paginación,Desarrollo Frontend,Controles de ordenación con indicadores visuales,0.8,1.2,32.0,48.0
+14 Ordenación y Filtros en Paginación,Testeo,Testing de ordenación y filtros globales,0.2,0.2,7.0,7.0
+15 Editar Perfiles,Desarrollo Backend,Endpoint para cambio de rol con validaciones,0.8,1.2,40.0,60.0
+15 Editar Perfiles,Desarrollo Frontend,Formulario de edición de perfil con selector de rol,0.8,1.2,32.0,48.0
+15 Editar Perfiles,Testeo,Testing de cambio de rol y permisos,0.2,0.2,7.0,7.0
+16 Información Adicional en Lista,Desarrollo Backend,Serializer ampliado con nombre apellido y grupo,0.4,0.8,20.0,40.0
+16 Información Adicional en Lista,Desarrollo Frontend,Columnas adicionales en tabla de usuarios,0.4,0.8,16.0,32.0
+16 Información Adicional en Lista,Testeo,Testing de display de información adicional,0.2,0.2,7.0,7.0
+17 Métricas Revisadas,Desarrollo Backend,Refactor de cálculos y optimización de queries,1.2,1.6,60.0,80.0
+17 Métricas Revisadas,Desarrollo Frontend,Componentes de métricas más claros y precisos,1.2,1.6,48.0,64.0
+17 Métricas Revisadas,Testeo,Testing de precisión de cálculos y visualización,0.2,0.4,7.0,14.0
+18 Historial Completo de Alumno,Desarrollo Backend,Query ampliado para incluir exámenes de todos los grupos,0.8,1.2,40.0,60.0
+18 Historial Completo de Alumno,Testeo,Testing de datos completos en historial,0.2,0.2,7.0,7.0
+19 Reportes PDF Mejorados,Desarrollo Backend,PDF con nombre de alumno y descarga individual,1.2,1.6,60.0,80.0
+19 Reportes PDF Mejorados,Testeo,Testing de generación PDF y datos correctos,0.2,0.2,7.0,7.0
+20 Permisos en Exámenes,Desarrollo Backend,Sistema de permisos refinado instructor/admin,1.2,1.6,60.0,80.0
+20 Permisos en Exámenes,Testeo,Testing de permisos por rol específico,0.2,0.2,7.0,7.0
+21 Selector de Preguntas Mejorado,Desarrollo Frontend,Botón seleccionar todo y selección masiva,0.8,1.2,32.0,48.0
+21 Selector de Preguntas Mejorado,Desarrollo Frontend,Vista previa mejorada con enunciado completo,1.2,1.6,48.0,64.0
+21 Selector de Preguntas Mejorado,Testeo,Testing de selección masiva y preview,0.2,0.2,7.0,7.0
+22 Códigos de Colores y Aleatoriedad,Desarrollo Frontend,Colores por porcentaje de acierto,0.8,1.2,32.0,48.0
+22 Códigos de Colores y Aleatoriedad,Desarrollo Backend,Aleatoriedad mejorada respetando temas,0.8,1.2,40.0,60.0
+22 Códigos de Colores y Aleatoriedad,Testeo,Testing de lógica de colores y distribución,0.2,0.2,7.0,7.0
+23 Ordenación de Syllabus,Desarrollo Backend,Campo order en modelo Topic/Theme,0.4,0.8,20.0,40.0
+23 Ordenación de Syllabus,Desarrollo Frontend,Interfaz drag & drop para reordenar temas,1.2,1.6,48.0,64.0
+23 Ordenación de Syllabus,Testeo,Testing de drag & drop y persistencia,0.2,0.2,7.0,7.0
+24 Menú Responsive,Desarrollo Frontend,Media queries específicas para iPad vertical,0.8,1.2,32.0,48.0
+24 Menú Responsive,Testeo,Testing responsive en iPad,0.2,0.2,7.0,7.0
+25 Selector Mobile,Desarrollo Frontend,Componentes optimizados para móvil,1.2,1.6,48.0,64.0
+25 Selector Mobile,Testeo,Testing de UX móvil,0.2,0.2,7.0,7.0
+26 Reuniones y Coordinación,Reuniones,Sesiones de coordinación y revisión de progreso,1.6,3.2,0.0,0.0
