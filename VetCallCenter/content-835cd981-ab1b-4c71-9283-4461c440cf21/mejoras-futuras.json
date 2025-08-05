@@ -1,0 +1,40 @@
+{
+  "title": "Mejoras Futuras",
+  "items": [
+    {
+      "id": 1,
+      "title": "Recordatorios automáticos por WhatsApp",
+      "description": "Integración con WhatsApp Business API para envío automático de recordatorios de citas, seguimiento post-consulta y notificaciones de vacunación"
+    },
+    {
+      "id": 2,
+      "title": "Análisis predictivo de salud animal",
+      "description": "Sistema de IA que analiza patrones de consultas y síntomas para detectar tendencias de salud y sugerir cuidados preventivos personalizados"
+    },
+    {
+      "id": 3,
+      "title": "Integración multi-plataforma empresarial",
+      "description": "Conectores avanzados con sistemas ERP veterinarios, software de gestión de inventario y plataformas de facturación electrónica"
+    },
+    {
+      "id": 4,
+      "title": "Telemedicina veterinaria integrada",
+      "description": "Plataforma de consultas virtuales con análisis de imágenes por IA para diagnósticos preliminares y triaje remoto"
+    },
+    {
+      "id": 5,
+      "title": "Red multi-clínica y referencias automáticas",
+      "description": "Sistema de red entre clínicas para referencias automáticas de casos especializados y gestión coordinada de tratamientos complejos"
+    },
+    {
+      "id": 6,
+      "title": "Análisis de sentimiento del cliente",
+      "description": "Procesamiento de emociones en conversaciones para detectar niveles de ansiedad o satisfacción y ajustar automáticamente el tono y enfoque"
+    },
+    {
+      "id": 7,
+      "title": "Sistema de inventario inteligente",
+      "description": "Gestión automatizada de medicamentos y suministros con predicción de demanda basada en patrones estacionales y históricos de uso"
+    }
+  ]
+} 

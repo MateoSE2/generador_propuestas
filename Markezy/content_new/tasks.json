@@ -1,0 +1,595 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "name": "Inicialización / Base",
+      "description": "Configuración de arquitectura, entorno Docker, Django multi-tenant, React TypeScript y wireframes UI/UX",
+      "tasks": [
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Configurar arquitectura del proyecto y entorno Docker",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Inicializar proyecto Django con estructura multi-tenant",
+          "minHours": 3.0,
+          "maxHours": 4.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Configurar proyecto React con TypeScript y librería de componentes UI",
+          "minHours": 3.0,
+          "maxHours": 4.0
+        },
+        {
+          "type": "Diseño UI/UX",
+          "title": "Crear wireframes y sistema de diseño para interfaz Lead Magnet",
+          "minHours": 3.0,
+          "maxHours": 4.0
+        },
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Configurar esquema base de datos MySQL con aislamiento de tenants",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Configurar Redis y Celery para procesamiento en segundo plano",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Reuniones",
+          "title": "Sesión técnica de kickoff y revisión de arquitectura",
+          "minHours": 1.0,
+          "maxHours": 2.0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Autenticación de Usuarios",
+      "description": "Sistema JWT multi-tenant con roles, gestión de usuarios y flujos de invitación de agencias",
+      "tasks": [
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar autenticación JWT con control de acceso basado en roles",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Crear sistema de gestión de usuarios multi-tenant",
+          "minHours": 3.0,
+          "maxHours": 5.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Construir interfaz login/logout y rutas protegidas",
+          "minHours": 3.0,
+          "maxHours": 4.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar flujos de invitación de agencias y usuarios",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas de autenticación y autorización",
+          "minHours": 1.0,
+          "maxHours": 2.0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Interfaz Conversacional Lead Magnet",
+      "description": "Chatbot inteligente con gestión de estado, flujo dinámico de preguntas e integración OpenAI",
+      "tasks": [
+        {
+          "type": "Diseño UI/UX",
+          "title": "Diseñar layout de interfaz conversacional y flujo de usuario",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Construir interfaz de chat con historial de mensajes e indicadores",
+          "minHours": 5.0,
+          "maxHours": 7.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Crear gestión de estado de conversación y persistencia",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar lógica de flujo dinámico de preguntas",
+          "minHours": 3.0,
+          "maxHours": 5.0
+        },
+        {
+          "type": "Prompting",
+          "title": "Diseñar prompts conversacionales para calificación de leads en español",
+          "minHours": 3.0,
+          "maxHours": 4.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Integrar API OpenAI para procesamiento de lenguaje natural",
+          "minHours": 3.0,
+          "maxHours": 4.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas de flujo conversacional y gestión de estado",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Motor de Generación de Estrategias IA",
+      "description": "Pipeline de estrategias con metodología SERSEO e integración OpenAI optimizada",
+      "tasks": [
+        {
+          "type": "Prompting",
+          "title": "Desarrollar prompts de metodología SERSEO para generación de estrategias",
+          "minHours": 5.0,
+          "maxHours": 7.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Construir pipeline de generación de estrategias con integración OpenAI",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Implementar interfaz de vista previa de estrategia en vivo",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas de calidad y rendimiento de generación de estrategias",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Gestión de Leads e Integración Clientify",
+      "description": "Dashboard de leads e integración CRM con reintentos automáticos",
+      "tasks": [
+        {
+          "type": "Desarrollo Backend",
+          "title": "Crear modelo de datos de leads y operaciones CRUD básicas",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Construir dashboard de leads con filtrado y búsqueda",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar integración API Clientify con lógica de reintentos",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Añadir vista detalle de lead con historial de conversación",
+          "minHours": 3.0,
+          "maxHours": 4.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas de gestión de leads e integración",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Exportación de Estrategias PDF",
+      "description": "Generación dinámica de PDFs profesionales con branding de agencia y descarga automática",
+      "tasks": [
+        {
+          "type": "Desarrollo Backend",
+          "title": "Configurar librería de generación PDF y motor de plantillas",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Diseño UI/UX",
+          "title": "Diseñar layout profesional PDF con elementos de branding",
+          "minHours": 1.0,
+          "maxHours": 2.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar generación dinámica PDF con contenido de estrategia",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Añadir sistema de configuración de branding de agencia",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Crear interfaz de descarga y compartición de PDF",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas de rendimiento y calidad de generación PDF",
+          "minHours": 1.0,
+          "maxHours": 2.0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Responsive Móvil y Pulido UX",
+      "description": "Optimización para dispositivos móviles, responsive design y mejoras de experiencia de usuario",
+      "tasks": [
+        {
+          "type": "Diseño UI/UX",
+          "title": "Optimizar interfaz para dispositivos tablet y móviles",
+          "minHours": 1.0,
+          "maxHours": 2.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Implementar diseño responsive en todos los componentes",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Añadir estados de carga y mejoras de manejo de errores",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas de compatibilidad multi-dispositivo",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sistema de Usuarios Avanzado",
+      "description": "Gestión granular de permisos, autenticación Google, panel superadmin y CRUD de agencias",
+      "tasks": [
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Diseñar modelo de permisos granular",
+          "minHours": 6.0,
+          "maxHours": 9.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar middleware de permisos",
+          "minHours": 4.5,
+          "maxHours": 7.5
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Crear UI gestión de roles",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Integrar autenticación Google",
+          "minHours": 3.8,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Diseño UI/UX",
+          "title": "Diseñar UI panel superadmin",
+          "minHours": 4.5,
+          "maxHours": 7.5
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar CRUD agencias",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Desarrollar panel superadmin",
+          "minHours": 6.0,
+          "maxHours": 9.0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Gestión de Clientes",
+      "description": "Sistema completo de gestión de clientes con modelo extendido, onboarding y seguimiento",
+      "tasks": [
+        {
+          "type": "Desarrollo Backend",
+          "title": "Diseñar modelo cliente extendido",
+          "minHours": 3.8,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Diseño UI/UX",
+          "title": "Crear UI ficha cliente",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar CRUD cliente",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Desarrollar UI gestión clientes",
+          "minHours": 5.3,
+          "maxHours": 7.5
+        },
+        {
+          "type": "Diseño UI/UX",
+          "title": "Diseñar flujo onboarding",
+          "minHours": 3.8,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar tracking onboarding",
+          "minHours": 3.8,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Crear UI onboarding",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Gestión de Proyectos",
+      "description": "Sistema de proyectos con plantillas setup, Kanban visual y registro de tiempo",
+      "tasks": [
+        {
+          "type": "Desarrollo Backend",
+          "title": "Diseñar modelo proyecto",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar plantillas setup",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Diseño UI/UX",
+          "title": "Diseñar UI Kanban",
+          "minHours": 5.3,
+          "maxHours": 7.5
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar backend Kanban",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Desarrollar frontend Kanban",
+          "minHours": 6.0,
+          "maxHours": 9.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Crear sistema registro tiempo",
+          "minHours": 3.8,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Implementar UI registro tiempo",
+          "minHours": 3.8,
+          "maxHours": 6.0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Comunicación y Soporte",
+      "description": "Chat interno por proyecto, sistema de tickets y videollamadas integradas",
+      "tasks": [
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Diseñar sistema mensajería",
+          "minHours": 5.3,
+          "maxHours": 7.5
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar backend chat",
+          "minHours": 6.0,
+          "maxHours": 9.0
+        },
+        {
+          "type": "Diseño UI/UX",
+          "title": "Crear UI chat",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Desarrollar frontend chat",
+          "minHours": 6.0,
+          "maxHours": 9.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar sistema tickets",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Crear UI tickets",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Integrar videollamadas",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Métricas y KPIs",
+      "description": "Sistema de analytics multinivel con dashboards por rol y filtros avanzados",
+      "tasks": [
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Diseñar modelo analytics",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar agregación datos",
+          "minHours": 5.3,
+          "maxHours": 7.5
+        },
+        {
+          "type": "Diseño UI/UX",
+          "title": "Crear dashboards KPIs",
+          "minHours": 5.3,
+          "maxHours": 7.5
+        },
+        {
+          "type": "Desarrollo Frontend",
+          "title": "Desarrollar UI métricas",
+          "minHours": 6.0,
+          "maxHours": 9.0
+        },
+        {
+          "type": "Desarrollo Backend",
+          "title": "Implementar filtros",
+          "minHours": 3.8,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Testear métricas",
+          "minHours": 3.0,
+          "maxHours": 4.5
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Finalización",
+      "description": "Testing completo, optimización rendimiento, documentación técnica y deployment final",
+      "tasks": [
+        {
+          "type": "Desarrollo Backend",
+          "title": "Configurar entorno de producción y headers de seguridad",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Configurar deployment Docker Swarm",
+          "minHours": 3.0,
+          "maxHours": 4.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas end-to-end de journeys completos de usuario",
+          "minHours": 4.0,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas de rendimiento para conversaciones concurrentes",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Desplegar en VPS IONOS y configurar monitoreo",
+          "minHours": 2.0,
+          "maxHours": 3.0
+        },
+        {
+          "type": "Reuniones",
+          "title": "Sesión final de revisión y entrega",
+          "minHours": 1.0,
+          "maxHours": 2.0
+        },
+        {
+          "type": "Testeo",
+          "title": "Pruebas integración V2",
+          "minHours": 6.0,
+          "maxHours": 9.0
+        },
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Optimización rendimiento",
+          "minHours": 4.5,
+          "maxHours": 6.8
+        },
+        {
+          "type": "CTO/Arquitectura",
+          "title": "Documentación técnica",
+          "minHours": 3.8,
+          "maxHours": 6.0
+        },
+        {
+          "type": "Reuniones",
+          "title": "Sesión entrega V2",
+          "minHours": 2.3,
+          "maxHours": 3.0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "totalPhases": 13,
+    "totalWeeks": 16,
+    "totalHours": {
+      "min": 284.2,
+      "max": 424.5
+    }
+  }
+} 

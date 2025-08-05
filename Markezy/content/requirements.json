@@ -1,9 +1,10 @@
 {
   "metadata": {
-    "totalRequirements": 19,
-    "totalHours": 142,
-    "totalAreas": 9,
-    "lastUpdated": "2025-01-28"
+    "totalRequirements": 27,
+    "totalHours": 284.2,
+    "totalAreas": 11,
+    "lastUpdated": "2024-06-18",
+    "location": "Terrassa, España"
   },
   "functionalAreas": [
     {
@@ -11,7 +12,7 @@
       "title": "Arquitectura e Infraestructura",
       "description": "Configuración base del sistema, contenedores y servicios backend",
       "totalRequirements": 3,
-      "projectPercentage": 12,
+      "projectPercentage": 8,
       "requirements": [
         {
           "id": "docker-infrastructure",
@@ -44,7 +45,7 @@
       "title": "Sistema de Autenticación",
       "description": "Gestión completa de usuarios, roles y control de acceso",
       "totalRequirements": 3,
-      "projectPercentage": 15,
+      "projectPercentage": 10,
       "requirements": [
         {
           "id": "jwt-authentication",
@@ -73,11 +74,68 @@
       ]
     },
     {
+      "id": "sistema-usuarios-v2",
+      "title": "Sistema de Usuarios Avanzado",
+      "description": "Gestión granular de permisos, autenticación social y panel superadmin",
+      "totalRequirements": 7,
+      "projectPercentage": 15,
+      "requirements": [
+        {
+          "id": "permisos-granulares",
+          "title": "Modelo de Permisos Granular",
+          "description": "Diseño e implementación de sistema de permisos detallado por rol y nivel de acceso",
+          "priority": "alta",
+          "developmentAreas": ["Arquitectura", "Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "middleware-permisos",
+          "title": "Middleware de Permisos",
+          "description": "Sistema de verificación de permisos por ruta y acción con control granular",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "ui-gestion-roles",
+          "title": "UI Gestión de Roles",
+          "description": "Interfaz para asignar y editar permisos por rol con gestión visual",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "auth-google",
+          "title": "Autenticación Google",
+          "description": "Integración OAuth2 con Google para facilitar el acceso de usuarios",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "panel-superadmin",
+          "title": "Panel Superadmin",
+          "description": "Interfaz de gestión global de agencias con control centralizado",
+          "priority": "alta",
+          "developmentAreas": ["UI/UX", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "crud-agencias",
+          "title": "CRUD Agencias",
+          "description": "APIs para gestión completa de agencias con datos de plan y licencias",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        }
+      ]
+    },
+    {
       "id": "conversacion",
       "title": "Motor Conversacional",
       "description": "Sistema de chat inteligente con IA para captación de leads",
       "totalRequirements": 3,
-      "projectPercentage": 20,
+      "projectPercentage": 12,
       "requirements": [
         {
           "id": "chat-interface",
@@ -110,7 +168,7 @@
       "title": "Generación de Estrategias IA",
       "description": "Motor de inteligencia artificial para crear estrategias de marketing",
       "totalRequirements": 2,
-      "projectPercentage": 18,
+      "projectPercentage": 10,
       "requirements": [
         {
           "id": "serseo-prompting",
@@ -135,7 +193,7 @@
       "title": "Gestión de Leads",
       "description": "Sistema de captura, almacenamiento y visualización de leads",
       "totalRequirements": 2,
-      "projectPercentage": 12,
+      "projectPercentage": 8,
       "requirements": [
         {
           "id": "lead-data-model",
@@ -160,7 +218,7 @@
       "title": "Integración CRM Clientify",
       "description": "Sincronización automática con sistema CRM existente",
       "totalRequirements": 1,
-      "projectPercentage": 8,
+      "projectPercentage": 5,
       "requirements": [
         {
           "id": "clientify-api",
@@ -177,7 +235,7 @@
       "title": "Exportación de Documentos",
       "description": "Generación de PDFs profesionales con branding personalizado",
       "totalRequirements": 2,
-      "projectPercentage": 8,
+      "projectPercentage": 6,
       "requirements": [
         {
           "id": "pdf-engine",
@@ -198,11 +256,263 @@
       ]
     },
     {
+      "id": "gestion-clientes",
+      "title": "Gestión de Clientes",
+      "description": "Sistema completo de gestión de clientes con onboarding y seguimiento",
+      "totalRequirements": 7,
+      "projectPercentage": 12,
+      "requirements": [
+        {
+          "id": "modelo-cliente",
+          "title": "Modelo Cliente Extendido",
+          "description": "Diseño de modelo de datos de cliente con campos de negocio y relaciones",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "ui-ficha-cliente",
+          "title": "UI Ficha Cliente",
+          "description": "Diseño de formulario y vista detalle de cliente con información completa",
+          "priority": "alta",
+          "developmentAreas": ["UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "crud-cliente",
+          "title": "CRUD Cliente",
+          "description": "APIs para gestión completa de clientes con operaciones CRUD",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "ui-gestion-clientes",
+          "title": "UI Gestión Clientes",
+          "description": "Implementación frontend de alta y edición de clientes",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "flujo-onboarding",
+          "title": "Flujo Onboarding",
+          "description": "Diseño de pasos y estados del proceso de onboarding",
+          "priority": "media",
+          "developmentAreas": ["UI/UX"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "tracking-onboarding",
+          "title": "Tracking Onboarding",
+          "description": "Sistema de seguimiento de progreso del onboarding",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "ui-onboarding",
+          "title": "UI Onboarding",
+          "description": "Interfaz de seguimiento paso a paso del onboarding",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "gestion-proyectos",
+      "title": "Gestión de Proyectos",
+      "description": "Sistema de proyectos con plantillas, Kanban y registro de tiempo",
+      "totalRequirements": 7,
+      "projectPercentage": 12,
+      "requirements": [
+        {
+          "id": "modelo-proyecto",
+          "title": "Modelo Proyecto",
+          "description": "Estructura de datos para proyectos y fases",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "plantillas-setup",
+          "title": "Plantillas Setup",
+          "description": "Sistema de templates de proyecto reutilizables",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "ui-kanban",
+          "title": "UI Kanban",
+          "description": "Diseño de vista kanban de tareas con drag-drop",
+          "priority": "alta",
+          "developmentAreas": ["UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "backend-kanban",
+          "title": "Backend Kanban",
+          "description": "APIs para gestión de estados y drag-drop de tareas",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "frontend-kanban",
+          "title": "Frontend Kanban",
+          "description": "Implementación drag-drop y estados visuales",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "registro-tiempo",
+          "title": "Sistema Registro Tiempo",
+          "description": "Modelo y APIs para tracking de horas por tarea",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "ui-registro-tiempo",
+          "title": "UI Registro Tiempo",
+          "description": "Interfaz para registro de horas por tarea",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "comunicacion",
+      "title": "Comunicación y Soporte",
+      "description": "Sistema de chat interno, tickets y videollamadas",
+      "totalRequirements": 7,
+      "projectPercentage": 12,
+      "requirements": [
+        {
+          "id": "sistema-mensajeria",
+          "title": "Sistema Mensajería",
+          "description": "Arquitectura de chat en tiempo real con WebSocket",
+          "priority": "alta",
+          "developmentAreas": ["Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "backend-chat",
+          "title": "Backend Chat",
+          "description": "Sistema de mensajería con WebSocket y persistencia",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "ui-chat",
+          "title": "UI Chat",
+          "description": "Diseño de interfaz de chat por proyecto",
+          "priority": "alta",
+          "developmentAreas": ["UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "frontend-chat",
+          "title": "Frontend Chat",
+          "description": "Chat funcional con tiempo real y notificaciones",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "sistema-tickets",
+          "title": "Sistema Tickets",
+          "description": "Backend para gestión de incidencias y soporte",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "ui-tickets",
+          "title": "UI Tickets",
+          "description": "Interfaz de gestión de tickets con filtros",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "videollamadas",
+          "title": "Integración Videollamadas",
+          "description": "Sistema de videochat integrado con tickets",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "metricas",
+      "title": "Métricas y KPIs",
+      "description": "Sistema de analytics y dashboards por rol",
+      "totalRequirements": 6,
+      "projectPercentage": 10,
+      "requirements": [
+        {
+          "id": "modelo-analytics",
+          "title": "Modelo Analytics",
+          "description": "Estructura para métricas multinivel por rol",
+          "priority": "alta",
+          "developmentAreas": ["Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "agregacion-datos",
+          "title": "Agregación Datos",
+          "description": "Sistema de cálculo de KPIs y métricas",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "dashboards-kpis",
+          "title": "Dashboards KPIs",
+          "description": "Diseño de paneles por nivel de usuario",
+          "priority": "alta",
+          "developmentAreas": ["UI/UX"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "ui-metricas",
+          "title": "UI Métricas",
+          "description": "Implementación de gráficos y tablas interactivas",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "filtros-metricas",
+          "title": "Filtros Métricas",
+          "description": "Sistema de filtrado multinivel para dashboards",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "test-metricas",
+          "title": "Test Métricas",
+          "description": "Validación de cálculos y rendimiento",
+          "priority": "media",
+          "developmentAreas": ["Testing"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
       "id": "diseno-ux",
       "title": "Diseño y Experiencia de Usuario",
       "description": "Sistema de diseño, responsive y optimización UX",
       "totalRequirements": 2,
-      "projectPercentage": 5,
+      "projectPercentage": 4,
       "requirements": [
         {
           "id": "design-system",
@@ -226,8 +536,8 @@
       "id": "deployment-testing",
       "title": "Despliegue y Testing",
       "description": "Configuración de producción, testing y deployment final",
-      "totalRequirements": 1,
-      "projectPercentage": 12,
+      "totalRequirements": 4,
+      "projectPercentage": 8,
       "requirements": [
         {
           "id": "production-deployment",
@@ -236,6 +546,30 @@
           "priority": "alta",
           "developmentAreas": ["Arquitectura", "Testing"],
           "priorityColor": "red"
+        },
+        {
+          "id": "pruebas-integracion",
+          "title": "Pruebas Integración V2",
+          "description": "Testing completo de nuevas funcionalidades de gestión interna",
+          "priority": "alta",
+          "developmentAreas": ["Testing"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "optimizacion-rendimiento",
+          "title": "Optimización Rendimiento",
+          "description": "Mejoras de performance general y optimización de consultas",
+          "priority": "alta",
+          "developmentAreas": ["Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "documentacion-tecnica",
+          "title": "Documentación Técnica",
+          "description": "Documentación completa de nuevas funcionalidades y APIs",
+          "priority": "media",
+          "developmentAreas": ["Arquitectura"],
+          "priorityColor": "yellow"
         }
       ]
     }
@@ -249,12 +583,56 @@
     "media": {
       "label": "Media",
       "colorClasses": "text-yellow-600 bg-yellow-50 border-yellow-200",
-      "icon": "circle"
+      "icon": "circle-alert"
     },
     "baja": {
       "label": "Baja",
       "colorClasses": "text-green-600 bg-green-50 border-green-200",
-      "icon": "circle"
+      "icon": "circle-alert"
     }
-  }
+  },
+  "developmentAreas": [
+    {
+      "id": "arquitectura",
+      "title": "Arquitectura",
+      "description": "Diseño de sistemas, infraestructura y configuración técnica",
+      "totalHours": 45.3,
+      "projectPercentage": 16
+    },
+    {
+      "id": "backend",
+      "title": "Desarrollo Backend",
+      "description": "APIs, lógica de negocio y servicios del servidor",
+      "totalHours": 98.8,
+      "projectPercentage": 35
+    },
+    {
+      "id": "frontend",
+      "title": "Desarrollo Frontend",
+      "description": "Interfaces de usuario, componentes React y experiencia de usuario",
+      "totalHours": 79.8,
+      "projectPercentage": 28
+    },
+    {
+      "id": "ui-ux",
+      "title": "Diseño UI/UX",
+      "description": "Diseño de interfaces, wireframes y experiencia de usuario",
+      "totalHours": 35.5,
+      "projectPercentage": 12
+    },
+    {
+      "id": "prompting",
+      "title": "Prompting",
+      "description": "Desarrollo de prompts para IA y optimización de modelos",
+      "totalHours": 8.0,
+      "projectPercentage": 3
+    },
+    {
+      "id": "testing",
+      "title": "Testing",
+      "description": "Pruebas unitarias, integración y end-to-end",
+      "totalHours": 17.4,
+      "projectPercentage": 6
+    }
+  ]
 } 

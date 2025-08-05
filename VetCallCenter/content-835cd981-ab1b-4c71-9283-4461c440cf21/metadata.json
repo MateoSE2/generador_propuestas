@@ -1,0 +1,22 @@
+{
+  "title": "Sistema de Asistente de Voz para Clínicas Veterinarias",
+  "date": "23 de junio de 2025",
+  "location": "Terrassa, Barcelona",
+  "metaTitle": "Propuesta para Sistema de Asistente de Voz Veterinario",
+  "metaDescription": "Propuesta detallada para el desarrollo de un sistema de asistente de voz con IA especializado para clínicas veterinarias, incluyendo gestión de llamadas, citas automáticas, marketing y ventas proactivas.",
+  "sections": {
+    "header": true,
+    "hero": true,
+    "description": true,
+    "requirements": true,
+    "methodology": true,
+    "phases": true,
+    "budget": true,
+    "kpis": false,
+    "mockup": true,
+    "footer": true
+  },
+  "mockupLink": "https://lightsteelblue-dog-797675.hostingersite.com/dashboard",
+  "heroLogo": "kovyx.png",
+  "footerLogo": "kovyx.png"
+} 

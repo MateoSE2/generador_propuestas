@@ -1,7 +1,7 @@
 {
   "title": "Markezy - SaaS para Agencias de Marketing",
-  "date": "30 de junio de 2025",
-  "location": "Terrassa, España",
+  "date": "28 de junio de 2025",
+  "location": "Madrid, España",
   "metaTitle": "Propuesta para Markezy",
   "metaDescription": "Propuesta detallada para el desarrollo del SaaS Markezy, una herramienta para agencias de marketing.",
   "sections": {
@@ -9,11 +9,11 @@
     "hero": true,
     "description": true,
     "requirements": true,
-    "methodology": true,
+    "methodology": false,
     "phases": true,
     "budget": true,
     "kpis": true,
     "mockup": false,
-    "footer": false
+    "footer": true
   }
 } 

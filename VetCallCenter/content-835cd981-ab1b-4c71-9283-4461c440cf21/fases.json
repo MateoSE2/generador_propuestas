@@ -1,0 +1,108 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "name": "Infraestructura de Voz",
+      "description": "Configuración de telefonía, integración STT/TTS, optimización de audio y detección de actividad de voz",
+      "duration": "10-12 días",
+      "csvKey": "01 Infraestructura Voz"
+    },
+    {
+      "id": 1,
+      "name": "Gestión Conversacional", 
+      "description": "Desarrollo del motor de IA conversacional, base de datos veterinaria, clasificación de intenciones y flujos de diálogo",
+      "duration": "18-22 días",
+      "csvKey": "02 Gestión Conversacional"
+    },
+    {
+      "id": 2,
+      "name": "Sistema de Citas",
+      "description": "Integración de calendarios, algoritmos de disponibilidad, detección de conflictos y flujo de reserva completo",
+      "duration": "7-9 días",
+      "csvKey": "03 Sistema Citas"
+    },
+    {
+      "id": 3,
+      "name": "Gestión de Datos",
+      "description": "Implementación de modelos de datos, identificación de llamadas, perfiles de clientes y historial de interacciones",
+      "duration": "6-8 días",
+      "csvKey": "04 Gestión Datos"
+    },
+    {
+      "id": 4,
+      "name": "Dashboard Web",
+      "description": "Desarrollo de aplicación React, autenticación, interfaz responsiva, WebSockets y visualización en tiempo real",
+      "duration": "7-9 días",
+      "csvKey": "05 Dashboard Web"
+    },
+    {
+      "id": 5,
+      "name": "Marco de Seguridad",
+      "description": "Implementación de encriptación, autenticación JWT, seguridad de red y configuración de VPC",
+      "duration": "5-6 días",
+      "csvKey": "06 Seguridad"
+    },
+    {
+      "id": 6,
+      "name": "Testing y QA",
+      "description": "Testing unitario, pruebas de integración, pruebas de voz y rendimiento con validación en español",
+      "duration": "6-7 días",
+      "csvKey": "07 Testing QA"
+    },
+    {
+      "id": 7,
+      "name": "Diseño UX/UI",
+      "description": "Diseño de flujos conversacionales, interfaz de usuario, personalidad de voz y lógica de emergencias",
+      "duration": "4-5 días",
+      "csvKey": "08 Design UX/UI"
+    },
+    {
+      "id": 8,
+      "name": "Despliegue",
+      "description": "Configuración de infraestructura de producción, CI/CD, monitoreo y auto-escalado",
+      "duration": "7-8 días",
+      "csvKey": "09 Deployment"
+    },
+    {
+      "id": 9,
+      "name": "Captación Comercial",
+      "description": "Automatización de procesos comerciales por llamada, incluyendo la captación proactiva de clientes",
+      "duration": "15-20 días",
+      "csvKey": "13 Captación Comercial"
+    },
+    {
+      "id": 10,
+      "name": "Marketing Inteligente",
+      "description": "Campañas personalizadas basadas en IA con segmentación automática y análisis predictivo",
+      "duration": "20-25 días",
+      "csvKey": "14 Marketing"
+    },
+    {
+      "id": 11,
+      "name": "Cumplimiento Legal",
+      "description": "Revisiones de cumplimiento GDPR, preparación de acuerdos de procesamiento de datos y políticas de privacidad",
+      "duration": "2-3 días",
+      "csvKey": "11 Legal Compliance"
+    },
+    {
+      "id": 12,
+      "name": "Dominio Veterinario",
+      "description": "Consultas con expertos veterinarios, investigación de terminología en español y análisis de flujos de trabajo de clínicas",
+      "duration": "3-4 días",
+      "csvKey": "12 Veterinary Domain"
+    },
+    {
+      "id": 13,
+      "name": "Gestión del Proyecto",
+      "description": "Planificación de sprints, actualizaciones semanales, retrospectivas y sesiones de demostración",
+      "duration": "Distribuido",
+      "csvKey": "10 Project Management"
+    }
+  ],
+  "totalHours": {
+    "min": 783,
+    "max": 984
+  },
+  "totalWeeks": 24,
+  "totalPhases": 14
+} 

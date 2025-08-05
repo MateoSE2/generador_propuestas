@@ -1,0 +1,14 @@
+Phase/Feature,Min H,Max H,Min Cost,Max Cost
+01 Inicialización / Base,18.0,26.0,790.0,1120.0
+02 Autenticación de Usuarios,13.0,20.0,605.0,930.0
+03 Interfaz Conversacional Lead Magnet,22.0,32.0,955.0,1395.0
+04 Motor de Generación de Estrategias IA,15.0,22.0,605.0,890.0
+05 Gestión de Leads e Integración Clientify,15.0,22.0,650.0,955.0
+06 Exportación de Estrategias PDF,12.0,19.0,555.0,870.0
+08 Responsive Móvil y Pulido UX,9.0,14.0,350.0,545.0
+10 Sistema de Usuarios,33.8,52.6,1540.0,2397.0
+11 Gestión de Clientes,30.2,45.9,1329.0,2024.0
+12 Gestión de Proyectos,32.4,48.9,1469.0,2220.0
+13 Comunicación,35.3,52.7,1615.0,2409.0
+14 Métricas,27.9,41.3,1237.0,1832.5
+99 Finalización,30.6,45.8,1185.0,1770.0

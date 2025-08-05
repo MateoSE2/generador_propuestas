@@ -7,68 +7,74 @@
   "items": [
     {
       "id": 1,
-      "title": "[Herramienta] Módulo Generador de Contenido",
-      "description": "Sistema de creación automática de contenido para redes sociales con calendar integrado y personalización de voz de marca",
+      "title": "[Herramienta] Gestión de Contenidos IA",
+      "description": "Sistema completo de gestión de contenido con asistente IA, workflow de aprobación, calendario editorial y generación automática",
       "category": "herramientas"
     },
     {
       "id": 2,
-      "title": "[Herramienta] SEO E-commerce Writer",
-      "description": "Herramienta especializada para generar descripciones de productos optimizadas para SEO con integración a plataformas e-commerce",
+      "title": "[Herramienta] SaaS para Agencias Externas",
+      "description": "Plataforma comercial para agencias de marketing no franquiciadas con planes de suscripción y facturación automática",
       "category": "herramientas"
     },
     {
       "id": 3,
-      "title": "[Herramienta] LLM Ranking Tracker",
-      "description": "Sistema de monitoreo de menciones de marca en respuestas de modelos de IA como ChatGPT con alertas de cambios",
+      "title": "[Herramienta] Marketplace de Servicios",
+      "description": "Plataforma de intercambio de servicios entre agencias franquiciadas con sistema de reputación y pagos",
       "category": "herramientas"
     },
     {
       "id": 4,
-      "title": "[Mejora] Cumplimiento RGPD y Protección de Datos",
-      "description": "Sistema completo de gestión de consentimientos, políticas de retención, exportación de datos y trazabilidad para cumplimiento RGPD",
-      "category": "mejoras"
+      "title": "[Herramienta] App Móvil Nativa",
+      "description": "Aplicaciones iOS y Android con gestión offline de proyectos, notificaciones push y autenticación biométrica",
+      "category": "herramientas"
     },
     {
       "id": 5,
-      "title": "[Mejora] Dashboard SuperAdmin",
-      "description": "Panel administrativo global con métricas cross-agencia, gestión de plataforma y configuración de feature flags",
+      "title": "[Mejora] Integración Avanzada CRM",
+      "description": "Conexión con múltiples CRMs (HubSpot, Salesforce, Pipedrive) con sincronización bidireccional de datos",
       "category": "mejoras"
     },
     {
       "id": 6,
-      "title": "[Mejora] Integración Email Marketing",
-      "description": "Automatización de secuencias de follow-up con templates personalizables y tracking avanzado de engagement",
+      "title": "[Mejora] Sistema de Facturación",
+      "description": "Gestión completa de facturación con integración Stripe, planes de suscripción y límites de uso por agencia",
       "category": "mejoras"
     },
     {
       "id": 7,
+      "title": "[Mejora] Dominios Personalizados",
+      "description": "Configuración de subdominios custom por agencia (ej: agencia.markezy.com) con SSL automático y branding",
+      "category": "mejoras"
+    },
+    {
+      "id": 8,
+      "title": "[Mejora] Integración Redes Sociales",
+      "description": "Conexión directa con APIs de Facebook, LinkedIn, Instagram y Twitter para publicación automática de contenido",
+      "category": "mejoras"
+    },
+    {
+      "id": 9,
       "title": "[Mejora] Widget WordPress Embebible",
       "description": "Componente JavaScript para integrar el Lead Magnet directamente en sitios web de agencias como widget",
       "category": "mejoras"
     },
     {
-      "id": 8,
-      "title": "[Mejora] App Móvil Nativa",
-      "description": "Aplicaciones iOS y Android con gestión offline de leads, notificaciones push y autenticación biométrica",
-      "category": "mejoras"
-    },
-    {
-      "id": 9,
-      "title": "[Mejora] Facturación y Suscripciones",
-      "description": "Sistema completo de billing con integración Stripe, gestión de planes y límites de uso por suscripción",
-      "category": "mejoras"
-    },
-    {
       "id": 10,
-      "title": "[Mejora] Dominios Personalizados",
-      "description": "Configuración de subdominios custom por agencia (ej: agencia.markezy.com) con SSL automático",
+      "title": "[Mejora] Cumplimiento RGPD Avanzado",
+      "description": "Sistema completo de gestión de consentimientos, políticas de retención, exportación de datos y trazabilidad",
       "category": "mejoras"
     },
     {
       "id": 11,
-      "title": "[Mejora] Integración Redes Sociales",
-      "description": "Conexión directa con APIs de Facebook, LinkedIn e Instagram para publicación automática de contenido generado",
+      "title": "[Mejora] Integración Email Marketing",
+      "description": "Automatización de secuencias de follow-up con templates personalizables y tracking avanzado de engagement",
+      "category": "mejoras"
+    },
+    {
+      "id": 12,
+      "title": "[Mejora] IA Predictiva",
+      "description": "Sistema de predicción de resultados de marketing basado en datos históricos y machine learning",
       "category": "mejoras"
     }
   ]

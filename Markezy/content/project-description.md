@@ -1,28 +1,39 @@
 # Markezy
 
-**Markezy** es una plataforma SaaS multi-tenant diseñada específicamente para agencias de marketing que buscan automatizar y optimizar su proceso de captación de leads. El objetivo principal es crear un MVP que permita a las 30 agencias franquiciadas de SERSEO generar estrategias de marketing personalizadas de forma automática utilizando inteligencia artificial.
+**Markezy** es una plataforma integral de gestión interna diseñada específicamente para la red de franquicias de marketing **Serseo**. El objetivo es crear un ecosistema digital completo que permita a la central y sus 30 agencias franquiciadas gestionar de forma eficiente clientes, proyectos y comunicación, todo potenciado por inteligencia artificial.
 
 ## Visión
 
-Transformar la captación de leads de un proceso manual de 2 horas en una experiencia conversacional de 10 minutos que genere estrategias profesionales automáticamente, integrándose perfectamente con los flujos de trabajo existentes de las agencias.
+Transformar la gestión interna de la red de franquicias Serseo en un proceso digitalizado y automatizado, donde la IA facilite tanto la captación de leads como la gestión operativa, permitiendo a las agencias enfocarse en el crecimiento de sus clientes mientras la central mantiene control y visibilidad total.
 
 ## Objetivos Principales
 
 El proyecto busca desarrollar una solución tecnológica integral que facilite:
 
-- **Automatización Inteligente**: Convertir conversaciones naturales en estrategias de marketing profesionales utilizando la metodología propietaria de SERSEO
-- **Eficiencia Operativa**: Reducir el tiempo de cualificación de leads en un 75% mediante IA conversacional en español
-- **Integración Perfecta**: Sincronización automática con Clientify para mantener los flujos de trabajo actuales sin interrupciones
-- **Escalabilidad**: Arquitectura preparada para el crecimiento futuro con funcionalidades avanzadas
+- **Gestión Centralizada**: Control total de la central sobre agencias, clientes y proyectos con roles y permisos granulares
+- **Automatización Inteligente**: Lead Magnet conversacional con IA para captación y cualificación automática de leads
+- **Gestión de Proyectos**: Sistema completo de proyectos por cliente con 7 fases estándar y seguimiento Kanban
+- **Comunicación Interna**: Chat integrado, tickets de soporte y videollamadas para facilitar la colaboración
+- **Métricas y KPIs**: Paneles de control para todos los roles con métricas de rendimiento y crecimiento
+
+## Contexto de Mercado
+
+La industria del marketing digital requiere agilidad y eficiencia operativa. Las agencias franquiciadas necesitan herramientas que les permitan:
+
+- Gestionar múltiples clientes simultáneamente
+- Mantener comunicación fluida con la central
+- Automatizar procesos repetitivos
+- Medir y optimizar su rendimiento
 
 ## Propuesta de Valor
 
-Markezy ofrece un ecosistema completo que permite a las agencias:
+Markezy ofrece un ecosistema completo que permite:
 
-- **Lead Magnet Conversacional**: Interfaz de chat inteligente que cualifica leads mediante conversaciones naturales en español
-- **Generación Automática de Estrategias**: Motor de IA que utiliza la metodología SERSEO para crear estrategias personalizadas por sector
-- **Documentación Profesional**: Generación automática de PDFs branded con estrategias completas y recomendaciones
-- **Dashboard Centralizado**: Visualización y gestión de todos los leads capturados con filtros avanzados
-- **Sincronización Clientify**: Integración en tiempo real con el CRM actual sin interrumpir flujos existentes
+- **Lead Magnet Inteligente**: Chat conversacional con IA que capta y cualifica leads automáticamente, generando estrategias personalizadas
+- **Gestión Multi-tenant**: Espacios seguros para cada agencia con control de acceso granular y roles específicos
+- **Proyectos Estructurados**: Sistema de 7 fases por cliente con plantillas reutilizables y seguimiento visual tipo Kanban
+- **Comunicación Integrada**: Chat interno por proyecto, sistema de tickets y videollamadas para soporte
+- **Métricas Operativas**: KPIs específicos por rol (central, agencia, consultor, cliente) con dashboards personalizados
+- **Configuración Centralizada**: Gestión de plantillas, branding y ajustes globales desde la central
 
-La plataforma está diseñada para escalar desde las 30 agencias SERSEO hasta el mercado español de 50k agencias, con arquitectura multi-tenant que garantiza aislamiento de datos y personalización por agencia.
+La plataforma está diseñada para escalar con la red de franquicias, proporcionando una base sólida para el crecimiento futuro con funcionalidades avanzadas de IA y automatización.

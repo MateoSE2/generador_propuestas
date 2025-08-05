@@ -1,0 +1,355 @@
+{
+  "metadata": {
+    "totalRequirements": 32,
+    "totalHours": 858,
+    "totalAreas": 8,
+    "lastUpdated": "2025-06-23"
+  },
+  "functionalAreas": [
+    {
+      "id": "infraestructura-voz",
+      "title": "Infraestructura de Voz",
+      "description": "Sistema completo de manejo de llamadas telefónicas con STT/TTS y optimización de latencia",
+      "totalRequirements": 6,
+      "projectPercentage": 15,
+      "requirements": [
+        {
+          "id": "config-telefonia",
+          "title": "Configuración de telefonía",
+          "description": "Setup de cuenta Twilio, números españoles y endpoints de webhook para manejo de llamadas",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "CTO/Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "stt-tts-integracion",
+          "title": "Integración STT/TTS",
+          "description": "Reconocimiento de voz en español y síntesis de voz natural con optimización de calidad",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "deteccion-actividad",
+          "title": "Detección de actividad de voz",
+          "description": "Algoritmos para detectar actividad de voz y optimizar la experiencia conversacional",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "optimizacion-audio",
+          "title": "Optimización de audio",
+          "description": "Reducción de ruido, buffering y manejo de errores para calidad de audio profesional",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "enrutamiento-multitenant",
+          "title": "Enrutamiento multi-tenant",
+          "description": "Sistema de enrutamiento de llamadas por clínica con configuración personalizada",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "monitoreo-calidad",
+          "title": "Monitoreo de calidad",
+          "description": "Métricas de calidad de voz y alertas de rendimiento del sistema",
+          "priority": "baja",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "gestion-conversacional",
+      "title": "Gestión Conversacional",
+      "description": "Motor de IA conversacional especializado en terminología veterinaria con flujos naturales",
+      "totalRequirements": 6,
+      "projectPercentage": 20,
+      "requirements": [
+        {
+          "id": "motor-ia",
+          "title": "Motor de IA conversacional",
+          "description": "Integración con GPT-4 y configuración de prompts especializados para contexto veterinario",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Prompting"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "base-datos-veterinaria",
+          "title": "Base de datos veterinaria",
+          "description": "Terminología y contexto veterinario en español para respuestas especializadas",
+          "priority": "alta",
+          "developmentAreas": ["Prompting", "Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "clasificacion-intenciones",
+          "title": "Clasificación de intenciones",
+          "description": "Sistema para identificar y clasificar automáticamente las intenciones del usuario",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "gestion-contexto",
+          "title": "Gestión de contexto",
+          "description": "Mantenimiento del contexto conversacional y recuperación de conversaciones",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "triaje-emergencias",
+          "title": "Triaje de emergencias",
+          "description": "Lógica especializada para detectar y escalar casos de emergencia veterinaria",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Prompting"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "fallback-handling",
+          "title": "Manejo de fallbacks",
+          "description": "Sistema de respuestas alternativas para intenciones no reconocidas",
+          "priority": "baja",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "green"
+        }
+      ]
+    },
+    {
+      "id": "sistema-citas",
+      "title": "Sistema de Citas",
+      "description": "Integración completa con calendarios para programación automática con detección de conflictos",
+      "totalRequirements": 4,
+      "projectPercentage": 12,
+      "requirements": [
+        {
+          "id": "integracion-calendarios",
+          "title": "Integración de calendarios",
+          "description": "Investigación y conexión con APIs de calendario para verificación de disponibilidad",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "CTO/Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "deteccion-conflictos",
+          "title": "Detección de conflictos",
+          "description": "Algoritmos para detectar y resolver conflictos de programación automáticamente",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "flujo-reserva",
+          "title": "Flujo de reserva multi-paso",
+          "description": "Proceso conversacional completo para recolección de información y confirmación",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "confirmacion-citas",
+          "title": "Proceso de confirmación",
+          "description": "Sistema automático de confirmación con detalles de la cita programada",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "gestion-datos",
+      "title": "Gestión de Datos",
+      "description": "Almacenamiento seguro de información de clientes y mascotas con historial de interacciones",
+      "totalRequirements": 4,
+      "projectPercentage": 10,
+      "requirements": [
+        {
+          "id": "modelos-datos",
+          "title": "Modelos de datos encriptados",
+          "description": "Estructuras de datos para clientes y mascotas con encriptación completa",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "identificacion-llamadas",
+          "title": "Identificación de llamadas",
+          "description": "Sistema para reconocer automáticamente clientes recurrentes",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "gestion-perfiles",
+          "title": "Gestión de perfiles",
+          "description": "Mantenimiento de perfiles de clientes con asociaciones de mascotas",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "historial-interacciones",
+          "title": "Historial de interacciones",
+          "description": "Tracking completo de interacciones y preferencias de clientes",
+          "priority": "media",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "dashboard-web",
+      "title": "Dashboard Web",
+      "description": "Plataforma de administración React con monitoreo en tiempo real y WebSockets",
+      "totalRequirements": 4,
+      "projectPercentage": 12,
+      "requirements": [
+        {
+          "id": "aplicacion-react",
+          "title": "Aplicación React",
+          "description": "Setup de proyecto React con TypeScript, Tailwind CSS y arquitectura responsiva",
+          "priority": "alta",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "autenticacion-sistema",
+          "title": "Sistema de autenticación",
+          "description": "Autenticación segura con control de acceso básico y personalización por clínica",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "websockets-tiempo-real",
+          "title": "WebSockets en tiempo real",
+          "description": "Conexión en tiempo real para monitoreo de llamadas activas y transcripciones",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "yellow"
+        },
+        {
+          "id": "visualizacion-transcripciones",
+          "title": "Visualización de transcripciones",
+          "description": "Interfaz para ver transcripciones sincronizadas con reproducción de llamadas",
+          "priority": "media",
+          "developmentAreas": ["Frontend"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "marco-seguridad",
+      "title": "Marco de Seguridad",
+      "description": "Implementación completa de encriptación y medidas de seguridad empresarial",
+      "totalRequirements": 3,
+      "projectPercentage": 8,
+      "requirements": [
+        {
+          "id": "encriptacion-extremo",
+          "title": "Encriptación extremo a extremo",
+          "description": "Protección completa de transmisión de datos y encriptación de base de datos",
+          "priority": "alta",
+          "developmentAreas": ["CTO/Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "autenticacion-jwt",
+          "title": "Autenticación JWT",
+          "description": "Sistema de autenticación segura con límites de velocidad y protección API",
+          "priority": "alta",
+          "developmentAreas": ["Backend"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "seguridad-red",
+          "title": "Seguridad de red",
+          "description": "Configuración de VPC, firewall y monitoreo de seguridad de red",
+          "priority": "media",
+          "developmentAreas": ["CTO/Arquitectura"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "captacion-comercial",
+      "title": "Captación Comercial",
+      "description": "Automatización de procesos comerciales con captación proactiva de clientes",
+      "totalRequirements": 3,
+      "projectPercentage": 15,
+      "requirements": [
+        {
+          "id": "gestion-leads",
+          "title": "Gestión de leads",
+          "description": "Sistema completo de tracking, scoring y seguimiento automático de leads",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "CTO/Arquitectura"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "gestion-presupuestos",
+          "title": "Gestión de presupuestos",
+          "description": "Sistema de creación, seguimiento y recuperación automática de presupuestos",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Prompting"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "cross-selling",
+          "title": "Cross-selling inteligente",
+          "description": "Análisis de historial y recomendaciones automáticas de servicios adicionales",
+          "priority": "media",
+          "developmentAreas": ["Backend", "Prompting"],
+          "priorityColor": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "marketing-inteligente",
+      "title": "Marketing Inteligente",
+      "description": "Campañas personalizadas basadas en IA con segmentación y análisis predictivo",
+      "totalRequirements": 2,
+      "projectPercentage": 18,
+      "requirements": [
+        {
+          "id": "ia-marketing",
+          "title": "IA para marketing",
+          "description": "Sistema de IA para personalización de campañas y predicción de comportamiento",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "CTO/Arquitectura", "Prompting"],
+          "priorityColor": "red"
+        },
+        {
+          "id": "segmentacion-automatica",
+          "title": "Segmentación automática",
+          "description": "Algoritmos de segmentación de clientes y activación automática de campañas",
+          "priority": "alta",
+          "developmentAreas": ["Backend", "Frontend"],
+          "priorityColor": "red"
+        }
+      ]
+    }
+  ],
+  "priorityConfig": {
+    "alta": {
+      "label": "Alta",
+      "colorClasses": "text-red-600 bg-red-50 border-red-200",
+      "icon": "circle-alert"
+    },
+    "media": {
+      "label": "Media", 
+      "colorClasses": "text-yellow-600 bg-yellow-50 border-yellow-200",
+      "icon": "circle"
+    },
+    "baja": {
+      "label": "Baja",
+      "colorClasses": "text-green-600 bg-green-50 border-green-200",
+      "icon": "circle"
+    }
+  }
+} 

@@ -1,0 +1,102 @@
+{
+  "title": "KPIs del Proyecto",
+  "subtitle": "Métricas clave que demuestran el impacto y valor esperado del sistema de asistente de voz para clínicas veterinarias",
+  "kpis": [
+    {
+      "id": "response-time",
+      "icon": "clock",
+      "value": "< 1000ms",
+      "title": "Latencia de Respuesta",
+      "description": "Tiempo de respuesta del sistema de voz para una experiencia conversacional fluida",
+      "color": "primary"
+    },
+    {
+      "id": "availability",
+      "icon": "users",
+      "value": "24/7",
+      "title": "Disponibilidad del Sistema",
+      "description": "Atención automática de llamadas y gestión de citas fuera del horario laboral",
+      "color": "primary"
+    },
+    {
+      "id": "admin-reduction",
+      "icon": "percent",
+      "value": "40-60%",
+      "title": "Reducción Carga Admin",
+      "description": "Disminución en tareas administrativas rutinarias del personal de la clínica",
+      "color": "primary"
+    },
+    {
+      "id": "appointment-automation",
+      "icon": "trending-up",
+      "value": "85%",
+      "title": "Automatización de Citas",
+      "description": "Porcentaje de citas gestionadas automáticamente sin intervención humana",
+      "color": "primary"
+    },
+    {
+      "id": "call-resolution",
+      "icon": "clock",
+      "value": "< 3 min",
+      "title": "Tiempo Resolución",
+      "description": "Tiempo promedio para resolver consultas frecuentes y programar citas",
+      "color": "primary"
+    },
+    {
+      "id": "client-satisfaction",
+      "icon": "percent",
+      "value": "90%",
+      "title": "Satisfacción del Cliente",
+      "description": "Nivel de satisfacción con la experiencia de atención automatizada",
+      "color": "primary"
+    }
+  ],
+  "summary": {
+    "title": "Métricas de Éxito en Automatización Veterinaria",
+    "description": "Estos KPIs han sido seleccionados estratégicamente para medir el impacto real del sistema de asistente de voz en clínicas veterinarias. Cada métrica representa un objetivo cuantificable que contribuye al éxito operacional de la clínica y proporciona valor tangible tanto para el personal como para los clientes."
+  },
+  "icons": {
+    "users": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",
+        "M22 21v-2a4 4 0 0 0-3-3.87",
+        "M16 3.13a4 4 0 0 1 0 7.75"
+      ],
+      "circles": [
+        { "cx": "9", "cy": "7", "r": "4" }
+      ]
+    },
+    "trending-up": {
+      "viewBox": "0 0 24 24",
+      "paths": [
+        "M16 7 22 7 22 13"
+      ],
+      "polylines": [
+        "22 7 13.5 15.5 8.5 10.5 2 17",
+        "16 7 22 7 22 13"
+      ]
+    },
+    "percent": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "lines": [
+        { "x1": "19", "x2": "5", "y1": "5", "y2": "19" }
+      ],
+      "circles": [
+        { "cx": "6.5", "cy": "6.5", "r": "2.5" },
+        { "cx": "17.5", "cy": "17.5", "r": "2.5" }
+      ]
+    },
+    "clock": {
+      "viewBox": "0 0 24 24",
+      "paths": [],
+      "circles": [
+        { "cx": "12", "cy": "12", "r": "10" }
+      ],
+      "polylines": [
+        "12 6 12 12 16 14"
+      ]
+    }
+  }
+} 

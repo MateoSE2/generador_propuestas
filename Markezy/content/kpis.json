@@ -1,59 +1,59 @@
 {
   "title": "KPIs del Proyecto",
-  "subtitle": "Métricas clave que demuestran el impacto y valor esperado de Markezy para agencias de marketing",
+  "subtitle": "Métricas clave que demuestran el impacto y valor esperado de Markezy para la gestión interna de la red de franquicias Serseo",
   "kpis": [
     {
       "id": "active-agencies",
       "icon": "users",
-      "value": "30+",
+      "value": "30",
       "title": "Agencias Activas",
-      "description": "Agencias SERSEO usando la plataforma mensualmente",
+      "description": "Agencias franquiciadas usando la plataforma de gestión interna",
       "color": "primary"
     },
     {
-      "id": "leads-generated",
+      "id": "projects-delivered",
       "icon": "trending-up",
-      "value": "1,000+",
-      "title": "Leads Generados",
-      "description": "Leads cualificados capturados mensualmente",
+      "value": "500+",
+      "title": "Proyectos Entregados",
+      "description": "Proyectos completados mensualmente con sistema de 7 fases",
       "color": "primary"
     },
     {
       "id": "time-reduction",
       "icon": "clock",
-      "value": "50%",
+      "value": "60%",
       "title": "Reducción Tiempo",
-      "description": "Mejora en tiempo de cualificación vs proceso manual",
+      "description": "Mejora en tiempo de gestión vs procesos manuales",
       "color": "primary"
     },
     {
-      "id": "conversion-rate",
+      "id": "client-satisfaction",
       "icon": "percent",
-      "value": "30%+",
-      "title": "Tasa de Conversión",
-      "description": "Leads que progresan a reunión comercial",
+      "value": "85%+",
+      "title": "Satisfacción Cliente",
+      "description": "Clientes satisfechos con el proceso de onboarding y seguimiento",
       "color": "primary"
     },
     {
-      "id": "user-adoption",
+      "id": "communication-efficiency",
       "icon": "target",
-      "value": "50%",
-      "title": "Adopción Usuarios",
-      "description": "Agentes SERSEO usando activamente la plataforma",
+      "value": "95%",
+      "title": "Eficiencia Comunicación",
+      "description": "Tickets y consultas resueltos dentro del SLA establecido",
       "color": "primary"
     },
     {
-      "id": "strategy-quality",
+      "id": "task-completion",
       "icon": "star",
-      "value": "4.5/5",
-      "title": "Calidad Estrategias",
-      "description": "Valoración promedio de estrategias generadas por IA",
+      "value": "95%",
+      "title": "Tareas Completadas",
+      "description": "Tareas completadas en tiempo según planificación Kanban",
       "color": "primary"
     }
   ],
   "summary": {
-    "title": "Métricas de Impacto Empresarial",
-    "description": "Estos KPIs han sido diseñados específicamente para medir el impacto de Markezy en la eficiencia operativa de agencias de marketing. Cada métrica refleja objetivos cuantificables que demuestran el retorno de inversión y la transformación digital del proceso de captación de leads."
+    "title": "Métricas de Impacto Operativo",
+    "description": "Estos KPIs han sido diseñados específicamente para medir el impacto de Markezy en la eficiencia operativa de la red de franquicias Serseo. Cada métrica refleja objetivos cuantificables que demuestran la transformación digital de la gestión interna y el retorno de inversión en automatización."
   },
   "icons": {
     "users": {

@@ -1,0 +1,40 @@
+Area,Requisito,Descripción
+
+Sistema de Usuarios,Gestión de Agencias,Cada agencia tendrá su propio espacio privado y seguro
+Sistema de Usuarios,Roles de Usuario,Diferentes niveles de acceso: Administrador Principal Administrador de Agencia y Agente
+Sistema de Usuarios,Invitación de Usuarios,Sistema para invitar nuevos miembros al equipo de cada agencia
+Sistema de Usuarios,Control de Acceso,Cada usuario solo podrá ver la información de su propia agencia
+
+Chat Inteligente,Interfaz de Conversación,Chat inteligente que cualifica clientes potenciales automáticamente
+Chat Inteligente,Historial de Conversaciones,Registro completo de todas las conversaciones con clientes
+Chat Inteligente,Cualificación Automática,El sistema evalúa automáticamente si el cliente es adecuado para la agencia
+Chat Inteligente,Personalización por Sector,Adaptación de preguntas según el sector del cliente potencial
+
+Generación de Estrategias,Estrategias Automáticas,Creación automática de estrategias de marketing personalizadas
+Generación de Estrategias,Metodología SERSEO,Utiliza la metodología probada de SERSEO para generar estrategias
+Generación de Estrategias,Vista Previa en Tiempo Real,Visualización inmediata de la estrategia mientras se genera
+Generación de Estrategias,Personalización por Cliente,Estrategias adaptadas al sector y necesidades específicas del cliente
+
+Gestión de Clientes,Panel de Control,Vista general de todos los clientes potenciales
+Gestión de Clientes,Búsqueda y Filtros,Búsqueda fácil de clientes por diferentes criterios
+Gestión de Clientes,Fichas de Cliente,Toda la información del cliente en una sola pantalla
+Gestión de Clientes,Seguimiento de Estado,Control del estado de cada cliente potencial
+
+Integración con CRM,Conexión con Clientify,Sincronización automática con el sistema actual de Clientify
+Integración con CRM,Datos Unificados,Toda la información centralizada en un solo lugar
+Integración con CRM,Actualización Automática,Los datos se actualizan automáticamente entre sistemas
+
+Documentos Profesionales,Generación de Propuestas,Creación automática de propuestas en PDF profesionales
+Documentos Profesionales,Marca Personalizada,Documentos con el logo y colores de cada agencia
+Documentos Profesionales,Descarga y Compartir,Fácil descarga y envío de propuestas a clientes
+
+Diseño y Usabilidad,Diseño Moderno,Interfaz moderna y fácil de usar
+Diseño y Usabilidad,Acceso Móvil,Acceso desde cualquier dispositivo (ordenador tablet móvil)
+Diseño y Usabilidad,Experiencia de Usuario,Diseño intuitivo que no requiere formación extensa
+
+Mejoras Futuras,Contenido para Redes,Generación automática de contenido para redes sociales
+Mejoras Futuras,Descripciones para E-commerce,Herramienta para crear descripciones de productos optimizadas
+Mejoras Futuras,Seguimiento de Marca,Sistema de monitoreo de menciones de marca
+Mejoras Futuras,App Móvil,Aplicación móvil dedicada para iOS y Android
+Mejoras Futuras,Dominios Personalizados,Cada agencia podrá usar su propio dominio web
+Mejoras Futuras,Integración Redes Sociales,Conexión directa con Facebook LinkedIn e Instagram 

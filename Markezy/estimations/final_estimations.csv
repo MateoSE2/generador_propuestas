@@ -1,0 +1,83 @@
+Phase/Feature,Type,Task,Min H,Max H
+01 Inicialización / Base,CTO/Arquitectura,Configurar arquitectura del proyecto y entorno Docker,4,6
+01 Inicialización / Base,Desarrollo Backend,Inicializar proyecto Django con estructura multi-tenant,3,4
+01 Inicialización / Base,Desarrollo Frontend,Configurar proyecto React con TypeScript y librería de componentes UI,3,4
+01 Inicialización / Base,Diseño UI/UX,Crear wireframes y sistema de diseño para interfaz Lead Magnet,3,4
+01 Inicialización / Base,CTO/Arquitectura,Configurar esquema base de datos MySQL con aislamiento de tenants,2,3
+01 Inicialización / Base,Desarrollo Backend,Configurar Redis y Celery para procesamiento en segundo plano,2,3
+01 Inicialización / Base,Reuniones,Sesión técnica de kickoff y revisión de arquitectura,1,2
+02 Autenticación de Usuarios,Desarrollo Backend,Implementar autenticación JWT con control de acceso basado en roles,4,6
+02 Autenticación de Usuarios,Desarrollo Backend,Crear sistema de gestión de usuarios multi-tenant,3,5
+02 Autenticación de Usuarios,Desarrollo Frontend,Construir interfaz login/logout y rutas protegidas,3,4
+02 Autenticación de Usuarios,Desarrollo Backend,Implementar flujos de invitación de agencias y usuarios,2,3
+02 Autenticación de Usuarios,Testeo,Pruebas de autenticación y autorización,1,2
+03 Interfaz Conversacional Lead Magnet,Diseño UI/UX,Diseñar layout de interfaz conversacional y flujo de usuario,2,3
+03 Interfaz Conversacional Lead Magnet,Desarrollo Frontend,Construir interfaz de chat con historial de mensajes e indicadores,5,7
+03 Interfaz Conversacional Lead Magnet,Desarrollo Backend,Crear gestión de estado de conversación y persistencia,4,6
+03 Interfaz Conversacional Lead Magnet,Desarrollo Backend,Implementar lógica de flujo dinámico de preguntas,3,5
+03 Interfaz Conversacional Lead Magnet,Prompting,Diseñar prompts conversacionales para calificación de leads en español,3,4
+03 Interfaz Conversacional Lead Magnet,Desarrollo Backend,Integrar API OpenAI para procesamiento de lenguaje natural,3,4
+03 Interfaz Conversacional Lead Magnet,Testeo,Pruebas de flujo conversacional y gestión de estado,2,3
+04 Motor de Generación de Estrategias IA,Prompting,Desarrollar prompts de metodología SERSEO para generación de estrategias,5,7
+04 Motor de Generación de Estrategias IA,Desarrollo Backend,Construir pipeline de generación de estrategias con integración OpenAI,4,6
+04 Motor de Generación de Estrategias IA,Desarrollo Frontend,Implementar interfaz de vista previa de estrategia en vivo,4,6
+04 Motor de Generación de Estrategias IA,Testeo,Pruebas de calidad y rendimiento de generación de estrategias,2,3
+05 Gestión de Leads e Integración Clientify,Desarrollo Backend,Crear modelo de datos de leads y operaciones CRUD básicas,2,3
+05 Gestión de Leads e Integración Clientify,Desarrollo Frontend,Construir dashboard de leads con filtrado y búsqueda,4,6
+05 Gestión de Leads e Integración Clientify,Desarrollo Backend,Implementar integración API Clientify con lógica de reintentos,4,6
+05 Gestión de Leads e Integración Clientify,Desarrollo Frontend,Añadir vista detalle de lead con historial de conversación,3,4
+05 Gestión de Leads e Integración Clientify,Testeo,Pruebas de gestión de leads e integración,2,3
+06 Exportación de Estrategias PDF,Desarrollo Backend,Configurar librería de generación PDF y motor de plantillas,2,3
+06 Exportación de Estrategias PDF,Diseño UI/UX,Diseñar layout profesional PDF con elementos de branding,1,2
+06 Exportación de Estrategias PDF,Desarrollo Backend,Implementar generación dinámica PDF con contenido de estrategia,4,6
+06 Exportación de Estrategias PDF,Desarrollo Backend,Añadir sistema de configuración de branding de agencia,2,3
+06 Exportación de Estrategias PDF,Desarrollo Frontend,Crear interfaz de descarga y compartición de PDF,2,3
+06 Exportación de Estrategias PDF,Testeo,Pruebas de rendimiento y calidad de generación PDF,1,2
+08 Responsive Móvil y Pulido UX,Diseño UI/UX,Optimizar interfaz para dispositivos tablet y móviles,1,2
+08 Responsive Móvil y Pulido UX,Desarrollo Frontend,Implementar diseño responsive en todos los componentes,4,6
+08 Responsive Móvil y Pulido UX,Desarrollo Frontend,Añadir estados de carga y mejoras de manejo de errores,2,3
+08 Responsive Móvil y Pulido UX,Testeo,Pruebas de compatibilidad multi-dispositivo,2,3
+10 Sistema de Usuarios,CTO/Arquitectura,Diseñar modelo de permisos granular,6,9
+10 Sistema de Usuarios,Desarrollo Backend,Implementar middleware de permisos,4.5,7.5
+10 Sistema de Usuarios,Desarrollo Frontend,Crear UI gestión de roles,4.5,6.8
+10 Sistema de Usuarios,Desarrollo Backend,Integrar autenticación Google,3.8,6
+10 Sistema de Usuarios,Diseño UI/UX,Diseñar UI panel superadmin,4.5,7.5
+10 Sistema de Usuarios,Desarrollo Backend,Implementar CRUD agencias,4.5,6.8
+10 Sistema de Usuarios,Desarrollo Frontend,Desarrollar panel superadmin,6,9
+11 Gestión de Clientes,Desarrollo Backend,Diseñar modelo cliente extendido,3.8,6
+11 Gestión de Clientes,Diseño UI/UX,Crear UI ficha cliente,4.5,6.8
+11 Gestión de Clientes,Desarrollo Backend,Implementar CRUD cliente,4.5,6.8
+11 Gestión de Clientes,Desarrollo Frontend,Desarrollar UI gestión clientes,5.3,7.5
+11 Gestión de Clientes,Diseño UI/UX,Diseñar flujo onboarding,3.8,6
+11 Gestión de Clientes,Desarrollo Backend,Implementar tracking onboarding,3.8,6
+11 Gestión de Clientes,Desarrollo Frontend,Crear UI onboarding,4.5,6.8
+12 Gestión de Proyectos,Desarrollo Backend,Diseñar modelo proyecto,4.5,6.8
+12 Gestión de Proyectos,Desarrollo Backend,Implementar plantillas setup,4.5,6.8
+12 Gestión de Proyectos,Diseño UI/UX,Diseñar UI Kanban,5.3,7.5
+12 Gestión de Proyectos,Desarrollo Backend,Implementar backend Kanban,4.5,6.8
+12 Gestión de Proyectos,Desarrollo Frontend,Desarrollar frontend Kanban,6,9
+12 Gestión de Proyectos,Desarrollo Backend,Crear sistema registro tiempo,3.8,6
+12 Gestión de Proyectos,Desarrollo Frontend,Implementar UI registro tiempo,3.8,6
+13 Comunicación,CTO/Arquitectura,Diseñar sistema mensajería,5.3,7.5
+13 Comunicación,Desarrollo Backend,Implementar backend chat,6,9
+13 Comunicación,Diseño UI/UX,Crear UI chat,4.5,6.8
+13 Comunicación,Desarrollo Frontend,Desarrollar frontend chat,6,9
+13 Comunicación,Desarrollo Backend,Implementar sistema tickets,4.5,6.8
+13 Comunicación,Desarrollo Frontend,Crear UI tickets,4.5,6.8
+13 Comunicación,Desarrollo Backend,Integrar videollamadas,4.5,6.8
+14 Métricas,CTO/Arquitectura,Diseñar modelo analytics,4.5,6.8
+14 Métricas,Desarrollo Backend,Implementar agregación datos,5.3,7.5
+14 Métricas,Diseño UI/UX,Crear dashboards KPIs,5.3,7.5
+14 Métricas,Desarrollo Frontend,Desarrollar UI métricas,6,9
+14 Métricas,Desarrollo Backend,Implementar filtros,3.8,6
+14 Métricas,Testeo,Testear métricas,3,4.5
+99 Finalización,Desarrollo Backend,Configurar entorno de producción y headers de seguridad,2,3
+99 Finalización,CTO/Arquitectura,Configurar deployment Docker Swarm,3,4
+99 Finalización,Testeo,Pruebas end-to-end de journeys completos de usuario,4,6
+99 Finalización,Testeo,Pruebas de rendimiento para conversaciones concurrentes,2,3
+99 Finalización,CTO/Arquitectura,Desplegar en VPS IONOS y configurar monitoreo,2,3
+99 Finalización,Reuniones,Sesión final de revisión y entrega,1,2
+99 Finalización,Testeo,Pruebas integración V2,6,9
+99 Finalización,CTO/Arquitectura,Optimización rendimiento,4.5,6.8
+99 Finalización,CTO/Arquitectura,Documentación técnica,3.8,6
+99 Finalización,Reuniones,Sesión entrega V2,2.3,3 

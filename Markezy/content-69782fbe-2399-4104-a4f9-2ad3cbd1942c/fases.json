@@ -5,62 +5,149 @@
       "name": "Inicialización / Base",
       "description": "Configuración de arquitectura, entorno Docker, Django multi-tenant, React TypeScript y wireframes UI/UX",
       "duration": "1 sem",
-      "csvKey": "01 Inicialización / Base"
+      "csvKey": "01 Inicialización / Base",
+      "totalHours": {
+        "min": 18,
+        "max": 26
+      }
     },
     {
       "id": 1,
       "name": "Autenticación de Usuarios",
       "description": "Sistema JWT multi-tenant con roles, gestión de usuarios y flujos de invitación de agencias",
       "duration": "1 sem",
-      "csvKey": "02 Autenticación de Usuarios"
+      "csvKey": "02 Autenticación de Usuarios",
+      "totalHours": {
+        "min": 13,
+        "max": 20
+      }
     },
     {
       "id": 2,
       "name": "Interfaz Conversacional Lead Magnet",
       "description": "Chatbot inteligente con gestión de estado, flujo dinámico de preguntas e integración OpenAI",
       "duration": "2 sem",
-      "csvKey": "03 Interfaz Conversacional Lead Magnet"
+      "csvKey": "03 Interfaz Conversacional Lead Magnet",
+      "totalHours": {
+        "min": 22,
+        "max": 32
+      }
     },
     {
       "id": 3,
       "name": "Motor de Generación de Estrategias IA",
       "description": "Pipeline de estrategias con metodología SERSEO e integración OpenAI optimizada",
       "duration": "1 sem",
-      "csvKey": "04 Motor de Generación de Estrategias IA"
+      "csvKey": "04 Motor de Generación de Estrategias IA",
+      "totalHours": {
+        "min": 15,
+        "max": 22
+      }
     },
     {
       "id": 4,
       "name": "Gestión de Leads e Integración Clientify",
       "description": "Dashboard de leads e integración CRM con reintentos automáticos",
       "duration": "1 sem",
-      "csvKey": "05 Gestión de Leads e Integración Clientify"
+      "csvKey": "05 Gestión de Leads e Integración Clientify",
+      "totalHours": {
+        "min": 15,
+        "max": 22
+      }
     },
     {
       "id": 5,
       "name": "Exportación de Estrategias PDF",
       "description": "Generación dinámica de PDFs profesionales con branding de agencia y descarga automática",
       "duration": "1 sem",
-      "csvKey": "06 Exportación de Estrategias PDF"
+      "csvKey": "06 Exportación de Estrategias PDF",
+      "totalHours": {
+        "min": 12,
+        "max": 18
+      }
     },
     {
       "id": 6,
       "name": "Responsive Móvil y Pulido UX",
       "description": "Optimización para dispositivos móviles, responsive design y mejoras de experiencia de usuario",
       "duration": "1 sem",
-      "csvKey": "08 Responsive Móvil y Pulido UX"
+      "csvKey": "08 Responsive Móvil y Pulido UX",
+      "totalHours": {
+        "min": 9,
+        "max": 14
+      }
     },
     {
       "id": 7,
+      "name": "Sistema de Usuarios Avanzado",
+      "description": "Gestión granular de permisos, autenticación Google, panel superadmin y CRUD de agencias",
+      "duration": "2 sem",
+      "csvKey": "10 Sistema de Usuarios",
+      "totalHours": {
+        "min": 33.3,
+        "max": 50.8
+      }
+    },
+    {
+      "id": 8,
+      "name": "Gestión de Clientes",
+      "description": "Sistema completo de gestión de clientes con modelo extendido, onboarding y seguimiento",
+      "duration": "2 sem",
+      "csvKey": "11 Gestión de Clientes",
+      "totalHours": {
+        "min": 29.6,
+        "max": 44.8
+      }
+    },
+    {
+      "id": 9,
+      "name": "Gestión de Proyectos",
+      "description": "Sistema de proyectos con plantillas setup, Kanban visual y registro de tiempo",
+      "duration": "2 sem",
+      "csvKey": "12 Gestión de Proyectos",
+      "totalHours": {
+        "min": 33.6,
+        "max": 50.8
+      }
+    },
+    {
+      "id": 10,
+      "name": "Comunicación y Soporte",
+      "description": "Chat interno por proyecto, sistema de tickets y videollamadas integradas",
+      "duration": "2 sem",
+      "csvKey": "13 Comunicación",
+      "totalHours": {
+        "min": 35.8,
+        "max": 53.8
+      }
+    },
+    {
+      "id": 11,
+      "name": "Métricas y KPIs",
+      "description": "Sistema de analytics multinivel con dashboards por rol y filtros avanzados",
+      "duration": "2 sem",
+      "csvKey": "14 Métricas",
+      "totalHours": {
+        "min": 27.1,
+        "max": 40.8
+      }
+    },
+    {
+      "id": 12,
       "name": "Finalización",
-      "description": "Testing end-to-end, configuración producción, deployment Docker Swarm y monitoreo IONOS VPS",
-      "duration": "1 sem",
-      "csvKey": "99 Finalización"
+      "description": "Testing completo, optimización rendimiento, documentación técnica y deployment final",
+      "duration": "2 sem",
+      "csvKey": "99 Finalización",
+      "totalHours": {
+        "min": 25.6,
+        "max": 38.3
+      }
     }
   ],
   "totalHours": {
-    "min": 118,
-    "max": 176
+    "min": 284.2,
+    "max": 424.5
   },
-  "totalWeeks": 8,
-  "totalPhases": 8
+  "totalWeeks": 16,
+  "totalPhases": 13
 } 

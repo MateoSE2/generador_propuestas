@@ -1,0 +1,53 @@
+Version	Phase/Feature	Funcionalidad	TaskID	TaskName	Descripción	Tipo	Min H	Max H
+V2	02 Sistema de Usuarios	Roles y Permisos	T-101	Diseñar modelo de permisos granular	Definición de modelo de permisos por rol y nivel de acceso	CTO/Arquitectura	4	6
+V2	02 Sistema de Usuarios	Roles y Permisos	T-102	Implementar middleware de permisos	Sistema de verificación de permisos por ruta y acción	Desarrollo Backend	3	5
+V2	02 Sistema de Usuarios	Roles y Permisos	T-103	Crear UI gestión de roles	Interfaz para asignar y editar permisos por rol	Desarrollo Frontend	3	4.5
+V2	02 Sistema de Usuarios	Login Social	T-104	Integrar autenticación Google	Implementar OAuth2 con Google	Desarrollo Backend	2.5	4
+V2	02 Sistema de Usuarios	Gestión de Agencias	T-105	Diseñar UI panel superadmin	Interfaz para gestión global de agencias	Diseño UI/UX	3	5
+V2	02 Sistema de Usuarios	Gestión de Agencias	T-106	Implementar CRUD agencias	APIs para gestión completa de agencias	Desarrollo Backend	3	4.5
+V2	02 Sistema de Usuarios	Gestión de Agencias	T-107	Desarrollar panel superadmin	Panel funcional de gestión de agencias	Desarrollo Frontend	4	6
+
+V2	03 Gestión de Clientes	Alta Cliente	T-201	Diseñar modelo cliente extendido	Modelo con campos de negocio y relaciones	Desarrollo Backend	2.5	4
+V2	03 Gestión de Clientes	Alta Cliente	T-202	Crear UI ficha cliente	Diseño de formulario y vista detalle cliente	Diseño UI/UX	3	4.5
+V2	03 Gestión de Clientes	Alta Cliente	T-203	Implementar CRUD cliente	APIs para gestión completa de clientes	Desarrollo Backend	3	4.5
+V2	03 Gestión de Clientes	Alta Cliente	T-204	Desarrollar UI gestión clientes	Implementación frontend de alta y edición	Desarrollo Frontend	3.5	5
+V2	03 Gestión de Clientes	Onboarding	T-205	Diseñar flujo onboarding	Definición de pasos y estados del proceso	Diseño UI/UX	2.5	4
+V2	03 Gestión de Clientes	Onboarding	T-206	Implementar tracking onboarding	Sistema de seguimiento de progreso	Desarrollo Backend	2.5	4
+V2	03 Gestión de Clientes	Onboarding	T-207	Crear UI onboarding	Interfaz de seguimiento paso a paso	Desarrollo Frontend	3	4.5
+
+V2	04 Gestión de Proyectos	Setup Proyectos	T-301	Diseñar modelo proyecto	Estructura de datos para proyectos y fases	Desarrollo Backend	3	4.5
+V2	04 Gestión de Proyectos	Setup Proyectos	T-302	Implementar plantillas setup	Sistema de templates de proyecto	Desarrollo Backend	3	4.5
+V2	04 Gestión de Proyectos	Kanban	T-303	Diseñar UI Kanban	Layout de vista kanban de tareas	Diseño UI/UX	3.5	5
+V2	04 Gestión de Proyectos	Kanban	T-304	Implementar backend Kanban	APIs para gestión de estados y drag-drop	Desarrollo Backend	3	4.5
+V2	04 Gestión de Proyectos	Kanban	T-305	Desarrollar frontend Kanban	Implementación drag-drop y estados	Desarrollo Frontend	4	6
+V2	04 Gestión de Proyectos	Tiempo	T-306	Crear sistema registro tiempo	Modelo y APIs para tracking de horas	Desarrollo Backend	2.5	4
+V2	04 Gestión de Proyectos	Tiempo	T-307	Implementar UI registro tiempo	Interfaz para registro de horas por tarea	Desarrollo Frontend	2.5	4
+
+V2	05 Comunicación	Chat Interno	T-401	Diseñar sistema mensajería	Arquitectura de chat en tiempo real	CTO/Arquitectura	3.5	5
+V2	05 Comunicación	Chat Interno	T-402	Implementar backend chat	Sistema de mensajería con WebSocket	Desarrollo Backend	4	6
+V2	05 Comunicación	Chat Interno	T-403	Crear UI chat	Interfaz de chat por proyecto	Diseño UI/UX	3	4.5
+V2	05 Comunicación	Chat Interno	T-404	Desarrollar frontend chat	Chat funcional con tiempo real	Desarrollo Frontend	4	6
+V2	05 Comunicación	Soporte	T-405	Implementar sistema tickets	Backend para gestión de incidencias	Desarrollo Backend	3	4.5
+V2	05 Comunicación	Soporte	T-406	Crear UI tickets	Interfaz de gestión de tickets	Desarrollo Frontend	3	4.5
+V2	05 Comunicación	Soporte	T-407	Integrar videollamadas	Implementar sistema de videochat	Desarrollo Backend	3	4.5
+
+V2	06 Métricas	KPIs	T-501	Diseñar modelo analytics	Estructura para métricas multinivel	CTO/Arquitectura	3	4.5
+V2	06 Métricas	KPIs	T-502	Implementar agregación datos	Sistema de cálculo de KPIs	Desarrollo Backend	3.5	5
+V2	06 Métricas	KPIs	T-503	Crear dashboards KPIs	Diseño de paneles por nivel	Diseño UI/UX	3.5	5
+V2	06 Métricas	KPIs	T-504	Desarrollar UI métricas	Implementación de gráficos y tablas	Desarrollo Frontend	4	6
+V2	06 Métricas	KPIs	T-505	Implementar filtros	Sistema de filtrado multinivel	Desarrollo Backend	2.5	4
+V2	06 Métricas	KPIs	T-506	Testear métricas	Validación de cálculos y rendimiento	Testeo	2	3
+
+V2	07 Gestión de Contenidos	Panel Contenidos	T-601	Diseñar modelo contenidos	Estructura para gestión de contenidos	Desarrollo Backend	2.5	4
+V2	07 Gestión de Contenidos	Panel Contenidos	T-602	Implementar workflow estados	Sistema de estados y transiciones	Desarrollo Backend	3	4.5
+V2	07 Gestión de Contenidos	Panel Contenidos	T-603	Crear UI contenidos	Diseño de panel de contenidos	Diseño UI/UX	3	4.5
+V2	07 Gestión de Contenidos	Panel Contenidos	T-604	Desarrollar gestor contenidos	Implementación frontend del panel	Desarrollo Frontend	3.5	5
+V2	07 Gestión de Contenidos	Calendario	T-605	Implementar vista calendario	Backend para calendario editorial	Desarrollo Backend	2.5	4
+V2	07 Gestión de Contenidos	Calendario	T-606	Crear UI calendario	Interfaz de calendario con eventos	Desarrollo Frontend	3	4.5
+V2	07 Gestión de Contenidos	IA Contenidos	T-607	Integrar asistente IA	Sistema de generación con IA	Desarrollo Backend	3.5	5
+V2	07 Gestión de Contenidos	IA Contenidos	T-608	Diseñar prompts contenido	Prompts para generación de contenido	Prompting	3	4.5
+
+V2	99 Finalización	Testing Global	T-901	Pruebas integración V2	Testing completo de nuevas funciones	Testeo	4	6
+V2	99 Finalización	Testing Global	T-902	Optimización rendimiento	Mejoras de performance general	CTO/Arquitectura	3	4.5
+V2	99 Finalización	Testing Global	T-903	Documentación técnica	Documentar nuevas funcionalidades	CTO/Arquitectura	2.5	4
+V2	99 Finalización	Testing Global	T-904	Sesión entrega V2	Revisión final con stakeholders	Reuniones	1.5	2 

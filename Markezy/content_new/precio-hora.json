@@ -1,0 +1,39 @@
+{
+  "roles": [
+    {
+      "name": "CTO/Arquitectura",
+      "description": "Dirección técnica y definición de arquitectura",
+      "rate": 50
+    },
+    {
+      "name": "Desarrollo Backend",
+      "description": "Desarrollo de APIs y lógica de servidor",
+      "rate": 50
+    },
+    {
+      "name": "Desarrollo Frontend",
+      "description": "Desarrollo de interfaz de usuario",
+      "rate": 40
+    },
+    {
+      "name": "Diseño UI/UX",
+      "description": "Diseño de experiencia de usuario",
+      "rate": 40
+    },
+    {
+      "name": "Prompting",
+      "description": "Desarrollo de prompts para IA",
+      "rate": 35
+    },
+    {
+      "name": "Testeo",
+      "description": "Testing y control de calidad",
+      "rate": 35
+    },
+    {
+      "name": "Reuniones",
+      "description": "Sesiones de coordinación y revisión",
+      "rate": 0
+    }
+  ]
+} 

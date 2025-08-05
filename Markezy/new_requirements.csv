@@ -1,0 +1,48 @@
+Área	Funcionalidad	Descripción
+Sistema de Usuarios	Superadmin (Central Serseo)	Puede ver y gestionar todas las agencias, sus proyectos, sus usuarios y configuración global.
+Sistema de Usuarios	Admin Agencia	Usuario responsable de una agencia franquiciada. Gestiona sus clientes, proyectos y consultores.
+Sistema de Usuarios	Consultor de Agencia	Usuario asignado a una agencia para ejecutar tareas de proyectos de clientes.
+Sistema de Usuarios	Cliente	Usuario que accede a su espacio privado con visibilidad sobre su proyecto, contenidos, onboarding, métricas, etc.
+Sistema de Usuarios	Gestión de Agencias	Alta, edición y visualización de agencias desde Superadmin. Datos: nombre, plan, nº de licencias, estado.
+Sistema de Usuarios	Alta de Usuarios	Creación de usuarios internos (consultores, admins agencia) y clientes asociados a una agencia.
+Sistema de Usuarios	Control de Accesos	Cada usuario ve solo lo correspondiente a su agencia o proyecto. Control granular de permisos.
+Sistema de Usuarios	Invitación de Usuarios	Flujo de invitación para nuevos usuarios del equipo o clientes.
+Sistema de Usuarios	Roles y Permisos	Gestión detallada de permisos por rol (crear, editar, ver, administrar).
+Sistema de Usuarios	Login con Google	Opción de autenticación con cuenta Google.
+Sistema de Usuarios	Selección de Rol	Si un usuario pertenece a varios roles, puede seleccionar con qué rol desea acceder.
+Sistema de Usuarios	Filtro Global por Cliente	Permite filtrar toda la plataforma por cliente (proyectos, contenidos, tickets, etc.).
+Proyectos	Creación de Proyecto	Alta de nuevos proyectos por parte de Admin Agencia o Superadmin.
+Proyectos	Proyecto Setup Automático	Al crear un cliente, se asocia automáticamente un proyecto tipo 'Setup' con 7 fases estándar.
+Proyectos	Fases y Tareas	Cada proyecto se divide en fases, y cada fase en tareas. Posibilidad de marcarlas como completadas, en revisión o pendientes.
+Proyectos	Kanban de Tareas	Visualización de tareas tipo Kanban para facilitar el seguimiento.
+Proyectos	Indicadores de Estado	Resumen visual del avance de cada proyecto por fase y estado.
+Proyectos	Seguimiento Financiero	Seguimiento del presupuesto, horas consumidas, costes y facturación.
+Proyectos	Registro de Tiempo	Consultores registran tiempo dedicado por tarea/proyecto.
+Proyectos	Subida de Documentos	Documentación asociada a tareas y fases, accesible por cliente y consultores.
+Clientes	Alta y Ficha de Cliente	Flujo de alta con campos clave: datos de contacto, pack contratado, estado.
+Clientes	Etiquetas de Pack	Visualización del tipo de plan contratado por cliente (Basic, Premium, Ecommerce, etc.).
+Clientes	Seguimiento de Estado	Estado general del cliente (activo, onboarding, etc.) y su progreso.
+Clientes	Onboarding Paso a Paso	Visualización y edición del estado de onboarding por parte del admin agencia y cliente.
+Clientes	Historial de Actividad	Registro de acciones relevantes del cliente en plataforma.
+Comunicación	Muro de Conversación	Chat continuo entre cliente y su agencia dentro del proyecto.
+Comunicación	Bandeja de Conversaciones	Gestión unificada de todos los hilos abiertos por cliente o agencia.
+Soporte	Tickets de Soporte	Sistema de incidencias interno entre agencias y la central. Visible para Superadmin.
+Soporte	Videollamada desde Ticket	Posibilidad de activar videollamada directa desde ticket.
+Soporte	Filtros y Búsqueda	Filtrado por título, estado y prioridad para gestión de tickets.
+Métricas	KPIs Globales	Vista general: nº agencias, proyectos, clientes activos, setups activos.
+Métricas	KPIs de Agencia	Vista de métricas clave por agencia: clientes activos, proyectos, tareas, contenido pendiente.
+Métricas	KPIs de Cliente	Panel de métricas específicas del cliente (visitas, leads, posición media, CTR, etc.).
+Métricas	Gráficos de Actividad	Representación gráfica de evolución de proyectos, tareas o visitas.
+Contenidos	Panel de Contenido	Gestión de piezas de contenido por estado (borrador, revisión, publicado).
+Contenidos	Vista Calendario	Calendario editorial por agencia.
+Contenidos	Revisión y Aprobación	Flujo de aprobación por parte del cliente antes de publicar.
+Contenidos	Asistente IA de Contenido	Generador de contenidos con IA (posts, artículos, copys).
+Lead Magnet	Chat Inteligente de Captación	Asistente conversacional que capta y cualifica leads automáticamente.
+Lead Magnet	Cualificación Automática	Clasificación del lead según criterios definidos por sector/interés.
+Lead Magnet	Generación de Estrategia	Herramienta IA que genera estrategia de marketing personalizada.
+Lead Magnet	Generación de Propuesta PDF	Documento automático descargable con identidad visual de la agencia.
+Lead Magnet	Visualización del Lead	Los leads captados aparecen en CRM interno o integraciones.
+Administración	Gestión de Plantillas de Setup	Editor de plantillas de proyectos y setups reutilizables para todas las agencias.
+Administración	Gestión de Agencias	Alta, configuración y edición de agencias desde la central.
+Administración	Historial de Cambios	Registro cronológico de toda la actividad en la plataforma.
+Administración	Configuración General	Ajustes globales (branding, dominios, integraciones).

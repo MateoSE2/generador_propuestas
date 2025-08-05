@@ -1,0 +1,336 @@
+{
+  "currentRequirements": {
+    "functionalAreas": [
+      {
+        "id": "arquitectura",
+        "title": "Arquitectura e Infraestructura",
+        "description": "Configuración base del sistema, contenedores y servicios backend",
+        "requirements": [
+          {
+            "id": "docker-infrastructure",
+            "title": "Infraestructura Docker",
+            "description": "Configuración de arquitectura del proyecto con entorno Docker y contenedores para desarrollo y producción"
+          },
+          {
+            "id": "database-multitenant",
+            "title": "Base de Datos Multi-tenant",
+            "description": "Configuración de esquema MySQL con aislamiento completo de datos por agencia y estructura escalable"
+          },
+          {
+            "id": "backend-services",
+            "title": "Servicios Backend",
+            "description": "Configuración de Redis para caché y Celery para procesamiento en segundo plano de tareas pesadas"
+          }
+        ]
+      },
+      {
+        "id": "autenticacion",
+        "title": "Sistema de Autenticación",
+        "description": "Gestión completa de usuarios, roles y control de acceso",
+        "requirements": [
+          {
+            "id": "jwt-authentication",
+            "title": "Autenticación JWT",
+            "description": "Sistema de autenticación con tokens JWT y control de acceso basado en roles (SuperAdmin, AgencyAdmin, Agent)"
+          },
+          {
+            "id": "user-management",
+            "title": "Gestión de Usuarios Multi-tenant",
+            "description": "Sistema completo de gestión de usuarios con aislamiento por agencia y flujos de invitación automática"
+          },
+          {
+            "id": "auth-interfaces",
+            "title": "Interfaces de Autenticación",
+            "description": "Construcción de interfaces login/logout, rutas protegidas y formularios de gestión de usuarios"
+          }
+        ]
+      },
+      {
+        "id": "lead-magnet",
+        "title": "Lead Magnet Conversacional",
+        "description": "Sistema de captación y cualificación de leads con IA",
+        "requirements": [
+          {
+            "id": "chat-interface",
+            "title": "Interfaz Conversacional",
+            "description": "Chatbot inteligente con gestión de estado y flujo dinámico de preguntas"
+          },
+          {
+            "id": "ai-integration",
+            "title": "Integración OpenAI",
+            "description": "Procesamiento de lenguaje natural para calificación automática de leads"
+          },
+          {
+            "id": "strategy-generation",
+            "title": "Generación de Estrategias",
+            "description": "Pipeline de generación de estrategias con metodología SERSEO"
+          }
+        ]
+      },
+      {
+        "id": "crm-integration",
+        "title": "Integración CRM",
+        "description": "Gestión de leads e integración con sistemas externos",
+        "requirements": [
+          {
+            "id": "clientify-integration",
+            "title": "Integración Clientify",
+            "description": "Conexión con API Clientify para sincronización de leads y datos de contacto"
+          },
+          {
+            "id": "lead-dashboard",
+            "title": "Dashboard de Leads",
+            "description": "Interfaz de gestión de leads con filtrado, búsqueda y seguimiento"
+          }
+        ]
+      },
+      {
+        "id": "pdf-export",
+        "title": "Exportación PDF",
+        "description": "Generación de documentos profesionales",
+        "requirements": [
+          {
+            "id": "pdf-generation",
+            "title": "Generación Dinámica PDF",
+            "description": "Creación de PDFs profesionales con branding personalizado de agencia"
+          },
+          {
+            "id": "branding-config",
+            "title": "Configuración de Branding",
+            "description": "Sistema de personalización de documentos con logos y colores de agencia"
+          }
+        ]
+      },
+      {
+        "id": "responsive-design",
+        "title": "Diseño Responsive",
+        "description": "Optimización para dispositivos móviles",
+        "requirements": [
+          {
+            "id": "mobile-optimization",
+            "title": "Optimización Móvil",
+            "description": "Adaptación de interfaz para tablets y smartphones"
+          },
+          {
+            "id": "ux-improvements",
+            "title": "Mejoras UX",
+            "description": "Estados de carga, manejo de errores y mejoras de experiencia de usuario"
+          }
+        ]
+      },
+      {
+        "id": "user-management-v2",
+        "title": "Sistema de Usuarios Avanzado",
+        "description": "Gestión granular de permisos y autenticación social",
+        "requirements": [
+          {
+            "id": "granular-permissions",
+            "title": "Permisos Granulares",
+            "description": "Sistema de permisos detallado por rol y nivel de acceso"
+          },
+          {
+            "id": "google-auth",
+            "title": "Autenticación Google",
+            "description": "Integración con OAuth de Google para login social"
+          },
+          {
+            "id": "superadmin-panel",
+            "title": "Panel Superadmin",
+            "description": "Interfaz de administración central para gestión de agencias"
+          }
+        ]
+      },
+      {
+        "id": "client-management",
+        "title": "Gestión de Clientes",
+        "description": "Sistema completo de gestión de clientes",
+        "requirements": [
+          {
+            "id": "client-crud",
+            "title": "CRUD de Clientes",
+            "description": "Operaciones completas de creación, lectura, actualización y eliminación de clientes"
+          },
+          {
+            "id": "onboarding-flow",
+            "title": "Flujo de Onboarding",
+            "description": "Proceso estructurado de incorporación de nuevos clientes"
+          },
+          {
+            "id": "client-tracking",
+            "title": "Seguimiento de Clientes",
+            "description": "Tracking del progreso y estado de los clientes en el sistema"
+          }
+        ]
+      },
+      {
+        "id": "project-management",
+        "title": "Gestión de Proyectos",
+        "description": "Sistema de proyectos con metodología Kanban",
+        "requirements": [
+          {
+            "id": "project-templates",
+            "title": "Plantillas de Proyectos",
+            "description": "Sistema de plantillas configurables para diferentes tipos de proyectos"
+          },
+          {
+            "id": "kanban-board",
+            "title": "Tablero Kanban",
+            "description": "Interfaz visual tipo Kanban para gestión de tareas y proyectos"
+          },
+          {
+            "id": "time-tracking",
+            "title": "Registro de Tiempo",
+            "description": "Sistema de tracking de tiempo dedicado a tareas y proyectos"
+          }
+        ]
+      },
+      {
+        "id": "communication",
+        "title": "Comunicación y Soporte",
+        "description": "Herramientas de comunicación interna",
+        "requirements": [
+          {
+            "id": "internal-chat",
+            "title": "Chat Interno",
+            "description": "Sistema de mensajería interna por proyecto"
+          },
+          {
+            "id": "ticket-system",
+            "title": "Sistema de Tickets",
+            "description": "Gestión de incidencias y solicitudes de soporte"
+          },
+          {
+            "id": "video-calls",
+            "title": "Videollamadas",
+            "description": "Integración de videollamadas para reuniones y soporte"
+          }
+        ]
+      },
+      {
+        "id": "analytics",
+        "title": "Métricas y Analytics",
+        "description": "Sistema de análisis y reportes",
+        "requirements": [
+          {
+            "id": "kpi-dashboards",
+            "title": "Dashboards de KPIs",
+            "description": "Paneles de control con métricas clave por rol"
+          },
+          {
+            "id": "data-aggregation",
+            "title": "Agregación de Datos",
+            "description": "Sistema de recopilación y procesamiento de datos para análisis"
+          },
+          {
+            "id": "advanced-filters",
+            "title": "Filtros Avanzados",
+            "description": "Sistema de filtrado y búsqueda avanzada en reportes"
+          }
+        ]
+      },
+      {
+        "id": "production",
+        "title": "Producción y Deployment",
+        "description": "Configuración de entorno de producción",
+        "requirements": [
+          {
+            "id": "production-deployment",
+            "title": "Deployment de Producción",
+            "description": "Configuración completa de entorno de producción con Docker Swarm"
+          },
+          {
+            "id": "performance-optimization",
+            "title": "Optimización de Rendimiento",
+            "description": "Mejoras de performance y optimización de consultas"
+          },
+          {
+            "id": "technical-documentation",
+            "title": "Documentación Técnica",
+            "description": "Documentación completa de funcionalidades y APIs"
+          }
+        ]
+      }
+    ]
+  },
+  "futureImprovements": {
+    "title": "Mejoras Futuras",
+    "categories": {
+      "herramientas": "Herramientas",
+      "mejoras": "Mejoras"
+    },
+    "items": [
+      {
+        "id": 1,
+        "title": "[Herramienta] Gestión de Contenidos IA",
+        "description": "Sistema completo de gestión de contenido con asistente IA, workflow de aprobación, calendario editorial y generación automática",
+        "category": "herramientas"
+      },
+      {
+        "id": 2,
+        "title": "[Herramienta] SaaS para Agencias Externas",
+        "description": "Plataforma comercial para agencias de marketing no franquiciadas con planes de suscripción y facturación automática",
+        "category": "herramientas"
+      },
+      {
+        "id": 3,
+        "title": "[Herramienta] Marketplace de Servicios",
+        "description": "Plataforma de intercambio de servicios entre agencias franquiciadas con sistema de reputación y pagos",
+        "category": "herramientas"
+      },
+      {
+        "id": 4,
+        "title": "[Herramienta] App Móvil Nativa",
+        "description": "Aplicaciones iOS y Android con gestión offline de proyectos, notificaciones push y autenticación biométrica",
+        "category": "herramientas"
+      },
+      {
+        "id": 5,
+        "title": "[Mejora] Integración Avanzada CRM",
+        "description": "Conexión con múltiples CRMs (HubSpot, Salesforce, Pipedrive) con sincronización bidireccional de datos",
+        "category": "mejoras"
+      },
+      {
+        "id": 6,
+        "title": "[Mejora] Sistema de Facturación",
+        "description": "Gestión completa de facturación con integración Stripe, planes de suscripción y límites de uso por agencia",
+        "category": "mejoras"
+      },
+      {
+        "id": 7,
+        "title": "[Mejora] Dominios Personalizados",
+        "description": "Configuración de subdominios custom por agencia (ej: agencia.markezy.com) con SSL automático y branding",
+        "category": "mejoras"
+      },
+      {
+        "id": 8,
+        "title": "[Mejora] Integración Redes Sociales",
+        "description": "Conexión directa con APIs de Facebook, LinkedIn, Instagram y Twitter para publicación automática de contenido",
+        "category": "mejoras"
+      },
+      {
+        "id": 9,
+        "title": "[Mejora] Widget WordPress Embebible",
+        "description": "Componente JavaScript para integrar el Lead Magnet directamente en sitios web de agencias como widget",
+        "category": "mejoras"
+      },
+      {
+        "id": 10,
+        "title": "[Mejora] Cumplimiento RGPD Avanzado",
+        "description": "Sistema completo de gestión de consentimientos, políticas de retención, exportación de datos y trazabilidad",
+        "category": "mejoras"
+      },
+      {
+        "id": 11,
+        "title": "[Mejora] Integración Email Marketing",
+        "description": "Automatización de secuencias de follow-up con templates personalizables y tracking avanzado de engagement",
+        "category": "mejoras"
+      },
+      {
+        "id": 12,
+        "title": "[Mejora] IA Predictiva",
+        "description": "Sistema de predicción de resultados de marketing basado en datos históricos y machine learning",
+        "category": "mejoras"
+      }
+    ]
+  }
+} 
